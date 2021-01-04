@@ -1,0 +1,548 @@
+fileFormatVersion: 2
+guid: 29a9ed7e490fa634c841e765e2073cb8
+ModelImporter:
+  serializedVersion: 20101
+  internalIDToNameTable:
+  - first:
+      74: 6708875275037855614
+    second: Railing_1_L|Railing_1_L|Take 001|BaseLayer
+  - first:
+      74: -4201247780678386262
+    second: Railing_1_L|Railing_1_R|Take 001|BaseLayer
+  - first:
+      74: -1639187730849420173
+    second: Railing_1_L|Railing_2_L|Take 001|BaseLayer
+  - first:
+      74: -6737560039423740747
+    second: Railing_1_L|Railing_2_R|Take 001|BaseLayer
+  - first:
+      74: 6274074511244601151
+    second: Railing_1_L|Railing_3_L|Take 001|BaseLayer
+  - first:
+      74: 1732268084669953424
+    second: Railing_1_L|Railing_3_R|Take 001|BaseLayer
+  - first:
+      74: 8282199782474620376
+    second: Railing_1_L|Railing_4_L|Take 001|BaseLayer
+  - first:
+      74: 3847528427121348082
+    second: Railing_1_L|Railing_4_R|Take 001|BaseLayer
+  - first:
+      74: -624618650118848790
+    second: Railing_1_L|Step_1.001|Take 001|BaseLayer
+  - first:
+      74: 3205714389959414034
+    second: Railing_1_L|Step_2.001|Take 001|BaseLayer
+  - first:
+      74: 3777799309860010559
+    second: Railing_1_L|Step_3.001|Take 001|BaseLayer
+  - first:
+      74: 42636881004287224
+    second: Railing_1_L|Step_4.001|Take 001|BaseLayer
+  - first:
+      74: 1814102902293054707
+    second: Railing_1_R|Railing_1_L|Take 001|BaseLayer
+  - first:
+      74: 5691463436974639940
+    second: Railing_1_R|Railing_1_R|Take 001|BaseLayer
+  - first:
+      74: -5107589298835240208
+    second: Railing_1_R|Railing_2_L|Take 001|BaseLayer
+  - first:
+      74: -8548097065094985450
+    second: Railing_1_R|Railing_2_R|Take 001|BaseLayer
+  - first:
+      74: -1589313906055236660
+    second: Railing_1_R|Railing_3_L|Take 001|BaseLayer
+  - first:
+      74: 749865126749610063
+    second: Railing_1_R|Railing_3_R|Take 001|BaseLayer
+  - first:
+      74: 1990229515732167384
+    second: Railing_1_R|Railing_4_L|Take 001|BaseLayer
+  - first:
+      74: 4863557361693682476
+    second: Railing_1_R|Railing_4_R|Take 001|BaseLayer
+  - first:
+      74: -8854893612759883254
+    second: Railing_1_R|Step_1.001|Take 001|BaseLayer
+  - first:
+      74: 5826463411851938813
+    second: Railing_1_R|Step_2.001|Take 001|BaseLayer
+  - first:
+      74: -5235411638070789450
+    second: Railing_1_R|Step_3.001|Take 001|BaseLayer
+  - first:
+      74: -1673501244827867851
+    second: Railing_1_R|Step_4.001|Take 001|BaseLayer
+  - first:
+      74: -2024709301201051627
+    second: Step_1.001|Railing_1_L|Take 001|BaseLayer
+  - first:
+      74: 8079519174648628936
+    second: Step_1.001|Railing_1_R|Take 001|BaseLayer
+  - first:
+      74: -9116858632074013452
+    second: Step_1.001|Railing_2_L|Take 001|BaseLayer
+  - first:
+      74: -2973296068676260937
+    second: Step_1.001|Railing_2_R|Take 001|BaseLayer
+  - first:
+      74: 2107172259747242672
+    second: Step_1.001|Railing_3_L|Take 001|BaseLayer
+  - first:
+      74: 8304252952918551160
+    second: Step_1.001|Railing_3_R|Take 001|BaseLayer
+  - first:
+      74: 4979701284555226015
+    second: Step_1.001|Railing_4_L|Take 001|BaseLayer
+  - first:
+      74: -8672202745611776482
+    second: Step_1.001|Railing_4_R|Take 001|BaseLayer
+  - first:
+      74: -5334018031143003521
+    second: Step_1.001|Step_1.001|Take 001|BaseLayer
+  - first:
+      74: 1127227485849666465
+    second: Step_1.001|Step_2.001|Take 001|BaseLayer
+  - first:
+      74: -4069121679714626413
+    second: Step_1.001|Step_3.001|Take 001|BaseLayer
+  - first:
+      74: 4023118664530551332
+    second: Step_1.001|Step_4.001|Take 001|BaseLayer
+  - first:
+      74: -8491039640204399403
+    second: Railing_2_L|Railing_1_L|Take 001|BaseLayer
+  - first:
+      74: 4599268574579940422
+    second: Railing_2_L|Railing_1_R|Take 001|BaseLayer
+  - first:
+      74: -6943689256101932637
+    second: Railing_2_L|Railing_2_L|Take 001|BaseLayer
+  - first:
+      74: 1022401387805191113
+    second: Railing_2_L|Railing_2_R|Take 001|BaseLayer
+  - first:
+      74: 5450049460927945659
+    second: Railing_2_L|Railing_3_L|Take 001|BaseLayer
+  - first:
+      74: 2771319236879196474
+    second: Railing_2_L|Railing_3_R|Take 001|BaseLayer
+  - first:
+      74: 1800822414588080293
+    second: Railing_2_L|Railing_4_L|Take 001|BaseLayer
+  - first:
+      74: 8841309753087861149
+    second: Railing_2_L|Railing_4_R|Take 001|BaseLayer
+  - first:
+      74: 8503208307743327667
+    second: Railing_2_L|Step_1.001|Take 001|BaseLayer
+  - first:
+      74: 5367460014443321170
+    second: Railing_2_L|Step_2.001|Take 001|BaseLayer
+  - first:
+      74: -7828809712127954948
+    second: Railing_2_L|Step_3.001|Take 001|BaseLayer
+  - first:
+      74: -2162017768604433289
+    second: Railing_2_L|Step_4.001|Take 001|BaseLayer
+  - first:
+      74: -4890416749435532929
+    second: Railing_2_R|Railing_1_L|Take 001|BaseLayer
+  - first:
+      74: -3743059955895172244
+    second: Railing_2_R|Railing_1_R|Take 001|BaseLayer
+  - first:
+      74: -4796584349484565466
+    second: Railing_2_R|Railing_2_L|Take 001|BaseLayer
+  - first:
+      74: -7587318364982987641
+    second: Railing_2_R|Railing_2_R|Take 001|BaseLayer
+  - first:
+      74: 2797172551736738220
+    second: Railing_2_R|Railing_3_L|Take 001|BaseLayer
+  - first:
+      74: 2113609080172243403
+    second: Railing_2_R|Railing_3_R|Take 001|BaseLayer
+  - first:
+      74: -7901982485420453022
+    second: Railing_2_R|Railing_4_L|Take 001|BaseLayer
+  - first:
+      74: -6380630856450310600
+    second: Railing_2_R|Railing_4_R|Take 001|BaseLayer
+  - first:
+      74: 4342128177731275203
+    second: Railing_2_R|Step_1.001|Take 001|BaseLayer
+  - first:
+      74: -659539622048585061
+    second: Railing_2_R|Step_2.001|Take 001|BaseLayer
+  - first:
+      74: -3394690819033107013
+    second: Railing_2_R|Step_3.001|Take 001|BaseLayer
+  - first:
+      74: -109787736911738258
+    second: Railing_2_R|Step_4.001|Take 001|BaseLayer
+  - first:
+      74: -4656950793680815122
+    second: Step_2.001|Railing_1_L|Take 001|BaseLayer
+  - first:
+      74: 2448015565553023881
+    second: Step_2.001|Railing_1_R|Take 001|BaseLayer
+  - first:
+      74: 7447746784220221952
+    second: Step_2.001|Railing_2_L|Take 001|BaseLayer
+  - first:
+      74: 3183393166705424958
+    second: Step_2.001|Railing_2_R|Take 001|BaseLayer
+  - first:
+      74: -5201793226105810235
+    second: Step_2.001|Railing_3_L|Take 001|BaseLayer
+  - first:
+      74: -7736994320775578124
+    second: Step_2.001|Railing_3_R|Take 001|BaseLayer
+  - first:
+      74: 611868423934093348
+    second: Step_2.001|Railing_4_L|Take 001|BaseLayer
+  - first:
+      74: 1420008578750405036
+    second: Step_2.001|Railing_4_R|Take 001|BaseLayer
+  - first:
+      74: -5613323426994990165
+    second: Step_2.001|Step_1.001|Take 001|BaseLayer
+  - first:
+      74: -6688374278772317459
+    second: Step_2.001|Step_2.001|Take 001|BaseLayer
+  - first:
+      74: -5693100357996111082
+    second: Step_2.001|Step_3.001|Take 001|BaseLayer
+  - first:
+      74: -145396932011940535
+    second: Step_2.001|Step_4.001|Take 001|BaseLayer
+  - first:
+      74: 8100821195956264369
+    second: Railing_3_L|Railing_1_L|Take 001|BaseLayer
+  - first:
+      74: -6369202324967184282
+    second: Railing_3_L|Railing_1_R|Take 001|BaseLayer
+  - first:
+      74: -8901169103067044056
+    second: Railing_3_L|Railing_2_L|Take 001|BaseLayer
+  - first:
+      74: -3830635368135182590
+    second: Railing_3_L|Railing_2_R|Take 001|BaseLayer
+  - first:
+      74: -772130017872299774
+    second: Railing_3_L|Railing_3_L|Take 001|BaseLayer
+  - first:
+      74: -1785941892746929224
+    second: Railing_3_L|Railing_3_R|Take 001|BaseLayer
+  - first:
+      74: 5972333785863319331
+    second: Railing_3_L|Railing_4_L|Take 001|BaseLayer
+  - first:
+      74: 5162502997044131130
+    second: Railing_3_L|Railing_4_R|Take 001|BaseLayer
+  - first:
+      74: -7375555172287834985
+    second: Railing_3_L|Step_1.001|Take 001|BaseLayer
+  - first:
+      74: -1474972521346843083
+    second: Railing_3_L|Step_2.001|Take 001|BaseLayer
+  - first:
+      74: -5287614312874380362
+    second: Railing_3_L|Step_3.001|Take 001|BaseLayer
+  - first:
+      74: -8589597058993882360
+    second: Railing_3_L|Step_4.001|Take 001|BaseLayer
+  - first:
+      74: 8240531858274842663
+    second: Railing_3_R|Railing_1_L|Take 001|BaseLayer
+  - first:
+      74: 2320492257607166121
+    second: Railing_3_R|Railing_1_R|Take 001|BaseLayer
+  - first:
+      74: 4911115062541546557
+    second: Railing_3_R|Railing_2_L|Take 001|BaseLayer
+  - first:
+      74: 957728128373453177
+    second: Railing_3_R|Railing_2_R|Take 001|BaseLayer
+  - first:
+      74: -5540237013134778323
+    second: Railing_3_R|Railing_3_L|Take 001|BaseLayer
+  - first:
+      74: -7661021642274452383
+    second: Railing_3_R|Railing_3_R|Take 001|BaseLayer
+  - first:
+      74: -1774835305851610151
+    second: Railing_3_R|Railing_4_L|Take 001|BaseLayer
+  - first:
+      74: 8892622061322944470
+    second: Railing_3_R|Railing_4_R|Take 001|BaseLayer
+  - first:
+      74: -141682923843829207
+    second: Railing_3_R|Step_1.001|Take 001|BaseLayer
+  - first:
+      74: 323834144199137699
+    second: Railing_3_R|Step_2.001|Take 001|BaseLayer
+  - first:
+      74: 6437550215089557706
+    second: Railing_3_R|Step_3.001|Take 001|BaseLayer
+  - first:
+      74: -2102529896654421385
+    second: Railing_3_R|Step_4.001|Take 001|BaseLayer
+  - first:
+      74: 3919082647131382111
+    second: Step_3.001|Railing_1_L|Take 001|BaseLayer
+  - first:
+      74: -6228077118951884356
+    second: Step_3.001|Railing_1_R|Take 001|BaseLayer
+  - first:
+      74: 6351533691639598691
+    second: Step_3.001|Railing_2_L|Take 001|BaseLayer
+  - first:
+      74: 709881668964965901
+    second: Step_3.001|Railing_2_R|Take 001|BaseLayer
+  - first:
+      74: 8497632636807624752
+    second: Step_3.001|Railing_3_L|Take 001|BaseLayer
+  - first:
+      74: -4308868868496883785
+    second: Step_3.001|Railing_3_R|Take 001|BaseLayer
+  - first:
+      74: -2435701123621318153
+    second: Step_3.001|Railing_4_L|Take 001|BaseLayer
+  - first:
+      74: 6906346550958026352
+    second: Step_3.001|Railing_4_R|Take 001|BaseLayer
+  - first:
+      74: 1555345294048298031
+    second: Step_3.001|Step_1.001|Take 001|BaseLayer
+  - first:
+      74: 5681502079409561782
+    second: Step_3.001|Step_2.001|Take 001|BaseLayer
+  - first:
+      74: -2166767116538006101
+    second: Step_3.001|Step_3.001|Take 001|BaseLayer
+  - first:
+      74: -2204652339163382520
+    second: Step_3.001|Step_4.001|Take 001|BaseLayer
+  - first:
+      74: -4449664216950683897
+    second: Railing_4_L|Railing_1_L|Take 001|BaseLayer
+  - first:
+      74: 7695054879570520766
+    second: Railing_4_L|Railing_1_R|Take 001|BaseLayer
+  - first:
+      74: 8604577272730440622
+    second: Railing_4_L|Railing_2_L|Take 001|BaseLayer
+  - first:
+      74: -4510923026535883774
+    second: Railing_4_L|Railing_2_R|Take 001|BaseLayer
+  - first:
+      74: -1205865548200129736
+    second: Railing_4_L|Railing_3_L|Take 001|BaseLayer
+  - first:
+      74: -8717097206547064198
+    second: Railing_4_L|Railing_3_R|Take 001|BaseLayer
+  - first:
+      74: 1935464154913784054
+    second: Railing_4_L|Railing_4_L|Take 001|BaseLayer
+  - first:
+      74: -480572005000650083
+    second: Railing_4_L|Railing_4_R|Take 001|BaseLayer
+  - first:
+      74: 8030186158370919683
+    second: Railing_4_L|Step_1.001|Take 001|BaseLayer
+  - first:
+      74: -8866031772425332688
+    second: Railing_4_L|Step_2.001|Take 001|BaseLayer
+  - first:
+      74: -3463275675419423822
+    second: Railing_4_L|Step_3.001|Take 001|BaseLayer
+  - first:
+      74: 2965522516510468362
+    second: Railing_4_L|Step_4.001|Take 001|BaseLayer
+  - first:
+      74: 2202956679943928470
+    second: Railing_4_R|Railing_1_L|Take 001|BaseLayer
+  - first:
+      74: 3849936758721066752
+    second: Railing_4_R|Railing_1_R|Take 001|BaseLayer
+  - first:
+      74: 4839003507386345967
+    second: Railing_4_R|Railing_2_L|Take 001|BaseLayer
+  - first:
+      74: -5739011773515582751
+    second: Railing_4_R|Railing_2_R|Take 001|BaseLayer
+  - first:
+      74: -4842494037192129870
+    second: Railing_4_R|Railing_3_L|Take 001|BaseLayer
+  - first:
+      74: -6821575533996937327
+    second: Railing_4_R|Railing_3_R|Take 001|BaseLayer
+  - first:
+      74: -5084724846717585799
+    second: Railing_4_R|Railing_4_L|Take 001|BaseLayer
+  - first:
+      74: 2188110388580153236
+    second: Railing_4_R|Railing_4_R|Take 001|BaseLayer
+  - first:
+      74: -3716645873669904665
+    second: Railing_4_R|Step_1.001|Take 001|BaseLayer
+  - first:
+      74: 1750810491439263191
+    second: Railing_4_R|Step_2.001|Take 001|BaseLayer
+  - first:
+      74: -66729743986256665
+    second: Railing_4_R|Step_3.001|Take 001|BaseLayer
+  - first:
+      74: -3543712707532058812
+    second: Railing_4_R|Step_4.001|Take 001|BaseLayer
+  - first:
+      74: -6302700756202949595
+    second: Step_4.001|Railing_1_L|Take 001|BaseLayer
+  - first:
+      74: -3594754499148396614
+    second: Step_4.001|Railing_1_R|Take 001|BaseLayer
+  - first:
+      74: -8598582991988967523
+    second: Step_4.001|Railing_2_L|Take 001|BaseLayer
+  - first:
+      74: 3483707554160294277
+    second: Step_4.001|Railing_2_R|Take 001|BaseLayer
+  - first:
+      74: -261845590899779400
+    second: Step_4.001|Railing_3_L|Take 001|BaseLayer
+  - first:
+      74: 683084756823612655
+    second: Step_4.001|Railing_3_R|Take 001|BaseLayer
+  - first:
+      74: -1900057467489609373
+    second: Step_4.001|Railing_4_L|Take 001|BaseLayer
+  - first:
+      74: 7818702413896184996
+    second: Step_4.001|Railing_4_R|Take 001|BaseLayer
+  - first:
+      74: -1638004843066253840
+    second: Step_4.001|Step_1.001|Take 001|BaseLayer
+  - first:
+      74: 5484052802227951104
+    second: Step_4.001|Step_2.001|Take 001|BaseLayer
+  - first:
+      74: -1984340716156341956
+    second: Step_4.001|Step_3.001|Take 001|BaseLayer
+  - first:
+      74: -2392055616786077870
+    second: Step_4.001|Step_4.001|Take 001|BaseLayer
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_Metal_Dark
+    second: {fileID: 2100000, guid: 35058e7872079cc44ad388679971be14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_Metal_Gold
+    second: {fileID: 2100000, guid: c9f057b01e83d1d4ba8b6d887685a6f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mat_Metal_Medium
+    second: {fileID: 2100000, guid: c90ce8fe152bfbe49970356438363860, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,242 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5904152218201408970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5904152218201408946}
+  - component: {fileID: 5904152218201408947}
+  - component: {fileID: 5904152218201408944}
+  - component: {fileID: 5904152218201408945}
+  - component: {fileID: 5904152218201408950}
+  - component: {fileID: 5904152218201408949}
+  m_Layer: 0
+  m_Name: ---GameManager---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5904152218201408946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5904152218201408970}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.14, y: 2.479, z: -4.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5904152218201408947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5904152218201408970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e552dd58e2a1ef3438f49bb6257fdf51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TouchableLayers:
+    serializedVersion: 2
+    m_Bits: 32512
+  CurrentlyViewing: 
+  InventoryManager: {fileID: 0}
+  CameraController: {fileID: 0}
+  CurrentGameState: 2
+  Puzzles:
+  - PuzzleState: 2
+    PuzzleDoneEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - PuzzleState: 2
+    PuzzleDoneEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  DeactivationTimeOfObjects: 2
+  FadePanel: {fileID: 0}
+  SecondDeskManager: {fileID: 0}
+  loadingScreen: {fileID: 0}
+  eventSystem: {fileID: 0}
+--- !u!114 &5904152218201408944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5904152218201408970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc98219a83dff145947365dc914d06e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TapThreshold: 0.2
+  SwipeThreshold: 100
+  ReferenceDpi: 200
+  GuiLayers:
+    serializedVersion: 2
+    m_Bits: 32
+  RecordFingers: 1
+  RecordThreshold: 5
+  RecordLimit: 10
+  SimulateMultiFingers: 1
+  PinchTwistKey: 306
+  MovePivotKey: 308
+  MultiDragKey: 308
+  FingerTexture: {fileID: 2800000, guid: 25c48be3a87ea0f489a6d41c9c9a2194, type: 3}
+--- !u!114 &5904152218201408945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5904152218201408970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd00f83559d8ff448717efd36a038bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  touchWhenNotVisible: 0
+  VantagePoint:
+    serializedVersion: 2
+    m_Bits: 256
+  InspectableObjectsLayer0:
+    serializedVersion: 2
+    m_Bits: 512
+  InspectableObjectsLayer1:
+    serializedVersion: 2
+    m_Bits: 1024
+  InspectableObjectsLayer2:
+    serializedVersion: 2
+    m_Bits: 2048
+  CameraFollowTarget: {fileID: 0}
+  CameraLookAtTarget: {fileID: 0}
+  ObjectRotation: {fileID: 0}
+  CineMachineCam: {fileID: 0}
+  LookAtTime: 1
+  CameraOffsetOfInteractable: 2
+  InterpolationSpeed: 5
+  RaycastRange: 100
+  RequiredTabs: 2
+  tabCount: 0
+  tabCooler: 0.5
+--- !u!114 &5904152218201408950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5904152218201408970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7c1c71d8ad5da9438de3b2e5990763f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoreStartedOverGui: 1
+  IgnoreIsOverGui: 0
+  RequiredSelectable: {fileID: 0}
+  RequiredTapCount: 2
+  RequiredTapInterval: 0
+  onFinger:
+    m_PersistentCalls:
+      m_Calls: []
+  onCount:
+    m_PersistentCalls:
+      m_Calls: []
+  ScreenDepth:
+    Conversion: 2
+    Camera: {fileID: 0}
+    Object: {fileID: 0}
+    Layers:
+      serializedVersion: 2
+      m_Bits: 16128
+    Distance: 3
+  onWorld:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5904152218201408945}
+        m_TargetAssemblyTypeName: TouchBehaviours.TouchInputManager, Assembly-CSharp
+        m_MethodName: DubbleTaped
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5904152218201408949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5904152218201408970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a77491ac66e49347bf20daa45c4aff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  touchWhenNotVisible: 0
+  startState: 2
+  moveDragThreshold: 300
+  book: {fileID: 0}
+  emptyPage: {fileID: 21300000, guid: 9946a2355d26aae418b2c533e886bcb2, type: 3}
+  buttonText: {fileID: 0}
+  beginSprites:
+  - {fileID: 21300000, guid: 07b65bd45df70c54dac91bcb91e9e93a, type: 3}
+  - {fileID: 21300000, guid: d4ac217bc8ee8644fa3e924d6e24dbf5, type: 3}
+  - {fileID: 21300000, guid: ece7f77bbc0a94e4d82ff942ead5a4e1, type: 3}
+  - {fileID: 21300000, guid: 1cae4d4ccfaf0b341b0e8878e47bbb18, type: 3}
+  - {fileID: 21300000, guid: 5f67524435aa1e04b9d8ef636d54c040, type: 3}
+  beginText:
+  - "From: Nikola Tesla\r\nTo: Initiate\r\nSend: New York, June 21st 1892\r\nReceived:
+    London, June 21st 1892\r\n\r\nWE ARE THE SOCIETY OF THE CROSSED KEYS STOP \r\nYOU
+    ARE CURIOUS AND HAVE POTENTIAL STOP \r\nCOMPLETE TRIALS ADA LOVELACE AND BECOME
+    HER SUCCESSOR STOP \r\nGO TO 101A ST MARK\u2019S CRES, PRIMROSE HILL, LONDON
+    STOP\r\nFOR BETTERMENT OF THE WORLD STOP \r\nGOOD LUCK STOP \r\nNIKOLA TESLA
+    STOP\r\n"
+  - "Dear Initiate,\r\n\r\nThis letter is directed only to you. Do not share this
+    with anybody else. Now you know of the existence of our secret organization.
+    It must remain secret. \r\nWe are the Society of the Crossed Keys. We uncover
+    the world\u2019s secrets and use them for the betterment of our world. It is
+    our goal to keep these secrets out of the wrong hands. \r\r\nNikola Tesla has
+    seen your potential and has given you an assignment. Complete this assignment
+    and we will welcome you into our ranks. \r\nWe wish you all the luck in the world.\r\n\r\nSincerely,\r\n\r\nSociety
+    of the Crossed Keys"
+  - "01-09-1847: Trials\r\n\r\nFirst these trials\u2026 I have spent my last few
+    years on them. Someday someone will finish them\u2026 Hopefully\u2026 They need
+    to understand my choices in life, but they don\u2019t need to become me. They
+    need to be someone better. "
+  - '02-05-1848: Lesson
+
+
+    My life has been different than most women. There are
+    not a lot of women in my field. My teacher, Mary Somerville, helped me a lot
+    in becoming the woman I am today. Secondly, there was only one lesson I have
+    never learned. To live a normal life with my children.'
+  - "08-04-1849: Reliving\r\n\r\nMy work\u2026 It\u2019s great, exciting, I learn
+    something new every day. Not fully knowing where your work will go is positively
+    thrilling. I sometimes think too little about the design befoure executing my
+    work. Always be thoughtful about the next step. \r\n\r\n\u201CGreat discoveries
+    generally lead to a variety of conclusions\u201D - Mary Somerville. \r\n"
+  clearTextPage: {fileID: 0}
+  clearText: {fileID: 0}
+  imagePageOne: {fileID: 0}
+  pageOneNumber: {fileID: 0}
+  imagePageTwo: {fileID: 0}
+  pageTwoNumber: {fileID: 0}
+  telegramCanvas: {fileID: 0}
+  telegramPage: {fileID: 0}
+  letterPage: {fileID: 0}

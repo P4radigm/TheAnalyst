@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: mat_PBR_BookLeather
+  m_Shader: {fileID: -6465566751694194690, guid: 509db49789da061479ee3370e3a0bf8c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_12811A0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_1BCD59D3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_46FA7BF:
+        m_Texture: {fileID: 2800000, guid: a8d67674989d8e947be5076badb4cbf4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_91FD475A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_9AAE3171:
+        m_Texture: {fileID: 2800000, guid: e92494be0426fb74889916650ee072c9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_418C0820_Texture_1:
+        m_Texture: {fileID: 2800000, guid: e5d22cd423d253344b61f1fbc8f4484b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_59EFC11F_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_C1CDCE0C_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_DDA7D0D8_Texture_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Boolean_9E761660: 1
+    - Vector1_21FF427F: 0
+    - Vector1_39A5795D: 5
+    - Vector1_49FF2DA1: 0
+    - Vector1_567CE951: 0.467
+    - Vector1_72357EA3: 15
+    - Vector1_A36B5BC6: 1
+    - Vector1_ADC1703F: 1
+    - Vector1_D040B99B: 0
+    - Vector1_DE554D27: 0
+    - Vector1_FE94B976: 1
+    m_Colors:
+    - Color_3528C4A2: {r: 1, g: 1, b: 1, a: 0}
+    - Color_B6A8C3D0: {r: 0.1981132, g: 0.124288, b: 0.124288, a: 0}
+  m_BuildTextureStacks: []
