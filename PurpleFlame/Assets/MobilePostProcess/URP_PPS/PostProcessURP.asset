@@ -31,8 +31,8 @@ MonoBehaviour:
     ImageFiltering: 1
     Color: {r: 1, g: 1, b: 1, a: 1}
     Contrast: 0
-    Brightness: -0.03
-    Saturation: -0.1
+    Brightness: 0
+    Saturation: -0.2
     Exposure: 0
     Gamma: 0
     Sharpness: 0
