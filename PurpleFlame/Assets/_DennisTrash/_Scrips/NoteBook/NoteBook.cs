@@ -1,8 +1,7 @@
 ﻿using Lean.Touch;
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TouchBehaviours;
+using UnityEngine;
 
 namespace Dennis
 {
