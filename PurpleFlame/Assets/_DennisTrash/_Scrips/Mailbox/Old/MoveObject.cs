@@ -8,6 +8,7 @@ namespace Dennis
 {
     public class MoveObject : LeanDrag
     {
+        /*
         [SerializeField] private LayerMask layer;
         [SerializeField] private float maxDisToEndPos;
         [SerializeField] private Transform EndPos;
@@ -111,5 +112,6 @@ namespace Dennis
         {
             return puzzelFinished;
         }
+        */
     }
 }
