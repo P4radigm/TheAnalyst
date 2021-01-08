@@ -9,14 +9,34 @@ namespace Dennis
         public int aPart;
         [HideInInspector] public bool inPosition = false;
 
-        public void CurrentPosition(Vector3 currentPosition)
+        private Collider collider;
+        private Vector3 startPos;
+
+        private void Start()
         {
-            this.transform.position = new Vector3(currentPosition.x, currentPosition.y, transform.position.z);
+            collider = GetComponent<Collider>();
+            startPos = this.transform.position;
         }
 
-        public void OnPosition()
+        public void DisableCollider(bool state)
         {
-            inPosition = true;
-        }   
+            collider.enabled = !state;
+        }
+
+        public void UpdatePosition(Vector3 hitPos)
+        {
+            this.transform.position = hitPos;
+        }
+
+        public void AddCurrentEndPosition(Transform endPos)
+        {
+            this.transform.position = endPos.position;
+            this.transform.rotation = endPos.rotation;
+        }
+
+        public void ResetPosition()
+        {
+            this.transform.position = startPos;
+        }
     }
 }

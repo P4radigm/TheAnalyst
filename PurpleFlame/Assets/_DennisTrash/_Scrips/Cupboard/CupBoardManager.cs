@@ -12,7 +12,7 @@ namespace Dennis
         [Header("Attributes")]
         [SerializeField] private Weight[] weights;
         [SerializeField] private LayerMask layerMask;
-        [SerializeField] private LayerMask layerMaskWheel;
+        [SerializeField] private LayerMask layerMaskField;
         [SerializeField] private Collider touchInputCollider;
         [SerializeField] private GameObject[] weightPosition;
         [SerializeField] private Animator animChess;
@@ -60,7 +60,7 @@ namespace Dennis
         {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(touchingFingers[0].ScreenPosition);
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMaskWheel))
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMaskField))
             {
                 position = hit.point;
             }
