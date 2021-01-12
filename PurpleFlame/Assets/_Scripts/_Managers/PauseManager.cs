@@ -65,6 +65,8 @@ public class PauseManager : MonoBehaviour
         UIPerformancePreset();
     }
 
+    #region Navigation
+
     public void Pause()
     {
         inGameCanvas.gameObject.SetActive(false);
@@ -98,6 +100,10 @@ public class PauseManager : MonoBehaviour
         Debug.Log($"Goes back to Main Menu");
         //SceneManager.LoadScene("MainMenu");
     }
+
+    #endregion
+
+    #region SoundSettings
 
     public void ToggleSfx()
     {
@@ -169,6 +175,10 @@ public class PauseManager : MonoBehaviour
         }
     }
 
+    #endregion
+
+    #region GraphicsSettings
+
     public void UpdateTextureQuality()
     {
         preset_Title.text = $"Performance Preset....";
@@ -218,6 +228,8 @@ public class PauseManager : MonoBehaviour
         {
             oM.notchSetting = true;
         }
+
+        oM.UpdateNotchDisplay();
     }
 
     public void UINotch()
@@ -407,4 +419,5 @@ public class PauseManager : MonoBehaviour
         }
     }
 
+    #endregion
 }

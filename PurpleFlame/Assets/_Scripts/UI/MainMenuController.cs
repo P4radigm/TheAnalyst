@@ -409,6 +409,8 @@ public class MainMenuController : MonoBehaviour
         {
             oM.notchSetting = true;
         }
+
+        oM.UpdateNotchDisplay();
     }
 
     public void UINotch()
