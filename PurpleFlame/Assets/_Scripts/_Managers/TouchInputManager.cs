@@ -75,7 +75,6 @@ namespace TouchBehaviours
                     target = hit.transform.gameObject;
                     target.transform.LerpTransform(this, Vector3.right * 2, 4f);
                     GameManager.Instance.GoToNextScene();
-
                 }
 
                 //When we hitt a collectable we need to collect this
@@ -94,7 +93,6 @@ namespace TouchBehaviours
                 //When we hit a inspectable we do some stuff 
                 if (hit.transform.gameObject != null && hit.transform.gameObject.HasComponent<Iinspectable>())
                 {
-                    Debug.Log("MOVE BITCH");
                     target = hit.transform.gameObject;
 
                     if (target != lastTarget)
@@ -119,10 +117,7 @@ namespace TouchBehaviours
                             DubbleTapedOnInspectable();
                     }
                 }
-
-            }
-
-      
+            }      
         }
 
         protected override void OnFingerUpdate(LeanFinger finger)
