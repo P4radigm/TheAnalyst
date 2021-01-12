@@ -40,7 +40,7 @@ public class OptionsManager : MonoBehaviour
     public performancePresetSetting ppSetting;
     public TextureQualitySetting tqSetting;
 
-    public bool particlesSetting;
+    public bool notchSetting;
     public bool shadowsSetting;
     public bool PostProcessingSetting;
 

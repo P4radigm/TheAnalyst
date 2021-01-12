@@ -16,53 +16,81 @@ public enum UImenuState
 
 public class MainMenuController : MonoBehaviour
 {
-    [Header("Animation Settings")]
+    [Header("Intro Cutscene Settings")]
+    [Space(10)]
+    [SerializeField] Animator openingCutScene;
+    [Space(10)]
+    [SerializeField] private float sideBarAnimStartDelay;
+    [SerializeField] private float sideBarAnimDuration;
+    [SerializeField] private AnimationCurve sideBarCurve;
+    [Space(5)]
+    [SerializeField] private float postProcessingAnimStartDelay;
+    [SerializeField] private float postProcessingAnimDuration;
+    [SerializeField] private AnimationCurve postProcessingCurve;
+    [Space(10)]
+    [SerializeField] private GameObject leftPanel;
+    [SerializeField] private GameObject rightPanel;
+    private int panelWidth;
+    private int screenWidth;
+    private Coroutine sideBarRoutine;
+    private Coroutine postProcessingRoutine;
+
+
+    [Header("Main Menu Animation Settings")]
+    [Space(10)]
     [SerializeField] Vector3 mainMenuPosition;
     [SerializeField] Vector3 optionsPosition;
     [SerializeField] Vector3 sherlockedPosition;
     [SerializeField] Vector3 creditsPosition;
     [SerializeField] Vector3 newProfilePosition;
+    [Space(20)]
     [SerializeField] float durationOptions;
     [SerializeField] float durationSherlocked;
     [SerializeField] float durationCredits;
     [SerializeField] float durationNewProfile;
+    [Space(10)]
     [SerializeField] AnimationCurve animCurve;
     private Coroutine animRoutine;
     private Vector3 startPos;
 
     [Header("Gameplay")]
+    [Space(10)]
     [SerializeField] private TextMeshProUGUI ics_Title;
     [SerializeField] private TextMeshProUGUI ics_Setting;
 
     [Header("Graphics")]
-    [SerializeField] private GameObject leftPanel;
-    [SerializeField] private GameObject rightPanel;
-    private Coroutine sideBarRoutine;
-    private int panelWidth;
-    [SerializeField] private float sideBarAnimDuration;
-    [SerializeField] AnimationCurve sideBarCurve;
+    [Space(10)]
     [SerializeField] private TextMeshProUGUI preset_Title;
     [SerializeField] private TextMeshProUGUI preset_Setting;
+    [Space(5)]
     [SerializeField] private TextMeshProUGUI tq_Title;
     [SerializeField] private TextMeshProUGUI tq_Setting;
+    [Space(5)]
     [SerializeField] private TextMeshProUGUI p_Title;
     [SerializeField] private TextMeshProUGUI p_Setting;
+    [Space(5)]
     [SerializeField] private TextMeshProUGUI s_Title;
     [SerializeField] private TextMeshProUGUI s_Setting;
+    [Space(5)]
     [SerializeField] private TextMeshProUGUI pp_Title;
     [SerializeField] private TextMeshProUGUI pp_Setting;
 
     [Header("Sound")]
+    [Space(10)]
     [SerializeField] private Image mM_SfxToggle; 
-    [SerializeField] private Image mM_MusicToggle; 
+    [SerializeField] private Image mM_MusicToggle;
+    [Space(5)]
     [SerializeField] private Image oM_SfxToggle;
-    [SerializeField] private Image oM_MusicToggle; 
+    [SerializeField] private Image oM_MusicToggle;
+    [Space(5)]
     [SerializeField] private Slider sfxSlider;
     [SerializeField] private Slider musicSlider;
+    [Space(5)]
     [SerializeField] private TextMeshProUGUI sfxPercentage;
     [SerializeField] private TextMeshProUGUI musicPercentage;
 
     [Header("Profile")]
+    [Space(10)]
     [SerializeField] private GameObject newProfile;
     [SerializeField] private GameObject resetProfile;
     [SerializeField] private GameObject aysProfile;
@@ -70,21 +98,26 @@ public class MainMenuController : MonoBehaviour
     private OptionsManager oM;
     private UImenuState menuState;
     private MainMenuEventManager mmEm;
-    private int screenWidth;
-    public List<Button> buttonList = new List<Button>();
+    [HideInInspector] public List<Button> buttonList = new List<Button>();
 
     private void Start()
     {
         menuState = UImenuState.main;
         UpdateButtonList();
+
         screenWidth = Screen.width;
-        panelWidth = (screenWidth - 1920) / 2;
+        if(Screen.height <= 720) { panelWidth = (screenWidth - 1280) / 2; }
+        else if(Screen.height <= 1080) { panelWidth = (screenWidth - 1920) / 2; }
+        else if(Screen.height <= 1440) { panelWidth = (screenWidth - 2560) / 2; }
+        else if(Screen.height <= 2160) { panelWidth = (screenWidth - 4096) / 2; }
+        
         RectTransform _leftPanelTransform = leftPanel.GetComponent<RectTransform>();
         RectTransform _rightPanelTransform = rightPanel.GetComponent<RectTransform>();
         _leftPanelTransform.anchoredPosition = new Vector2(panelWidth / 2, _leftPanelTransform.anchoredPosition.y);
         _rightPanelTransform.anchoredPosition = new Vector2(panelWidth / 2 * -1, _rightPanelTransform.anchoredPosition.y);
         _leftPanelTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, panelWidth);
         _rightPanelTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, panelWidth);
+
         oM = OptionsManager.instance;
         mmEm = MainMenuEventManager.instance;
         sfxSlider.value = oM.sfxLevelSetting;
@@ -115,7 +148,10 @@ public class MainMenuController : MonoBehaviour
         Debug.Log($"Camera goes to new profile pos, but starts game for now");
         //MoveCamera(durationNewProfile, newProfilePosition);
         //camState = UIcameraState.newProfile;
-        SceneManager.LoadScene("Act2_Dev");
+        //SceneManager.LoadScene("Act2_Dev");
+        openingCutScene.SetTrigger("StartGameTrigger");
+        RemoveSideBars();
+        StartPostProcessingAnim();
         menuState = UImenuState.main;
     }
 
@@ -238,18 +274,34 @@ public class MainMenuController : MonoBehaviour
         if (oM.ppSetting == performancePresetSetting.High)
         {
             oM.ppSetting = performancePresetSetting.Middle;
+            oM.tqSetting = TextureQualitySetting.Middle;
+            //oM.notchSetting = false;
+            oM.shadowsSetting = true;
+            oM.PostProcessingSetting = false;
         }
         else if (oM.ppSetting == performancePresetSetting.Middle)
         {
             oM.ppSetting = performancePresetSetting.Low;
+            oM.tqSetting = TextureQualitySetting.Low;
+            //oM.notchSetting = false;
+            oM.shadowsSetting = false;
+            oM.PostProcessingSetting = false;
         }
         else if (oM.ppSetting == performancePresetSetting.Low)
         {
             oM.ppSetting = performancePresetSetting.High;
+            oM.tqSetting = TextureQualitySetting.High;
+            //oM.notchSetting = true;
+            oM.shadowsSetting = true;
+            oM.PostProcessingSetting = true;
         }
         else
         {
             oM.ppSetting = performancePresetSetting.Middle;
+            oM.tqSetting = TextureQualitySetting.Middle;
+            //oM.notchSetting = false;
+            oM.shadowsSetting = true;
+            oM.PostProcessingSetting = false;
         }
     }
 
@@ -263,9 +315,6 @@ public class MainMenuController : MonoBehaviour
             tq_Title.text = $"Texture Quality..................";
             tq_Setting.text = $"High";
 
-            p_Title.text = $"Particles....................................";
-            p_Setting.text = $"On";
-
             s_Title.text = $"Shadows....................................";
             s_Setting.text = $"On";
 
@@ -274,14 +323,11 @@ public class MainMenuController : MonoBehaviour
         }
         else if (oM.ppSetting == performancePresetSetting.Middle)
         {
-            preset_Title.text = $"Performance Preset..";
+            preset_Title.text = $"Performance Preset.....";
             preset_Setting.text = $"Middle";
 
             tq_Title.text = $"Texture Quality.............";
             tq_Setting.text = $"Middle";
-
-            p_Title.text = $"Particles....................................";
-            p_Setting.text = $"Off";
 
             s_Title.text = $"Shadows....................................";
             s_Setting.text = $"On";
@@ -296,9 +342,6 @@ public class MainMenuController : MonoBehaviour
 
             tq_Title.text = $"Texture Quality...................";
             tq_Setting.text = $"Low";
-
-            p_Title.text = $"Particles....................................";
-            p_Setting.text = $"Off";
 
             s_Title.text = $"Shadows....................................";
             s_Setting.text = $"Off";
@@ -356,32 +399,28 @@ public class MainMenuController : MonoBehaviour
         }
     }
 
-    public void UpdateParticles()
+    public void UpdateNotch()
     {
-        if (oM.particlesSetting)
+        if (oM.notchSetting)
         {
-            oM.particlesSetting = false;
+            oM.notchSetting = false;
         }
         else
         {
-            oM.particlesSetting = true;
+            oM.notchSetting = true;
         }
     }
 
-    public void UIParticles()
+    public void UINotch()
     {
-        preset_Title.text = $"Performance Preset....";
-        preset_Setting.text = $"Custom";
-        //update renderpipeline asset
-
-        if (oM.particlesSetting)
+        if (oM.notchSetting)
         {
-            p_Title.text = $"Particles....................................";
+            p_Title.text = $"Notch Correction..................";
             p_Setting.text = $"On";
         }
         else
         {
-            p_Title.text = $"Particles....................................";
+            p_Title.text = $"Notch Correction..................";
             p_Setting.text = $"Off";
         }
     }
@@ -527,14 +566,29 @@ public class MainMenuController : MonoBehaviour
 
     #endregion
 
-    public void removeSideBars()
+    public void StartPostProcessingAnim()
     {
-        if (sideBarRoutine != null) { StopCoroutine(sideBarRoutine); }
+        if (postProcessingRoutine != null) { return; }
+        postProcessingRoutine = StartCoroutine(IEpostProcessingAnim());
+    }
+
+    private IEnumerator IEpostProcessingAnim()
+    {
+        yield return new WaitForSeconds(postProcessingAnimStartDelay);
+
+        yield return null;
+    }
+
+    public void RemoveSideBars()
+    {
+        if (sideBarRoutine != null) { return; }
         sideBarRoutine = StartCoroutine(IERemoveSidebars());
     }
 
     private IEnumerator IERemoveSidebars()
     {
+        yield return new WaitForSeconds(sideBarAnimStartDelay);
+
         RectTransform _leftPanelTransform = leftPanel.GetComponent<RectTransform>();
         RectTransform _rightPanelTransform = rightPanel.GetComponent<RectTransform>();
 
