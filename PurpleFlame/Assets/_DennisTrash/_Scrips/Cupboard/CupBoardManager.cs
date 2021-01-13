@@ -6,9 +6,6 @@ namespace Dennis
 {
     public class CupBoardManager : LeanDrag
     {
-        [Header("Preference values")]
-        [SerializeField] private float yPosWeights;
-
         [Header("Attributes")]
         [SerializeField] private Weight[] weights;
         [SerializeField] private LayerMask layerMask;
@@ -64,7 +61,6 @@ namespace Dennis
             {
                 position = hit.point;
             }
-            //position.y = yPosWeights;
             selectedWeight.UpdatePosition(position);
         }
 

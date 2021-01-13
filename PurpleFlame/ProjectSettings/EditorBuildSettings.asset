@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scenes/ACT1_V01.unity
     guid: b7c6e7b1bfcd6d34a99765875107b05a
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/ACT2_Dev.unity
     guid: 0e912d37342a8724889042868592e9e4
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/ACT3_Dev.unity
     guid: 8f946974ac3054649b39d5ab4ad2da78
   - enabled: 0
@@ -35,10 +35,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/_Scenes/ACT1_DEVELOPMENT_PROTOTYPE.unity
     guid: 91bfd08765cd23b4aa52e101922f4304
-  - enabled: 1
+  - enabled: 0
     path: Assets/_DennisTrash/LoungeTable.unity
     guid: 59645ea8f0f3f0f44aa802dfa2ffb4a3
   - enabled: 0
     path: Assets/_Scenes/LeonsScienceDesk.unity
     guid: 930cdcf5631550346bc767391c510f5e
+  - enabled: 1
+    path: Assets/_Scenes/ACT1_FINAL_THIJS.unity
+    guid: 32b2d8c0c4ad28b4ab223819d5a1647d
   m_configObjects: {}
