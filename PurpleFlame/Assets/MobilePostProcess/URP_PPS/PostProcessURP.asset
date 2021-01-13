@@ -59,8 +59,8 @@ MonoBehaviour:
   m_Name: PostProcessURP
   m_EditorClassIdentifier: 
   m_RendererFeatures:
-  - {fileID: -754972587007797143}
-  m_RendererFeatureMap: ef91da55c6fb9b63
+  - {fileID: 52497854470221637}
+  m_RendererFeatureMap: 45ef2a3f8582ba00
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   shaders:
     blitPS: {fileID: 4800000, guid: c17132b1f77d20942aa75f8429c0f8bc, type: 3}
@@ -82,3 +82,49 @@ MonoBehaviour:
     failOperation: 0
     zFailOperation: 0
   m_ShadowTransparentReceive: 1
+--- !u!114 &52497854470221637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864677e595539bf4bbecf0c40589f800, type: 3}
+  m_Name: NewPostProcessUrp
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  settings:
+    Event: 500
+    blitMaterial: {fileID: 0}
+    Blur: 0
+    BlurAmount: 1
+    BlurMask: {fileID: 0}
+    Bloom: 0
+    BloomColor: {r: 0.5019608, g: 0.36862746, b: 0.34901962, a: 1}
+    BloomAmount: 1
+    BloomDiffuse: 1
+    BloomThreshold: 0
+    BloomSoftness: 0
+    LUT: 0
+    LutAmount: 0
+    SourceLut: {fileID: 0}
+    ImageFiltering: 0
+    Color: {r: 1, g: 1, b: 1, a: 1}
+    Contrast: 0
+    Brightness: 0
+    Saturation: 0
+    Exposure: 0
+    Gamma: 0
+    Sharpness: 0
+    ChromaticAberration: 0
+    Offset: 0
+    FishEyeDistortion: 0
+    GlitchAmount: 0
+    Distortion: 0
+    LensDistortion: 0
+    Vignette: 0
+    VignetteColor: {r: 0, g: 0, b: 0, a: 1}
+    VignetteAmount: 0
+    VignetteSoftness: 0.001
