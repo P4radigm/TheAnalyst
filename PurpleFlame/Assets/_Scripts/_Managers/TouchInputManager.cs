@@ -70,11 +70,14 @@ namespace TouchBehaviours
                     hit.transform.GetComponent<IPuzzle>().ActivatePressEvents();
                 }
 
+
                 if(hit.transform.gameObject !=null && hit.transform.gameObject.HasComponent<AdaDoor>())
                 {
-                    target = hit.transform.gameObject;
-                    target.transform.LerpTransform(this, Vector3.right * 2, 4f);
-                    GameManager.Instance.GoToNextScene();
+                    Vector3 v3 = new Vector3(0, 0, 0);
+
+                    //target = hit.transform.gameObject;
+                    //target.transform.LerpTransform(this, Vector3.right * 2, 4f);
+                    //GameManager.Instance.GoToNextScene();
                 }
 
                 //When we hitt a collectable we need to collect this

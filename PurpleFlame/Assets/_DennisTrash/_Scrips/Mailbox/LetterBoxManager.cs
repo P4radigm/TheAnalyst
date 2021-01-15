@@ -102,6 +102,7 @@ namespace Dennis
 
         private void DisableObject()
         {
+            if(selectedObject == null) { return; }
             selectedObject.DisableCollider(false);
             selectedObject = null;
         }
