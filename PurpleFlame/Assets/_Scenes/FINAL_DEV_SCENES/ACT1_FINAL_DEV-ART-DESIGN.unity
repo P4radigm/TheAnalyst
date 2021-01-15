@@ -17956,7 +17956,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: Stair_Anim
+            m_StringArgument: MB1_Drawer_Anim
             m_BoolArgument: 1
           m_CallState: 2
         - m_Target: {fileID: 1682926191125192400}
@@ -57079,7 +57079,7 @@ MonoBehaviour:
     Source: {fileID: 0}
   - name: MB1_Drawer_Anim
     Clip: {fileID: 8300000, guid: 322a51d8f750af64e9aab8447fb3c1cd, type: 3}
-    Volume: 0
+    Volume: 1
     Pitch: 1
     SpacialSound: 0
     Loop: 0
@@ -67401,7 +67401,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114927244}
   m_LocalRotation: {x: 0.053874653, y: 0.00043570792, z: -0.000023507755, w: 0.9985476}
-  m_LocalPosition: {x: -0.53, y: -1.24, z: 0.05}
+  m_LocalPosition: {x: -0.53, y: -0.755, z: 0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 159624756}
