@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/_DennisTrash/MainMenu.unity
     guid: 880918c45ace98444a02ccdf68c25772
   - enabled: 1
+    path: Assets/_Scenes/FINAL_DEV_SCENES/ACT1_FINAL_DEV-ART-DESIGN.unity
+    guid: 35415e349b209404aac0d900674bb01b
+  - enabled: 0
     path: Assets/_Scenes/ACT1_FINAL_THIJS.unity
     guid: 32b2d8c0c4ad28b4ab223819d5a1647d
   - enabled: 1

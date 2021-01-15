@@ -54,7 +54,7 @@ namespace Dennis
             Ray ray = Camera.main.ScreenPointToRay(touchingFingers[0].ScreenPosition);
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
             {
-                if (hit.collider.gameObject.GetComponent<ControlHandler>())
+                if (hit.collider.gameObject.GetComponent<Key>())
                 {
                     interactableHit = true;
                     collider.enabled = false;
