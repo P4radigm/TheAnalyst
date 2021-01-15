@@ -97,13 +97,13 @@ MonoBehaviour:
   m_Active: 0
   settings:
     Event: 500
-    blitMaterial: {fileID: 0}
+    blitMaterial: {fileID: 2100000, guid: 3aeedadbfc1ffb644834cb2b7d57aa77, type: 2}
     Blur: 0
     BlurAmount: 1
     BlurMask: {fileID: 0}
     Bloom: 0
     BloomColor: {r: 0.5019608, g: 0.36862746, b: 0.34901962, a: 1}
-    BloomAmount: 1
+    BloomAmount: 0.3
     BloomDiffuse: 1
     BloomThreshold: 0
     BloomSoftness: 0
@@ -118,7 +118,7 @@ MonoBehaviour:
     Exposure: 0
     Gamma: 0
     Sharpness: 0
-    ChromaticAberration: 0
+    ChromaticAberration: 1
     Offset: 0
     FishEyeDistortion: 0
     GlitchAmount: 0
@@ -126,5 +126,5 @@ MonoBehaviour:
     LensDistortion: 0
     Vignette: 0
     VignetteColor: {r: 0, g: 0, b: 0, a: 1}
-    VignetteAmount: 0
-    VignetteSoftness: 0.001
+    VignetteAmount: 0.143
+    VignetteSoftness: 0.394
