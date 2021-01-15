@@ -23,7 +23,7 @@ namespace TouchBehaviours
         public void Collect()
         {
             collectedEvents.Invoke();
-            GameManager.Instance.InventoryManager.AddItem(this);
+            //GameManager.Instance.InventoryManager.AddItem(this);
         }
 
         private IEnumerator DeactivateAFterTime()
