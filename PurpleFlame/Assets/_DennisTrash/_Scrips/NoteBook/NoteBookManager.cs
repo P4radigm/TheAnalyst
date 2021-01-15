@@ -171,7 +171,7 @@ namespace Dennis
             if (currentState == NodeState.Tutorial)
             {
                 currentState = NodeState.Notebook;
-                buttonText.text = "Book";
+                //buttonText.text = "Book";
             }
 
             int currentLetter = letter.letterID;
@@ -249,7 +249,7 @@ namespace Dennis
 
             if (currentState == NodeState.Tutorial)
             {
-                buttonText.text = "Note";
+                //buttonText.text = "Note";
                 telegramCanvas.SetActive(true);
                 notebookOpen = true;
             }

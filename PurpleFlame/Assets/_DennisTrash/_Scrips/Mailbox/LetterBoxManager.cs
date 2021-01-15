@@ -89,13 +89,13 @@ namespace Dennis
         public void AddCorrectObjectNumber()
         {
             correctParts++;
+            Destroy(selectedObject.GetComponent<PuzzleElement>());
 
             //finished
             if (correctParts == 3)
             {
                 untouchable = true;
                 DisableObject();
-                Debug.Log("Puzzel Done");
                 GameManager.Instance.PuzzleDone(GameState.Act1);
             }
         }

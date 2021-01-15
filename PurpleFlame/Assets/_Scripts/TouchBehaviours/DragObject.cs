@@ -84,10 +84,12 @@ namespace TouchBehaviours
                     {
                         PreMove(MovingState.EndSide);
                     }
+                    /*
                     else if(CurrentState == MovingState.EndSide || CurrentState == MovingState.MovingToEnd)
                     {
                         PreMove(MovingState.StartSide);
                     }
+                    */
                 }
             }
         }
