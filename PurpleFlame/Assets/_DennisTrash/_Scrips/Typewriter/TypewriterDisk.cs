@@ -105,7 +105,7 @@ namespace Dennis
 
             angle = _angle;
 
-            transform.localRotation = Quaternion.Euler(_angle, 0, 0);
+            transform.localRotation = Quaternion.Euler(0, _angle, 0);
             rollerCog.localRotation = Quaternion.Euler(0, 0, _angle*-1);
 
 
