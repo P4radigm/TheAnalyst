@@ -26,7 +26,7 @@ namespace Dennis
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, GameManager.Instance.TouchableLayers))
             {
                 if (!hit.collider.GetComponent<NextLevelTrigger>()) { return; }
-                mainMenu.LoadLevel(1);
+                mainMenu.LoadLevel(2);
             }
         }
     }
