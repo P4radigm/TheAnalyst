@@ -80,7 +80,7 @@ namespace Dennis
                     {
                         foundPos = true;
                         weightPlacePos.AddWeight(selectedWeight);
-                        selectedWeight.AddCurrentWeightPosition(weightPlacePos);
+                        selectedWeight.AddCurrentWeightPosition(weightPlacePos, false);
                     }
                 }
                 if (weightPosition[i].GetComponent<ScalePlacePos>())

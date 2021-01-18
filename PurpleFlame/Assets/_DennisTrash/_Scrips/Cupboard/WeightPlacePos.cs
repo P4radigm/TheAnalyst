@@ -7,10 +7,10 @@ namespace Dennis
     public class WeightPlacePos : MonoBehaviour
     {
         public float disToWeightPos;
+        public bool backPedestal;
         public Weight placeOccupied;
 
         public int heavyness;
-        [SerializeField] private bool backPedestal;
         [SerializeField] private Transform weightPos;
         
         private Weight previousWeight;
@@ -26,9 +26,10 @@ namespace Dennis
 
         private void SwitchWeights()
         {
+
             if(previousWeight != null)
             {
-                previousWeight.AddCurrentWeightPosition(placeOccupied.lastWeightPos);
+                previousWeight.AddCurrentWeightPosition(placeOccupied.lastWeightPos, true);
                 previousWeight.SetStartPos(placeOccupied.lastPos);
             }
             placeOccupied.lastWeightPos.NewPreviousWeight(previousWeight);
@@ -45,6 +46,7 @@ namespace Dennis
 
         public void NewPreviousWeight(Weight newPreviousWeight)
         {
+            if (!backPedestal) { return; }
             previousWeight = newPreviousWeight;
         }
     }

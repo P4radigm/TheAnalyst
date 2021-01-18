@@ -42,7 +42,7 @@ namespace Dennis
             {
                 door.transform.localEulerAngles = v3;
 
-                if (Mathf.Abs(v3.y) > Mathf.Abs(maxRotateAngle - (maxRotateAngle * 0.5f)))
+                if (Mathf.Abs(v3.y) > Mathf.Abs(maxRotateAngle - (maxRotateAngle * 0.6f)))
                 {
                     done = true;
                 }
