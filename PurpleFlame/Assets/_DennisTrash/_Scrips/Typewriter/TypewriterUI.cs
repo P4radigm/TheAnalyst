@@ -10,25 +10,33 @@ namespace Dennis
         [HideInInspector] public int answersCount;
         [HideInInspector] public bool readyToPickUp = false;
 
-        [SerializeField] private GameObject paper;
+        public GameObject paper;
         [SerializeField] private Material greenMat;
         [SerializeField] private Material startMat;
         [SerializeField] private MeshRenderer meshRenderer;
         [Space]
-        [SerializeField] private TextMeshProUGUI[] answersText;
+        public TextMeshProUGUI[] answersText;
+        public TextMeshProUGUI[] xAnswersText;
         [SerializeField] private TypewriterManager typewriterManager;
         [Space]
-        [SerializeField] private float[] answerPos;
+        public float[] answerPos;
         [SerializeField] private float maxAnswerDis;
+        public float maxAnswerDisForAlign;
         [SerializeField] private float scrollSpeed;
         [SerializeField] private float paperLength;
         [SerializeField] private float pickupLength;
         [SerializeField] private float beginLength;
 
+        [Header("Horizontal Align Anim")]
+        [SerializeField] private float haDuration;
+        [SerializeField] private AnimationCurve haCurve;
+        private Coroutine haRoutine;
+
         private float newPos;
         private string[] answerHistory;
         private Vector3 v3;
         private Vector3 startPos;
+        private int lastAnswer = -2;
 
         private void Start()
         {
@@ -58,8 +66,42 @@ namespace Dennis
                 CheckForPickupLocation();
             }
 
-            paper.transform.localPosition = v3;
+            paper.transform.localPosition = new Vector3(v3.x, v3.y, paper.transform.localPosition.z);
             CheckNearbyAnswerFields();
+
+            for (int i = 0; i < answerPos.Length; i++)
+            {
+                if(paper.transform.localPosition.y > (answerPos[i] - maxAnswerDisForAlign*1.5f) || paper.transform.localPosition.y < (answerPos[i] + maxAnswerDisForAlign * 1.5f))
+                {
+                    if(lastAnswer != typewriterManager.currentAnswer)
+                    {
+                        if (haRoutine == null) { haRoutine = StartCoroutine(HorizontalAlign(typewriterManager.currentAnswer)); }
+                    }
+                }
+            }
+        }
+
+        private IEnumerator HorizontalAlign(int _current)
+        {
+            if(_current < 0 || _current > typewriterManager.paperZPosPerQuestion.Length) { yield break; }
+
+            float _timeValue = 0;
+
+            float _currentZpos = paper.transform.localPosition.z;
+
+            while (_timeValue < 1)
+            {
+                _timeValue += Time.deltaTime / haDuration;
+                float _evaluatedTimeValue = haCurve.Evaluate(_timeValue);
+                float _newZpos = Mathf.Lerp(_currentZpos, typewriterManager.paperZPosPerQuestion[_current], _evaluatedTimeValue);
+
+                paper.transform.localPosition = new Vector3(paper.transform.localPosition.x, paper.transform.localPosition.y, _newZpos);
+
+                yield return null;
+            }
+
+            lastAnswer = typewriterManager.currentAnswer;
+            haRoutine = null;
         }
 
         private void CheckForPickupLocation()
@@ -108,11 +150,12 @@ namespace Dennis
         {
             if(currentAnswer != 5)
             {
-                answersText[currentQuestion].text = " " + currentAnswer;
+                answersText[currentQuestion].text += $" {currentAnswer}";
             }
             else
             {
-                answersText[currentQuestion].text = " " + "X";
+                xAnswersText[currentQuestion].text += $" X";
+                typewriterManager.HorizontalOffset();
             }
         }
     }

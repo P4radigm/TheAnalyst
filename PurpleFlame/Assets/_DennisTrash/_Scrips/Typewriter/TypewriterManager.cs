@@ -14,22 +14,31 @@ public class TypewriterManager : LeanDrag
     [SerializeField] private SnapShotCamera snapshotCam;
     [SerializeField] private BookManager bookManager;
     [SerializeField] private Animator bookCaseAnim;
+    [Space(20)]
+    [SerializeField] private AnimationCurve verticalAlignCurve;
+    [SerializeField] private float verticalAlignDurationMultiplier;
+    [SerializeField] private float horizontalOffsetAmount;
     //[SerializeField] private Animator deskAnim;
 
+    [HideInInspector] public float[] paperZPosPerQuestion = new float[4];
+    private float[] conceptZposArray = new float[4];
     private int[] answerNumbers = new int[4];
     private float swipe;
     private bool pressingTypeWriterDisk;
-    private bool interactableHit;
+    private bool buttonHit;
+    public bool firstHit;
     private bool swipeRecognised;
     private Vector3 hitNormal;
     private Vector3 position;
-    private TypewriterButton lastButtonPressed;
+    private TypewriterButton currentButtonPressed;
     private TypewriterDisk typeWriterDisk;
     private TypewriterUI typeWriterUI;
     private SwitchPages switchPages;
+    private Coroutine verticalAlignRoutine;
 
     private void Start()
     {
+        firstHit = true;
         typeWriterUI = GetComponent<TypewriterUI>();
         switchPages = GetComponent<SwitchPages>();
 
@@ -37,6 +46,13 @@ public class TypewriterManager : LeanDrag
         {
             answerNumbers[i] = -1;
         }
+
+        for (int i = 0; i < 4; i++)
+        {
+            conceptZposArray[i] = typeWriterUI.paper.transform.localPosition.z;
+        }
+
+        paperZPosPerQuestion = conceptZposArray;
     }
 
     sealed protected override void OnFingerDown(Lean.Touch.LeanFinger finger)
@@ -58,8 +74,9 @@ public class TypewriterManager : LeanDrag
 
             if (hit.collider.gameObject.GetComponent<TypewriterButton>())
             {
-                interactableHit = true;
-                lastButtonPressed = hit.collider.GetComponent<TypewriterButton>();
+                buttonHit = true;
+                currentButtonPressed = hit.collider.GetComponent<TypewriterButton>();
+                switchPages.SwitchPaper(true);
             }
             if (hit.collider.gameObject.GetComponent<TypewriterPaper>() && typeWriterUI.readyToPickUp && !paperPickedUp)
             {
@@ -77,7 +94,9 @@ public class TypewriterManager : LeanDrag
     {
         base.OnFingerUp(finger);
 
-        interactableHit = false;
+        VerticalAlign();
+
+        buttonHit = false;
         swipeRecognised = false;
         pressingTypeWriterDisk = false;
         swipe = 0;
@@ -85,27 +104,102 @@ public class TypewriterManager : LeanDrag
 
     private void Update()
     {
-        if (interactableHit && !swipeRecognised) { SwipeInputButton(); }
+        if (buttonHit && firstHit) { SwipeInputButton(); }
         if (pressingTypeWriterDisk) { SwipeInputDisk(); }
         //if (deskAnim.GetCurrentAnimatorStateInfo(0).IsName("Done")) { GetComponent<Animator>().SetTrigger("WeightPuzzleSolved"); }
     }
 
-    private void SwipeInputButton()
+    private void VerticalAlign()
     {
-        swipe = touchingFingers[0].ScreenDelta.y;
-
-        if (swipe < -swipeThreshold) 
+        if(currentAnswer != -1)
         {
-            swipeRecognised = true;
-            Debug.Log(currentAnswer);
-            if(currentAnswer >= 0 && currentAnswer <= answerNumbers.Length)
+            if (Mathf.Abs(typeWriterUI.paper.transform.localPosition.y - typeWriterUI.answerPos[currentAnswer]) > typeWriterUI.maxAnswerDisForAlign)
             {
-                if(answerNumbers[currentAnswer] == -1) { typeWriterUI.answersCount++; }
-                answerNumbers[currentAnswer] = lastButtonPressed.answerNumber;
-                lastButtonPressed.PressButtonAnim();
-                typeWriterUI.AnswerInsert(currentAnswer, lastButtonPressed.answerNumber + 1);
+                if (verticalAlignRoutine != null) { return; }
+                verticalAlignRoutine = StartCoroutine(VerticalAlignIE());
             }
         }
+    }
+
+    private IEnumerator VerticalAlignIE()
+    {
+        float _startYvalue = typeWriterUI.paper.transform.localPosition.y;
+
+        float _timeValue = 0;
+
+        float _duration = verticalAlignDurationMultiplier * Mathf.Abs(typeWriterUI.paper.transform.localPosition.y - typeWriterUI.answerPos[currentAnswer]);
+
+        while (_timeValue < 1)
+        {
+            _timeValue += Time.deltaTime / _duration;
+
+            float _evaluatedLerpTimeButton = verticalAlignCurve.Evaluate(_timeValue);
+            float _newY = Mathf.Lerp(_startYvalue, typeWriterUI.answerPos[currentAnswer], _evaluatedLerpTimeButton);
+
+            typeWriterUI.paper.transform.localPosition = new Vector3(typeWriterUI.paper.transform.localPosition.x, _newY, typeWriterUI.paper.transform.localPosition.z);
+
+            yield return null;
+        }
+
+        verticalAlignRoutine = null;
+        yield return null;
+    }
+
+    private void SwipeInputButton()
+    {
+        firstHit = false;
+        //Debug.Log(currentAnswer);
+        if(currentAnswer >= 0 && currentAnswer <= answerNumbers.Length)
+        {
+            if(currentButtonPressed.answerNumber < 4)
+            {
+                if(answerNumbers[currentAnswer] == -1) { typeWriterUI.answersCount++; }
+                answerNumbers[currentAnswer] = currentButtonPressed.answerNumber;
+            }
+            else
+            {
+                answerNumbers[currentAnswer] = -1;
+                typeWriterUI.answersCount--;
+            }
+            //typeWriterUI.AnswerInsert(currentAnswer, currentButtonPressed.answerNumber + 1);
+            if (currentButtonPressed.answerNumber + 1 != 5)
+            {
+                if (typeWriterUI.answersText[currentAnswer].text.Length == typeWriterUI.xAnswersText[currentAnswer].text.Length)
+                {
+                    currentButtonPressed.StartPressButtonAnim(this, true);
+                }
+                else
+                {
+                    currentButtonPressed.StartPressButtonAnim(this, false);
+                }
+            }
+            else
+            {
+                if (typeWriterUI.answersText[currentAnswer].text.Length != typeWriterUI.xAnswersText[currentAnswer].text.Length)
+                {
+                    currentButtonPressed.StartPressButtonAnim(this, true);
+                }
+                else
+                {
+                    currentButtonPressed.StartPressButtonAnim(this, false);
+                }
+            }      
+        }
+    }
+
+    public void PunchLetter()
+    {
+        typeWriterUI.AnswerInsert(currentAnswer, currentButtonPressed.answerNumber + 1);
+    }
+
+    public void HorizontalOffset()
+    {
+        if(currentAnswer >= 0 && currentAnswer <= answerNumbers.Length)
+        {
+            paperZPosPerQuestion[currentAnswer] += horizontalOffsetAmount;
+        }
+
+        typeWriterUI.paper.transform.localPosition = new Vector3(typeWriterUI.paper.transform.localPosition.x, typeWriterUI.paper.transform.localPosition.y, paperZPosPerQuestion[currentAnswer]);
     }
 
     private void SwipeInputDisk()
