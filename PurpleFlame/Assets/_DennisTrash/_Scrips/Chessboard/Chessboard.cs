@@ -148,7 +148,7 @@ public class Chessboard : LeanDrag
     {
         chessPiecesObj.transform.parent = chessBoardObj;
         mainDeskAnim.SetTrigger("ChessSolved");
-        Destroy(interactiveTrigger);
+        //Destroy(interactiveTrigger);
         if(typeRoutine != null) { return; }
         typeRoutine = StartCoroutine(StartTypeAnim());
     }

@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class SetCamColliderVisible : MonoBehaviour
 {
-    [SerializeField] private Collider camCollider;
+    [SerializeField] private Collider typeCamCollider;
+    [SerializeField] private Collider chessCamCollider;
 
     private void Awake()
     {
-        camCollider.enabled = false;
+        typeCamCollider.enabled = false;
     }
 
     public void SetCamColVisible()
     {
-        camCollider.enabled = true;
+        typeCamCollider.enabled = true;
+        chessCamCollider.enabled = false;
     }
 }
