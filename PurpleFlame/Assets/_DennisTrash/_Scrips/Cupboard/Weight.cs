@@ -33,6 +33,7 @@ namespace Dennis
             this.transform.position = lastPos;
             if(lastWeightPos.heavyness != 0) { return; }
             lastWeightPos.placeOccupied = this;
+            weightPlacePos = lastWeightPos;
         }
 
         public void UpdatePosition(Vector3 hitPos)
@@ -42,27 +43,30 @@ namespace Dennis
 
         public void CheckCurrentWeightPos()
         {
-            if(lastWeightPos != null)
-            {
-                lastWeightPos.RemoveWeight();
-            }
-
             if(weightPlacePos != null) 
             {
                 weightPlacePos.RemoveWeight();
                 weightPlacePos = null;
             }
-            if(scalePlacePos != null)
+            else if (lastWeightPos != null)
+            {
+                if (lastWeightPos.backPedestal)
+                {
+                    lastWeightPos.RemoveWeight();
+                }
+            }
+            if (scalePlacePos != null)
             {
                 scalePlacePos.RemoveWeight();
                 scalePlacePos = null;
             }
         }
 
-        public void AddCurrentWeightPosition(WeightPlacePos currentPos)
+        public void AddCurrentWeightPosition(WeightPlacePos currentPos, bool switchPlace)
         {
+            if (currentPos.backPedestal) { lastWeightPos = currentPos; }
+            if (switchPlace) { return; }
             weightPlacePos = currentPos;
-            lastWeightPos = currentPos;
         }
 
         public void AddCurrentWeightPosScale(ScalePlacePos currentPos)
