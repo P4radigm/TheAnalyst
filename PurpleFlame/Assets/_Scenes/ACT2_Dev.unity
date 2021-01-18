@@ -2362,9 +2362,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disToWeightPos: 0.15
+  backPedestal: 0
   placeOccupied: {fileID: 0}
   heavyness: 4
-  backPedestal: 0
   weightPos: {fileID: 1859813742}
 --- !u!1001 &103234690
 PrefabInstance:
@@ -2903,9 +2903,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disToWeightPos: 0.15
+  backPedestal: 1
   placeOccupied: {fileID: 0}
   heavyness: 0
-  backPedestal: 1
   weightPos: {fileID: 1907973998}
 --- !u!1 &131278461
 GameObject:
@@ -3637,6 +3637,7 @@ MonoBehaviour:
   - {fileID: 1153988549}
   - {fileID: 1239856542}
   - {fileID: 2123420911}
+  xAnswersText: []
   typewriterManager: {fileID: 146942460}
   answerPos:
   - 0.32
@@ -3644,10 +3645,18 @@ MonoBehaviour:
   - 1.1
   - 1.4
   maxAnswerDis: 0.1
+  maxAnswerDisForAlign: 0
   scrollSpeed: 2
   paperLength: 0
   pickupLength: 0.1
   beginLength: 0
+  haDuration: 0
+  haCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &146942460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3673,6 +3682,20 @@ MonoBehaviour:
   snapshotCam: {fileID: 898784327}
   bookManager: {fileID: 63900464}
   bookCaseAnim: {fileID: 63900460}
+  verticalAlignCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  verticalAlignDurationMultiplier: 0
+  horizontalOffsetAmount: 0
+  paperZPosPerQuestion:
+  - 0
+  - 0
+  - 0
+  - 0
+  firstHit: 0
 --- !u!95 &146942461
 Animator:
   serializedVersion: 3
@@ -4773,9 +4796,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disToWeightPos: 0.15
+  backPedestal: 1
   placeOccupied: {fileID: 0}
   heavyness: 0
-  backPedestal: 1
   weightPos: {fileID: 1678988711}
 --- !u!1001 &228566782
 PrefabInstance:
@@ -6186,6 +6209,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 2
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!23 &310494149
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7833,7 +7894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6885381156613409861, guid: a998f2e60e3d762489c54abf0cd58e8c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.384
+      value: 5.789
       objectReference: {fileID: 0}
     - target: {fileID: 6885381156613409861, guid: a998f2e60e3d762489c54abf0cd58e8c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8154,9 +8215,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disToWeightPos: 0.15
+  backPedestal: 1
   placeOccupied: {fileID: 0}
   heavyness: 0
-  backPedestal: 1
   weightPos: {fileID: 1971299309}
 --- !u!1001 &406587063
 PrefabInstance:
@@ -9155,9 +9216,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disToWeightPos: 0.15
+  backPedestal: 0
   placeOccupied: {fileID: 0}
   heavyness: 3
-  backPedestal: 0
   weightPos: {fileID: 411095287}
 --- !u!1 &450573896
 GameObject:
@@ -9203,9 +9264,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disToWeightPos: 0.15
+  backPedestal: 0
   placeOccupied: {fileID: 0}
   heavyness: 2
-  backPedestal: 0
   weightPos: {fileID: 981757344}
 --- !u!1 &451556257
 GameObject:
@@ -9959,9 +10020,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disToWeightPos: 0.15
+  backPedestal: 0
   placeOccupied: {fileID: 0}
   heavyness: 4
-  backPedestal: 0
   weightPos: {fileID: 1298618296}
 --- !u!1 &492419008
 GameObject:
@@ -16975,9 +17036,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disToWeightPos: 0.15
+  backPedestal: 1
   placeOccupied: {fileID: 0}
   heavyness: 0
-  backPedestal: 1
   weightPos: {fileID: 691503255}
 --- !u!1001 &875374558
 PrefabInstance:
@@ -22682,6 +22743,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 1
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!23 &1190720619
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -23555,9 +23654,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disToWeightPos: 0.15
+  backPedestal: 0
   placeOccupied: {fileID: 0}
   heavyness: 5
-  backPedestal: 0
   weightPos: {fileID: 664906548}
 --- !u!1001 &1211643457
 PrefabInstance:
@@ -26486,9 +26585,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disToWeightPos: 0.15
+  backPedestal: 1
   placeOccupied: {fileID: 0}
   heavyness: 0
-  backPedestal: 1
   weightPos: {fileID: 269452190}
 --- !u!1 &1378664771
 GameObject:
@@ -28726,6 +28825,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 4
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!23 &1498397505
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28863,9 +29000,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disToWeightPos: 0.15
+  backPedestal: 1
   placeOccupied: {fileID: 0}
   heavyness: 0
-  backPedestal: 1
   weightPos: {fileID: 465018344}
 --- !u!1 &1504198513
 GameObject:
@@ -29150,7 +29287,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507359189}
   m_LocalRotation: {x: -0.36916468, y: -0.03413099, z: 0.07751318, w: 0.9254968}
-  m_LocalPosition: {x: -0.089, y: 4.533, z: 5.377}
+  m_LocalPosition: {x: -0.091, y: 4.631, z: 5.479}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1431353295}
@@ -29168,7 +29305,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.72308254, b: 0.46099997, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.2
   m_Range: 1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -31991,6 +32128,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 3
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!23 &1644528322
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -32084,9 +32259,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disToWeightPos: 0.15
+  backPedestal: 0
   placeOccupied: {fileID: 0}
   heavyness: 3
-  backPedestal: 0
   weightPos: {fileID: 611472880}
 --- !u!1001 &1656491742
 PrefabInstance:
@@ -34728,9 +34903,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disToWeightPos: 0.15
+  backPedestal: 0
   placeOccupied: {fileID: 0}
   heavyness: 1
-  backPedestal: 0
   weightPos: {fileID: 1507247469}
 --- !u!1 &1774985342 stripped
 GameObject:
@@ -35899,9 +36074,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disToWeightPos: 0.15
+  backPedestal: 1
   placeOccupied: {fileID: 0}
   heavyness: 0
-  backPedestal: 1
   weightPos: {fileID: 1725114980}
 --- !u!1 &1812206764
 GameObject:
@@ -40256,6 +40431,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 0
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!23 &2017088246
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -46671,6 +46884,7 @@ MonoBehaviour:
   - {fileID: 723234342}
   - {fileID: 1596253916}
   - {fileID: 1129523532}
+  xAnswersText: []
   typewriterManager: {fileID: 1723810675360615494}
   answerPos:
   - -0.0255
@@ -46678,10 +46892,18 @@ MonoBehaviour:
   - 0.0085
   - 0.0244
   maxAnswerDis: 0.005
+  maxAnswerDisForAlign: 0
   scrollSpeed: 0.000025
   paperLength: 0.0679
   pickupLength: 0.01
   beginLength: 0.0186
+  haDuration: 0
+  haCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1723810675360615494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46707,6 +46929,20 @@ MonoBehaviour:
   snapshotCam: {fileID: 898784327}
   bookManager: {fileID: 63900464}
   bookCaseAnim: {fileID: 63900460}
+  verticalAlignCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  verticalAlignDurationMultiplier: 0
+  horizontalOffsetAmount: 0
+  paperZPosPerQuestion:
+  - 0
+  - 0
+  - 0
+  - 0
+  firstHit: 0
 --- !u!33 &1749303946529654589
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -47904,6 +48140,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 1
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2249053421542367493
 GameObject:
   m_ObjectHideFlags: 0
@@ -48016,7 +48290,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!1 &2355269645671893900
 GameObject:
@@ -63615,6 +63889,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 0
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!33 &6147637538850813298
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -63935,6 +64247,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 2
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!23 &6305775561002861076
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -64096,6 +64446,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 3
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &6371414974845584144
 Transform:
   m_ObjectHideFlags: 0
@@ -68191,6 +68579,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 4
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &8513070343591844566
 GameObject:
   m_ObjectHideFlags: 0
@@ -68863,6 +69289,10 @@ PrefabInstance:
     - target: {fileID: 6904627569264105838, guid: 23860f88fd96a274db75ff171e1fedb8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6904627569264105838, guid: 23860f88fd96a274db75ff171e1fedb8, type: 3}
+      propertyPath: m_Layer
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6957641658462338438, guid: 23860f88fd96a274db75ff171e1fedb8, type: 3}
       propertyPath: m_StaticEditorFlags
