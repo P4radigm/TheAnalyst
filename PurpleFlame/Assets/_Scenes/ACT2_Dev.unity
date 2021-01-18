@@ -3040,7 +3040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letterID: 17
   pagesSprites:
-  - {fileID: 21300000, guid: 251da548fad036b47ad40b08d6015705, type: 3}
+  - {fileID: 21300000, guid: de18fb82374b321498e1b706e692ad49, type: 3}
   pagesText:
   - "30-08-1850 - Power\r\n\r\nThe King has power. Knowledge is power. The king stands
     strong, planning out his next move. He carefully searches for the solution to
@@ -9672,7 +9672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letterID: 13
   pagesSprites:
-  - {fileID: 21300000, guid: 7852b9dd9b57bef45a5b1e93a0380dfb, type: 3}
+  - {fileID: 21300000, guid: fa004cba81b958a498d5210986a64d80, type: 3}
   pagesText:
   - "13-07-1850 - Path\r\n\r\nI have spent my whole life creating new machines and
     solving mathematical problems. Sometimes I wonder what my life would look like
@@ -19994,12 +19994,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letterID: 9
   pagesSprites:
-  - {fileID: 21300000, guid: 8f069356ef0165a4086d1a535fda24b1, type: 3}
+  - {fileID: 21300000, guid: a1ec5f42517078e4f9ab947219238e17, type: 3}
   pagesText:
   - "20-03-1846 - Consider\r\n\r\nWhen you are making a choice, one will always look
     the least impactful. A pawn is largely considered a throwaway. Sometimes, you
     need to go for the least considered option. Here the pawn can be the right answer.
-    \r"
+    \r\n"
 --- !u!65 &1189883809
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24546,7 +24546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letterID: 15
   pagesSprites:
-  - {fileID: 21300000, guid: 418d7c23ff2468f47837e539fd3a0604, type: 3}
+  - {fileID: 21300000, guid: 566de973de2c2e84bae35133170f877c, type: 3}
   pagesText:
   - 'In Liverpool, a flood made it impossible to travel over the Thames. I had to
     go to London via all accessible cities in the country within 52 hours. '
@@ -29132,7 +29132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letterID: 16
   pagesSprites:
-  - {fileID: 21300000, guid: 70f6e1990646efe4e8365e641fa51354, type: 3}
+  - {fileID: 21300000, guid: 0348ecd5d7fe10d48a08172ec74b207b, type: 3}
   pagesText:
   - 'Finally, I had to choose one city and travel to another one, but through all
     the other cities in the country. All this in 74 hours. There was only one route
@@ -32685,20 +32685,19 @@ MonoBehaviour:
   moveDragThreshold: 300
   book: {fileID: 1126483178}
   emptyPage: {fileID: 21300000, guid: 9946a2355d26aae418b2c533e886bcb2, type: 3}
-  buttonText: {fileID: 0}
   beginSprites:
   - {fileID: 21300000, guid: ae42da3995288dc478cf37ed58e15ad4, type: 3}
-  - {fileID: 21300000, guid: 57af28000224e534487d3b9ccf2f62f3, type: 3}
-  - {fileID: 21300000, guid: ed4b12a5cee88c245915faac1d8ec9c2, type: 3}
-  - {fileID: 21300000, guid: bccf4af3080fd6b4d9eff031993a2a67, type: 3}
-  - {fileID: 21300000, guid: 4f499ee3b916a0c4587ce0f0c740c6fc, type: 3}
+  - {fileID: 21300000, guid: 63138b36ae7473c48986b2ef998db8f5, type: 3}
+  - {fileID: 21300000, guid: 0c85fec5b4c648a4ea0b84e9a49c2bff, type: 3}
+  - {fileID: 21300000, guid: 35664fd5ac0e938469126a8ee518a0df, type: 3}
+  - {fileID: 21300000, guid: 82a61e5cd6ac0fc4381b98397213f8ed, type: 3}
   beginText:
   - "From: Nikola Tesla\r\nTo: Initiate\r\nSend: New York, June 21st 1892\r\nReceived:
     London, June 21st 1892\r\n\r\nWE ARE THE SOCIETY OF THE CROSSED KEYS STOP \r\nYOU
     ARE CURIOUS AND HAVE POTENTIAL STOP \r\nCOMPLETE TRIALS ADA LOVELACE AND BECOME
     HER SUCCESSOR STOP \r\nGO TO 101A ST MARK\u2019S CRES, PRIMROSE HILL, LONDON
     STOP\r\nFOR BETTERMENT OF THE WORLD STOP \r\nGOOD LUCK STOP \r\nNIKOLA TESLA
-    STOP\r"
+    STOP\r\n"
   - "Dear Initiate,\r\n\r\nThis letter is confidential, do not speak of it to anyone.\r\nYou
     now know of the existence of the Society of the Crossed Keys. We uncover secrets
     and use them for the betterment of our world while preventing them from falling
@@ -32707,7 +32706,7 @@ MonoBehaviour:
     of the Crossed Keys\r\n"
   - "01-09-1847: Trials\r\n\r\nFirst these trials\u2026 I have spent my last years
     creating them. \r\nTo pass them one will need to understand my choices in life,
-    but they don\u2019t need to become me. They need to become someone better.\r\n"
+    but they don\u2019t need to become me. They need to become someone better. \r\n"
   - '02-05-1848: Lesson
 
 
@@ -39635,14 +39634,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letterID: 8
   pagesSprites:
-  - {fileID: 21300000, guid: 52ff83d16810bc34d9f230d77e719990, type: 3}
+  - {fileID: 21300000, guid: 27aa83b270e7ee64bb8c43311f2e63f1, type: 3}
   pagesText:
   - "Four verses, four combinations\r\n\r\nMy father died when I was very small.\r\nBut
     my mother prevented her daughter\u2019s fall. \r\nShe helped me answer a mathematician\u2019s
     calls. \r\n\r\nReligion will not help me after my death. \r\nI need a legacy
     after my final breath. \r\nThe future is now in your hands.\r\nJust one more
     day of math, I vow. \r\n\r\nChoices\r\nKeeping secrets \r\nEnding is near\r\nWorking
-    towards the horizon\r\nDeath \r\n\r\r\nOh dear loving child \r\nYour secret is
+    towards the horizon\r\nDeath \r\n\r\nOh dear loving child \r\nYour secret is
     safe with me\r\nBe my legacy \r\n"
 --- !u!65 &879781564050841207
 BoxCollider:
@@ -41975,9 +41974,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12fd77f33023b0d489e6802642aa5bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letterID: 2
+  letterID: 4
   pagesSprites:
-  - {fileID: 21300000, guid: 6c57875869b327a4ab6a8d72ad6b5476, type: 3}
+  - {fileID: 21300000, guid: 64c6cf26e1ef0ac42a44f83954c85a6b, type: 3}
   pagesText:
   - "15-03-1849: Secrets\r\n\r\nThe Society isn't the only one who keeps secrets.
     \r\nMy three secrets are what made my life come to this. \r\nFor example, one
@@ -43292,7 +43291,7 @@ GameObject:
   - component: {fileID: 2820323733343533466}
   - component: {fileID: 2820323733343533465}
   m_Layer: 14
-  m_Name: Note4_Chess
+  m_Name: Note5_Chess
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43323,14 +43322,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12fd77f33023b0d489e6802642aa5bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letterID: 3
+  letterID: 5
   pagesSprites:
-  - {fileID: 21300000, guid: 2201d37d65cb6034d813abc94ffd3267, type: 3}
+  - {fileID: 21300000, guid: c691369ae2ced5442b82fdf4a1f77c8c, type: 3}
   pagesText:
   - "13-02-1846 - Chess\r\n\r\nOnce all four pieces are in their spot, you should
     be able to win the match in one move.\r\n\r\nGather the chess pieces in any order
     you like. If you get stuck in one trial, try another. There is no harm to put
-    your mind to something else for a while. \r\n\r\nGood luck\r"
+    your mind to something else for a while. \r\n\r\nGood luck\r\n"
 --- !u!1 &2826324546907172172
 GameObject:
   m_ObjectHideFlags: 0
@@ -58576,7 +58575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letterID: 14
   pagesSprites:
-  - {fileID: 21300000, guid: abf3e1d80e147cc48bc47c20983549df, type: 3}
+  - {fileID: 21300000, guid: fe8505062521a9348aafb61c182d4e20, type: 3}
   pagesText:
   - "After Canterbury, I traveled to Liverpool in 34 hours, but couldn\u2019t go
     through Oxford. There were reports that my work could be in danger there. "
@@ -60811,7 +60810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letterID: 9
   pagesSprites:
-  - {fileID: 21300000, guid: b282104570265e646b0249a8dc4bf243, type: 3}
+  - {fileID: 21300000, guid: 09f3fd308a08f7e4fb5bc5d28ba5c047, type: 3}
   pagesText:
   - "20-05-1850 - Life\r\n\r\nAfter my father died, I wanted a normal life. I got
     married, had children, went to church. Yet, at times, I felt like those things

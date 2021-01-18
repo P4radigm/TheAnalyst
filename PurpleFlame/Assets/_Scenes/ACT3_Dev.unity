@@ -1094,13 +1094,23 @@ MonoBehaviour:
   moveDragThreshold: 300
   book: {fileID: 796152983}
   emptyPage: {fileID: 21300000, guid: 9946a2355d26aae418b2c533e886bcb2, type: 3}
-  buttonText: {fileID: 930898143}
   beginSprites:
   - {fileID: 21300000, guid: 07b65bd45df70c54dac91bcb91e9e93a, type: 3}
   - {fileID: 21300000, guid: d4ac217bc8ee8644fa3e924d6e24dbf5, type: 3}
   - {fileID: 21300000, guid: ece7f77bbc0a94e4d82ff942ead5a4e1, type: 3}
   - {fileID: 21300000, guid: 1cae4d4ccfaf0b341b0e8878e47bbb18, type: 3}
   - {fileID: 21300000, guid: 5f67524435aa1e04b9d8ef636d54c040, type: 3}
+  - {fileID: 21300000, guid: 64c6cf26e1ef0ac42a44f83954c85a6b, type: 3}
+  - {fileID: 21300000, guid: c691369ae2ced5442b82fdf4a1f77c8c, type: 3}
+  - {fileID: 21300000, guid: 20fe4257cf1b5ab428ea92099384a31f, type: 3}
+  - {fileID: 21300000, guid: a1ec5f42517078e4f9ab947219238e17, type: 3}
+  - {fileID: 21300000, guid: 27aa83b270e7ee64bb8c43311f2e63f1, type: 3}
+  - {fileID: 21300000, guid: 09f3fd308a08f7e4fb5bc5d28ba5c047, type: 3}
+  - {fileID: 21300000, guid: fa004cba81b958a498d5210986a64d80, type: 3}
+  - {fileID: 21300000, guid: fe8505062521a9348aafb61c182d4e20, type: 3}
+  - {fileID: 21300000, guid: 566de973de2c2e84bae35133170f877c, type: 3}
+  - {fileID: 21300000, guid: 0348ecd5d7fe10d48a08172ec74b207b, type: 3}
+  - {fileID: 21300000, guid: de18fb82374b321498e1b706e692ad49, type: 3}
   beginText:
   - "From: Nikola Tesla\r\nTo: Initiate\r\nSend: New York, June 21st 1892\r\nReceived:
     London, June 21st 1892\r\n\r\nWE ARE THE SOCIETY OF THE CROSSED KEYS STOP \r\nYOU
@@ -1108,30 +1118,83 @@ MonoBehaviour:
     HER SUCCESSOR STOP \r\nGO TO 101A ST MARK\u2019S CRES, PRIMROSE HILL, LONDON
     STOP\r\nFOR BETTERMENT OF THE WORLD STOP \r\nGOOD LUCK STOP \r\nNIKOLA TESLA
     STOP\r\n"
-  - "Dear Initiate,\r\n\r\nThis letter is directed only to you. Do not share this
-    with anybody else. Now you know of the existence of our secret organization.
-    It must remain secret. \r\nWe are the Society of the Crossed Keys. We uncover
-    the world\u2019s secrets and use them for the betterment of our world. It is
-    our goal to keep these secrets out of the wrong hands. \r\r\nNikola Tesla has
-    seen your potential and has given you an assignment. Complete this assignment
-    and we will welcome you into our ranks. \r\nWe wish you all the luck in the world.\r\n\r\nSincerely,\r\n\r\nSociety
-    of the Crossed Keys"
-  - "01-09-1847: Trials\r\n\r\nFirst these trials\u2026 I have spent my last few
-    years on them. Someday someone will finish them\u2026 Hopefully\u2026 They need
-    to understand my choices in life, but they don\u2019t need to become me. They
-    need to be someone better. "
+  - "Dear Initiate,\r\n\r\nThis letter is confidential, do not speak of it to anyone.\r\nYou
+    now know of the existence of the Society of the Crossed Keys. We uncover secrets
+    and use them for the betterment of our world while preventing them from falling
+    into the wrong hands.  \r\n\r\nWe see your potential and give you an assignment.
+    Complete it and we will welcome you into our ranks. \r\n\r\nGodspeed,\r\n\r\nSincerely,\r\n\r\nSociety
+    of the Crossed Keys\r\n"
+  - "01-09-1847: Trials\r\n\r\nFirst these trials\u2026 I have spent my last years
+    creating them. \r\nTo pass them one will need to understand my choices in life,
+    but they don\u2019t need to become me. They need to become someone better. \r\n"
   - '02-05-1848: Lesson
 
 
-    My life has been different than most women. There are
-    not a lot of women in my field. My teacher, Mary Somerville, helped me a lot
-    in becoming the woman I am today. Secondly, there was only one lesson I have
-    never learned. To live a normal life with my children.'
-  - "08-04-1849: Reliving\r\n\r\nMy work\u2026 It\u2019s great, exciting, I learn
-    something new every day. Not fully knowing where your work will go is positively
-    thrilling. I sometimes think too little about the design befoure executing my
-    work. Always be thoughtful about the next step. \r\n\r\n\u201CGreat discoveries
-    generally lead to a variety of conclusions\u201D - Mary Somerville. \r\n"
+
+    Being a woman in my field is challenging. My teacher,
+    Miss Somerville, helped me become the woman I am today. Secondly, one lesson
+    I have never learned; to live a normal life with my children.'
+  - '08-04-1849: Reliving
+
+
+
+    Not knowing where your work will take you is positively
+    thrilling. In my excitement I sometimes think too little about the design befoure
+    executing my work. '
+  - "15-03-1849: Secrets\r\n\r\nThe Society isn't the only one who keeps secrets.
+    \r\nMy three secrets are what made my life come to this. \r\nFor example, one
+    thing I\u2019ve never told them is that, at first, I believed them to be some
+    sort of cult. \r\n"
+  - "13-02-1846 - Chess\r\n\r\nOnce all four pieces are in their spot, you should
+    be able to win the match in one move.\r\n\r\nGather the chess pieces in any order
+    you like. If you get stuck in one trial, try another. There is no harm to put
+    your mind to something else for a while. \r\n\r\nGood luck\r\n"
+  - '13-03-1846 - Choices
+
+
+
+    Weighing my priorities has always been a struggle
+    to me.
+
+
+
+    My work is my number one and I would give up anything for it. The
+    choices I have made define me and they have brought you here.
+
+'
+  - "20-03-1846 - Consider\r\n\r\nWhen you are making a choice, one will always look
+    the least impactful. A pawn is largely considered a throwaway. Sometimes, you
+    need to go for the least considered option. Here the pawn can be the right answer.
+    \r\n"
+  - "Four verses, four combinations\r\n\r\nMy father died when I was very small.\r\nBut
+    my mother prevented her daughter\u2019s fall. \r\nShe helped me answer a mathematician\u2019s
+    calls. \r\n\r\nReligion will not help me after my death. \r\nI need a legacy
+    after my final breath. \r\nThe future is now in your hands.\r\nJust one more
+    day of math, I vow. \r\n\r\nChoices\r\nKeeping secrets \r\nEnding is near\r\nWorking
+    towards the horizon\r\nDeath \r\n\r\nOh dear loving child \r\nYour secret is
+    safe with me\r\nBe my legacy \r\n"
+  - "20-05-1850 - Life\r\n\r\nAfter my father died, I wanted a normal life. I got
+    married, had children, went to church. Yet, at times, I felt like those things
+    were holding me back. \r\n   Maybe I am a bit twisted inside but sometimes my
+    machines feel like my real children. They are always here for me. They won\u2019t
+    yell at me or leave when they get older. \r\n    Nothing makes me regret my life
+    and how I have lived it. I just keep thinking about it\u2026\r\n"
+  - "13-07-1850 - Path\r\n\r\nI have spent my whole life creating new machines and
+    solving mathematical problems. Sometimes I wonder what my life would look like
+    without all this. Don\u2019t get me wrong, I love my work. Sometimes I just wonder...\r\n\r\nI
+    started out by going from Paris, where I met Charles Babbage, to Canterbury in
+    only 33 hours.\r\n"
+  - "After Canterbury, I traveled to Liverpool in 34 hours, but couldn\u2019t go
+    through Oxford. There were reports that my work could be in danger there. "
+  - 'In Liverpool, a flood made it impossible to travel over the Thames. I had to
+    go to London via all accessible cities in the country within 52 hours. '
+  - 'Finally, I had to choose one city and travel to another one, but through all
+    the other cities in the country. All this in 74 hours. There was only one route
+    that precisely took this amount of time. '
+  - "30-08-1850 - Power\r\n\r\nThe King has power. Knowledge is power. The king stands
+    strong, planning out his next move. He carefully searches for the solution to
+    his problems. Setting my mind to someone like the king can help me accomplish
+    higher goals. \r\n"
   clearTextPage: {fileID: 686308809}
   clearText: {fileID: 84384864}
   imagePageOne: {fileID: 1148880581}
@@ -1321,7 +1384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 656004711, guid: 6e0cbebea38a1be418023ce156299579, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -2418
+      value: 2393
       objectReference: {fileID: 0}
     - target: {fileID: 656004711, guid: 6e0cbebea38a1be418023ce156299579, type: 3}
       propertyPath: m_SizeDelta.y
@@ -4551,18 +4614,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8531796675389596591, guid: 6e0cbebea38a1be418023ce156299579, type: 3}
   m_PrefabInstance: {fileID: 199829511}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &865275601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 865275600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59fa6c71a1af754499baf14c4b0eb560, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &872743336
 PrefabInstance:
   m_ObjectHideFlags: 0

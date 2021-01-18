@@ -3099,7 +3099,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 76d9c74e1f44b0f4db0b13121616b66e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8b2e4ad3242904a47a1590ebffc15dc7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -34282,10 +34282,9 @@ MonoBehaviour:
   moveDragThreshold: 300
   book: {fileID: 696093168}
   emptyPage: {fileID: 21300000, guid: 9946a2355d26aae418b2c533e886bcb2, type: 3}
-  buttonText: {fileID: 0}
   beginSprites:
   - {fileID: 21300000, guid: ae3cd8a7f3976274689d8dc5908cf27a, type: 3}
-  - {fileID: 21300000, guid: 5e703e8f12be8c747bdce7e19d0606ed, type: 3}
+  - {fileID: 21300000, guid: 63138b36ae7473c48986b2ef998db8f5, type: 3}
   beginText:
   - "From: Nikola Tesla\r\nTo: Initiate\r\nSend: New York, June 21st 1892\r\nReceived:
     London, June 21st 1892\r\n\r\nWE ARE THE SOCIETY OF THE CROSSED KEYS STOP \r\nYOU
@@ -34293,14 +34292,12 @@ MonoBehaviour:
     HER SUCCESSOR STOP \r\nGO TO 101A ST MARK\u2019S CRES, PRIMROSE HILL, LONDON
     STOP\r\nFOR BETTERMENT OF THE WORLD STOP \r\nGOOD LUCK STOP \r\nNIKOLA TESLA
     STOP\r\n"
-  - "Dear Initiate,\r\n\r\nThis letter is directed only to you. Do not share this
-    with anybody else. Now you know of the existence of our secret organization.
-    It must remain secret. \r\nWe are the Society of the Crossed Keys. We uncover
-    the world\u2019s secrets and use them for the betterment of our world. It is
-    our goal to keep these secrets out of the wrong hands. \r\r\nNikola Tesla has
-    seen your potential and has given you an assignment. Complete this assignment
-    and we will welcome you into our ranks. \r\nWe wish you all the luck in the world.\r\n\r\nSincerely,\r\n\r\nSociety
-    of the Crossed Keys"
+  - "Dear Initiate,\r\n\r\nThis letter is confidential, do not speak of it to anyone.\r\nYou
+    now know of the existence of the Society of the Crossed Keys. We uncover secrets
+    and use them for the betterment of our world while preventing them from falling
+    into the wrong hands.  \r\n\r\nWe see your potential and give you an assignment.
+    Complete it and we will welcome you into our ranks. \r\n\r\nGodspeed,\r\n\r\nSincerely,\r\n\r\nSociety
+    of the Crossed Keys\r\n"
   clearTextPage: {fileID: 1943180259}
   clearText: {fileID: 114054977}
   imagePageOne: {fileID: 1334572958}
@@ -36042,27 +36039,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letterID: 1
   pagesSprites:
-  - {fileID: 21300000, guid: a176fd8da7e27a14f9f5440cdffd961a, type: 3}
-  - {fileID: 21300000, guid: 7960c6541fd927544b1912c63704bc0d, type: 3}
-  - {fileID: 21300000, guid: 946bd168bff926341a5b5c718af8e8d6, type: 3}
+  - {fileID: 21300000, guid: 0c85fec5b4c648a4ea0b84e9a49c2bff, type: 3}
+  - {fileID: 21300000, guid: 35664fd5ac0e938469126a8ee518a0df, type: 3}
+  - {fileID: 21300000, guid: 82a61e5cd6ac0fc4381b98397213f8ed, type: 3}
   pagesText:
-  - "01-09-1847: Trials\r\n\r\nFirst these trials\u2026 I have spent my last few
-    years on them. Someday someone will finish them\u2026 Hopefully\u2026 They need
-    to understand my choices in life, but they don\u2019t need to become me. They
-    need to be someone better. "
+  - "01-09-1847: Trials\r\n\r\nFirst these trials\u2026 I have spent my last years
+    creating them. \r\nTo pass them one will need to understand my choices in life,
+    but they don\u2019t need to become me. They need to become someone better. \r\n"
   - '02-05-1848: Lesson
 
 
 
-    My life has been different than most women. There
-    are not a lot of women in my field. My teacher, Mary Somerville, helped me a
-    lot in becoming the woman I am today. Secondly, there was only one lesson I have
-    never learned. To live a normal life with my children.'
-  - "08-04-1849: Reliving\r\n\r\nMy work\u2026 It\u2019s great, exciting, I learn
-    something new every day. Not fully knowing where your work will go is positively
-    thrilling. I sometimes think too little about the design befoure executing my
-    work. Always be thoughtful about the next step. \r\n\r\n\u201CGreat discoveries
-    generally lead to a variety of conclusions\u201D - Mary Somerville. \r\n"
+    Being a woman in my field is challenging. My teacher,
+    Miss Somerville, helped me become the woman I am today. Secondly, one lesson
+    I have never learned; to live a normal life with my children.'
+  - '08-04-1849: Reliving
+
+
+
+    Not knowing where your work will take you is positively
+    thrilling. In my excitement I sometimes think too little about the design befoure
+    executing my work. '
 --- !u!1 &1173401319
 GameObject:
   m_ObjectHideFlags: 0
@@ -88012,13 +88009,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5126451715960850166}
-  m_LocalRotation: {x: -0.86602545, y: 0, z: 0, w: 0.49999994}
-  m_LocalPosition: {x: 0.082, y: -0.0469, z: 0.0994}
+  m_LocalRotation: {x: -0.87218255, y: -0, z: -0, w: 0.48918045}
+  m_LocalPosition: {x: 0.07885001, y: -0.05177, z: 0.09938}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8783687918730407871}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: -120, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -121.427, y: 0, z: 0}
 --- !u!1 &5126451716401754297
 GameObject:
   m_ObjectHideFlags: 0
@@ -88043,8 +88040,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5126451716401754297}
   m_LocalRotation: {x: 1.4210855e-14, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.082, y: -0.05088, z: 0.0957}
-  m_LocalScale: {x: 0.010000001, y: 0.01, z: 0.010000001}
+  m_LocalPosition: {x: 0.07885001, y: -0.05525, z: 0.09553}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8783687918730407871}
   m_RootOrder: 8
@@ -88102,13 +88099,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5126451716584706410}
-  m_LocalRotation: {x: -0.49999914, y: -0, z: -0, w: 0.86602587}
-  m_LocalPosition: {x: 0.082, y: -0.0471, z: 0.0917}
+  m_LocalRotation: {x: -0.4983507, y: -0, z: -0, w: 0.86697555}
+  m_LocalPosition: {x: 0.07884, y: -0.051769994, z: 0.0912}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8783687918730407871}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: -60, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -59.782, y: 0, z: 0}
 --- !u!23 &5134785834589037256
 MeshRenderer:
   m_ObjectHideFlags: 0

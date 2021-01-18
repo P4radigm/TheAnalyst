@@ -24,7 +24,6 @@ namespace Dennis
         [Header("UI")]
         [SerializeField] private GameObject book;
         [SerializeField] private Sprite emptyPage;
-        [SerializeField] private TextMeshProUGUI buttonText;
         //[SerializeField] private Letter beginLetter;
         [SerializeField] private Sprite[] beginSprites;
         [TextArea(15, 10)]
@@ -171,7 +170,6 @@ namespace Dennis
             if (currentState == NodeState.Tutorial)
             {
                 currentState = NodeState.Notebook;
-                //buttonText.text = "Book";
             }
 
             int currentLetter = letter.letterID;
@@ -249,7 +247,6 @@ namespace Dennis
 
             if (currentState == NodeState.Tutorial)
             {
-                //buttonText.text = "Note";
                 telegramCanvas.SetActive(true);
                 notebookOpen = true;
             }
