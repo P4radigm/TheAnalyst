@@ -7,7 +7,7 @@ namespace Dennis
 {
     public class TypewriterUI : MonoBehaviour
     {
-        [HideInInspector] public int answersCount;
+        public int answersCount;
         [HideInInspector] public bool readyToPickUp = false;
 
         public GameObject paper;
