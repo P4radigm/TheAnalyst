@@ -30,7 +30,7 @@ public class OptionsManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
     }
 
     [Header("Settings")]

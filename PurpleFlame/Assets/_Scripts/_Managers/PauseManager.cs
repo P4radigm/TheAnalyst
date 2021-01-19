@@ -78,8 +78,8 @@ namespace Dennis
             pauseCanvas.gameObject.SetActive(true);
             pauseSettings.SetActive(false);
             pauseMain.SetActive(true);
-            usualtime = Time.timeScale;
-            Time.timeScale = 0;
+            //usualtime = Time.timeScale;
+            //Time.timeScale = 0;
             ObjectRotation.Instance.enabled = false;
             cT = ObjectRotation.Instance.gameObject.GetComponent<CameraTarget>();
             cT.enabled = false;
@@ -90,7 +90,7 @@ namespace Dennis
         {
             pauseCanvas.gameObject.SetActive(false);
             inGameCanvas.gameObject.SetActive(true);
-            Time.timeScale = usualtime;
+            //Time.timeScale = usualtime;
             ObjectRotation.Instance.enabled = true;
             cT.enabled = true;
             //Resume in-game interactions or time

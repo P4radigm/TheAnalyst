@@ -60132,9 +60132,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6686455788693272905, guid: f186dd7a0f1aebf4c81c611f6e215878, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -12.561028
+      objectReference: {fileID: 0}
+    - target: {fileID: 6686455788693272905, guid: f186dd7a0f1aebf4c81c611f6e215878, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.10885767
+      objectReference: {fileID: 0}
     - target: {fileID: 6686455789850694507, guid: f186dd7a0f1aebf4c81c611f6e215878, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6686455789871199960, guid: f186dd7a0f1aebf4c81c611f6e215878, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 96.422134
+      objectReference: {fileID: 0}
+    - target: {fileID: 6686455789871199960, guid: f186dd7a0f1aebf4c81c611f6e215878, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 49.736572
+      objectReference: {fileID: 0}
+    - target: {fileID: 6686455789871199960, guid: f186dd7a0f1aebf4c81c611f6e215878, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 229.32132
       objectReference: {fileID: 0}
     - target: {fileID: 6686455789993830748, guid: f186dd7a0f1aebf4c81c611f6e215878, type: 3}
       propertyPath: m_Name
@@ -60244,6 +60264,18 @@ PrefabInstance:
       propertyPath: rightPanel
       value: 
       objectReference: {fileID: 1155343988}
+    - target: {fileID: 7044511139711957677, guid: f186dd7a0f1aebf4c81c611f6e215878, type: 3}
+      propertyPath: sideBarAnimStartDelay
+      value: 37.183334
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044511139711957677, guid: f186dd7a0f1aebf4c81c611f6e215878, type: 3}
+      propertyPath: sideBarAnimDuration
+      value: 1.2833333
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044511139711957682, guid: f186dd7a0f1aebf4c81c611f6e215878, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7044511139862605510, guid: f186dd7a0f1aebf4c81c611f6e215878, type: 3}
       propertyPath: m_IsActive
       value: 1
