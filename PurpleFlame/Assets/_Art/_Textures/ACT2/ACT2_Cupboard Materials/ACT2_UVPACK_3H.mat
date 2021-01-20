@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ACT2_UVPACK_Cupboard
+  m_Name: ACT2_UVPACK_3H
   m_Shader: {fileID: -6465566751694194690, guid: 509db49789da061479ee3370e3a0bf8c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -41,7 +41,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_46FA7BF:
-        m_Texture: {fileID: 2800000, guid: 5a985beb97b3e01409c5c1d2ad7dd2ce, type: 3}
+        m_Texture: {fileID: 2800000, guid: 228285d6abf53a84a878387c4771c68d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_91FD475A:
@@ -49,7 +49,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_9AAE3171:
-        m_Texture: {fileID: 2800000, guid: 7ed6f7bb2b26ae540947915810f084ee, type: 3}
+        m_Texture: {fileID: 2800000, guid: 30e67fa231edd194e9defc83b0ebb3cb, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_FACE2C08:
@@ -87,7 +87,7 @@ Material:
     m_Floats:
     - Boolean_1E9950CC: 1
     - Boolean_6234D484: 0
-    - Boolean_9E761660: 1
+    - Boolean_9E761660: 0
     - Boolean_A29117A1: 0
     - Vector1_12F8FCEB: 3
     - Vector1_19EA0681: 1
@@ -97,9 +97,9 @@ Material:
     - Vector1_567CE951: 0
     - Vector1_72357EA3: 1
     - Vector1_A36B5BC6: 1
-    - Vector1_ADC1703F: 0.409
+    - Vector1_ADC1703F: 0.585
     - Vector1_D040B99B: 0
-    - Vector1_DE554D27: 0.339
+    - Vector1_DE554D27: 1
     - Vector1_E046DE26: 1
     - Vector1_E1B30B3E: 1
     - Vector1_F3D5D4A0: 300
