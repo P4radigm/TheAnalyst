@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Linq;
+using UnityEngine.Events;
 
-namespace Dennis
+namespace PurpleFlame
 {
     public enum NodeState
     {
@@ -42,6 +43,11 @@ namespace Dennis
         [SerializeField] private GameObject telegramCanvas;
         [SerializeField] private GameObject telegramPage;
         [SerializeField] private GameObject letterPage;
+
+        [Header("Audio")]
+        [SerializeField] private UnityEvent noteBookOpenSound;
+        [SerializeField] private UnityEvent noteBookPageTurnSound;
+        [SerializeField] private UnityEvent noteBookCloseSound;
 
         private bool notebookOpen;
         private bool clearTextOpen;
@@ -148,7 +154,7 @@ namespace Dennis
             
             if (notebookOpen)
             {
-                if(currentState == NodeState.Tutorial)
+                if (currentState == NodeState.Tutorial)
                 {
                     telegramCanvas.SetActive(true);
                 }
@@ -156,12 +162,16 @@ namespace Dennis
                 {
                     book.SetActive(true);
                 }
+
+                noteBookOpenSound.Invoke();
             }
             else
             {
                 //currentPageSelected = 0;
                 book.SetActive(false);
                 telegramCanvas.SetActive(false);
+
+                noteBookCloseSound.Invoke();
             }
         }
 
@@ -223,6 +233,8 @@ namespace Dennis
             {
                 currentPageSelected = 0;
             }
+
+            noteBookPageTurnSound.Invoke();
         }
 
         #region Singleton

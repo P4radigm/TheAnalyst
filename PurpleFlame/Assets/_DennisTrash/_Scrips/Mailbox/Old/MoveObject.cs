@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TouchBehaviours;
 
-namespace Dennis
+namespace PurpleFlame
 {
     public class MoveObject : LeanDrag
     {

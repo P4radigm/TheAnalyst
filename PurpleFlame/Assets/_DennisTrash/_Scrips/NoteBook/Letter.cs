@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Dennis
+namespace PurpleFlame
 {
     public class Letter : MonoBehaviour
     {

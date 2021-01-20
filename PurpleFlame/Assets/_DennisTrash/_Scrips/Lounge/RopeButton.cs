@@ -1,9 +1,9 @@
-﻿using Dennis;
+﻿using PurpleFlame;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Dennis
+namespace PurpleFlame
 {
     public class RopeButton : MonoBehaviour
     {

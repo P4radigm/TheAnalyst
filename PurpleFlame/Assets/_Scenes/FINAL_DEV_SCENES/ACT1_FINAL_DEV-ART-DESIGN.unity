@@ -1251,6 +1251,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Stair_Anim
+          m_BoolArgument: 1
+        m_CallState: 2
   itemType: 0
 --- !u!64 &51226031
 MeshCollider:
@@ -25791,15 +25803,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6609513271647039295, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180
+      value: -1.2907844e-13
       objectReference: {fileID: 0}
     - target: {fileID: -6609513271647039295, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 7.016709e-15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -6609513271647039295, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 7.016709e-15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -6013982348155671688, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25851,15 +25863,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -3544540066618962156, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -3544540066618962156, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 7.016709e-15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -3544540066618962156, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 7.016709e-15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -3508212587812625768, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25883,15 +25895,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2747919223099783831, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180
+      value: -1.1809824e-13
       objectReference: {fileID: 0}
     - target: {fileID: -2747919223099783831, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 7.016709e-15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2747919223099783831, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 7.016709e-15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -2739585469241293681, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25931,15 +25943,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 85211326688173040, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 85211326688173040, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 7.016709e-15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 85211326688173040, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 7.016709e-15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 151056561972296460, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -25975,15 +25987,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1698319247870349239, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 1.2907844e-13
       objectReference: {fileID: 0}
     - target: {fileID: 1698319247870349239, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 7.016709e-15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1698319247870349239, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 7.016709e-15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2038065273677960283, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -26023,15 +26035,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3447163373780647555, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3447163373780647555, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 7.016709e-15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3447163373780647555, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 7.016709e-15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3585024751390024140, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -26063,15 +26075,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5465420218058498960, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5465420218058498960, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 7.016709e-15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5465420218058498960, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 7.016709e-15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5576365183203784007, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -26135,15 +26147,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9158789080680883761, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 1.1809824e-13
       objectReference: {fileID: 0}
     - target: {fileID: 9158789080680883761, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 7.016709e-15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9158789080680883761, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 7.016709e-15
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d6da38526727ec4faa177d2709ee8d3, type: 3}
@@ -26874,7 +26886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &852637724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34307,6 +34319,51 @@ MonoBehaviour:
   telegramCanvas: {fileID: 53763424}
   telegramPage: {fileID: 964805106}
   letterPage: {fileID: 1418280658}
+  noteBookOpenSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Note_Open
+          m_BoolArgument: 0
+        m_CallState: 2
+  noteBookPageTurnSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Note_PageTurn
+          m_BoolArgument: 0
+        m_CallState: 2
+  noteBookCloseSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Note_Close
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1110548352
 GameObject:
   m_ObjectHideFlags: 0
@@ -40346,7 +40403,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1302082882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57327,20 +57384,20 @@ MonoBehaviour:
   _Sounds:
   - name: Stair_Anim
     Clip: {fileID: 8300000, guid: 7f65667bcd5746640b24089e110ecd95, type: 3}
-    Volume: 1
+    Volume: 0.4
     Pitch: 1
     SpacialSound: 0
     Loop: 0
     Source: {fileID: 0}
   - name: MB1_Pick_Up
-    Clip: {fileID: 8300000, guid: e04e1a5e7d3d51a46a90404ad892fd23, type: 3}
-    Volume: 1
+    Clip: {fileID: 8300000, guid: f181707109ae845d29ab44e96286fbd8, type: 3}
+    Volume: 0.7
     Pitch: 1
     SpacialSound: 0
     Loop: 0
     Source: {fileID: 0}
   - name: MB1_Put_Down
-    Clip: {fileID: 8300000, guid: d073dc6461ae77748a0ea8f3bf3a2e74, type: 3}
+    Clip: {fileID: 8300000, guid: c2d19b7bfd6d44874b07ddde9931a6dd, type: 3}
     Volume: 1
     Pitch: 1
     SpacialSound: 0
@@ -57389,15 +57446,15 @@ MonoBehaviour:
     Loop: 0
     Source: {fileID: 0}
   - name: Note_Open
-    Clip: {fileID: 8300000, guid: 75ad810fd6e4949479148b5c509c73c8, type: 3}
+    Clip: {fileID: 8300000, guid: f3e3a2f6e29474d68a5d0af78f5e7626, type: 3}
     Volume: 1
     Pitch: 1
     SpacialSound: 0
     Loop: 0
     Source: {fileID: 0}
   - name: Door_Open
-    Clip: {fileID: 8300000, guid: 5b380f5fdaa01ff4b80754398b8d5066, type: 3}
-    Volume: 1
+    Clip: {fileID: 8300000, guid: ddaef13603ea24d158a1123afde554e7, type: 3}
+    Volume: 0.7
     Pitch: 1
     SpacialSound: 0
     Loop: 0
@@ -57413,6 +57470,20 @@ MonoBehaviour:
     Clip: {fileID: 0}
     Volume: 0
     Pitch: 0
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Note_PageTurn
+    Clip: {fileID: 8300000, guid: 19d2c72e9324af64b8706d6ba828af2f, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Note_Close
+    Clip: {fileID: 8300000, guid: 733d09df67b5847379e9426973673544, type: 3}
+    Volume: 0.6
+    Pitch: 1
     SpacialSound: 0
     Loop: 0
     Source: {fileID: 0}
@@ -68349,6 +68420,21 @@ MonoBehaviour:
   enableObjects:
   - {fileID: 1916702154}
   disableObjects: []
+  openDoorSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Door_Open
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2132755198
 GameObject:
   m_ObjectHideFlags: 0
@@ -72455,7 +72541,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -43.69126, y: -43.89976}
+  m_AnchoredPosition: {x: -43.691162, y: -43.89978}
   m_SizeDelta: {x: 128, y: 128}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &721920016672057623
@@ -74178,7 +74264,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 53.414185, y: 46.32013}
+  m_AnchoredPosition: {x: 53.414062, y: 46.32019}
   m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &721920017010298196

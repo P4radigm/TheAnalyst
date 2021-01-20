@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-namespace Dennis
+namespace PurpleFlame
 {
 	public abstract class Touchable : MonoBehaviour
 	{

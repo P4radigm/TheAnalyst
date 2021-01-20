@@ -4,7 +4,7 @@ using UnityEngine;
 using Lean.Touch;
 using TouchBehaviours;
 
-namespace Dennis
+namespace PurpleFlame
 {
     public class NextLevelTrigger : LeanDrag
     {

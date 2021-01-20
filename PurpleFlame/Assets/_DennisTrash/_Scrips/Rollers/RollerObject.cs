@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-namespace Dennis
+namespace PurpleFlame
 {
     public class RollerObject : MonoBehaviour
     {
@@ -12,6 +13,9 @@ namespace Dennis
         [SerializeField] private int faces;
         [SerializeField] private int correctSymbol;
         [SerializeField] private float delayPosTime;
+
+        [Header("Audio")]
+        [SerializeField] private UnityEvent neutralPositionSound;
 
         public Vector3 v3;
         private bool correct = false;
@@ -71,6 +75,7 @@ namespace Dennis
 
                 v3.z = Mathf.Lerp(v3.z, angleLerp, 0.07f);
                 transform.eulerAngles = v3;
+                neutralPositionSound.Invoke();
             }
             else
             {

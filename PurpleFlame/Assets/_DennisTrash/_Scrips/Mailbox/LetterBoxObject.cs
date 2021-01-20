@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Dennis
+namespace PurpleFlame
 {
     public class LetterBoxObject : MonoBehaviour
     {

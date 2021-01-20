@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-namespace Dennis
+namespace PurpleFlame
 {
     public class Key : LeanDrag
     {
@@ -18,6 +19,7 @@ namespace Dennis
         [Header("End Cinematic Stuff")]
         [SerializeField] private GameObject[] enableObjects;
         [SerializeField] private GameObject[] disableObjects;
+        [SerializeField] private UnityEvent openDoorSound;
 
         private float roundCount;
         private float angleLastFrame = 0;
@@ -126,6 +128,8 @@ namespace Dennis
             {
                 disableObjects[i].SetActive(false);
             }
+
+            openDoorSound.Invoke();
         }
 
         private void DisableInteractable()

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Lean;
 using System.Collections;
 
-namespace Dennis
+namespace PurpleFlame
 {
 	public abstract class LeanDrag : Touchable
 	{

@@ -1,13 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-namespace Dennis
+namespace PurpleFlame
 {
     public class DoorManager : LeanDrag
     {
         [SerializeField] private float swipeThreshold;
         [SerializeField] private LayerMask layerMask;
+
+        [Header("Audio")]
+        [SerializeField] private UnityEvent openDoorSound;
 
         private bool finished;
         private bool interactableHit;
@@ -27,6 +31,8 @@ namespace Dennis
                     interactableHit = true;
                     selectedDoor = hit.collider.gameObject.GetComponent<Door>();
                     ObjectRotation.Instance.DisableScript(true);
+
+                    openDoorSound.Invoke();
                 }
             }
         }

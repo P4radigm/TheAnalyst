@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-namespace Dennis
+namespace PurpleFlame
 {
     public class CupBoardManager : LeanDrag
     {
@@ -13,6 +14,10 @@ namespace Dennis
         [SerializeField] private Collider touchInputCollider;
         [SerializeField] private GameObject[] weightPosition;
         [SerializeField] private Animator animChess;
+
+        [Header("Audio")]
+        [SerializeField] private UnityEvent pickUpSound;
+        [SerializeField] private UnityEvent putDownSound;
 
         private Weight selectedWeight;
         private Vector3 position;
@@ -33,6 +38,8 @@ namespace Dennis
                     selectedWeight.DisableCollider(true);
                     selectedWeight.CheckCurrentWeightPos();
                     touchInputCollider.enabled = true;
+
+                    pickUpSound.Invoke();
                 }
             }
         }
@@ -46,6 +53,8 @@ namespace Dennis
             CheckPosition();
             selectedWeight.DisableCollider(false);
             selectedWeight = null;
+
+            putDownSound.Invoke();
         }
 
         private void Update()

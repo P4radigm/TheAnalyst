@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
-namespace Dennis
+namespace PurpleFlame
 {
     public class PauseManager : MonoBehaviour
     {

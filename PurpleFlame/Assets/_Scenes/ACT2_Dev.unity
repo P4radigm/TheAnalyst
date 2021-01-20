@@ -6436,6 +6436,21 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 1024
+  openDoorSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Cupboard_OpenDoor
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &330785368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31510,6 +31525,99 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2386955969570198095, guid: 558513f65dee04d42b7521ae9ead7232, type: 3}
   m_PrefabInstance: {fileID: 1816127356}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1817184615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1817184617}
+  - component: {fileID: 1817184618}
+  m_Layer: 0
+  m_Name: ---AudioManager---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1817184617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817184615}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.2386656, y: 0.6916888, z: 1.4357842}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1817184618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817184615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39a9efac0762d504baa566b45e63241b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Sounds:
+  - name: Note_Open
+    Clip: {fileID: 8300000, guid: f3e3a2f6e29474d68a5d0af78f5e7626, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Note_PageTurn
+    Clip: {fileID: 8300000, guid: 19d2c72e9324af64b8706d6ba828af2f, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Note_Close
+    Clip: {fileID: 8300000, guid: 733d09df67b5847379e9426973673544, type: 3}
+    Volume: 0.6
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: ComboLock_Turn
+    Clip: {fileID: 8300000, guid: 5d98be09192de4e85bb2814aaa44e241, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Cupboard_OpenDoor
+    Clip: {fileID: 8300000, guid: 385f8491bdbbe4ad88d5992dad596b12, type: 3}
+    Volume: 0.6
+    Pitch: 0.96
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Cupboard_PickUpWeight
+    Clip: {fileID: 8300000, guid: 3de6f8a98c4b64bb08b68009b02b2a95, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Cupboard_PutDownWeight
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 0.25
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
 --- !u!1001 &1822825848
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32752,6 +32860,51 @@ MonoBehaviour:
   telegramCanvas: {fileID: 1290235041}
   telegramPage: {fileID: 618318466}
   letterPage: {fileID: 594639810}
+  noteBookOpenSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Note_Open
+          m_BoolArgument: 0
+        m_CallState: 2
+  noteBookPageTurnSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Note_PageTurn
+          m_BoolArgument: 0
+        m_CallState: 2
+  noteBookCloseSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Note_Close
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1884248641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40556,6 +40709,36 @@ MonoBehaviour:
   - {fileID: 486689345}
   - {fileID: 1210946819}
   animChess: {fileID: 1223710045500149962}
+  pickUpSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Cupboard_PickUpWeight
+          m_BoolArgument: 0
+        m_CallState: 2
+  putDownSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Cupboard_PutDownWeight
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &1223710045500149960
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60058,6 +60241,21 @@ MonoBehaviour:
   faces: 6
   correctSymbol: 1
   delayPosTime: 0.5
+  neutralPositionSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ComboLock_Turn
+          m_BoolArgument: 0
+        m_CallState: 2
   v3: {x: 0, y: -90, z: 180}
 --- !u!65 &6502966377242100553
 BoxCollider:
@@ -60844,20 +61042,6 @@ Transform:
   - {fileID: 2942987723968738551}
   - {fileID: 2066118920}
   m_Father: {fileID: 1028311959}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &6909182981599999702
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8005632865085210710}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.016329, y: 0.19987297, z: -2.675652}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &6912683599826229992
@@ -61688,6 +61872,21 @@ MonoBehaviour:
   faces: 6
   correctSymbol: 0
   delayPosTime: 0.5
+  neutralPositionSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ComboLock_Turn
+          m_BoolArgument: 0
+        m_CallState: 2
   v3: {x: 0, y: -90, z: 60}
 --- !u!65 &7301600740891276219
 BoxCollider:
@@ -62021,6 +62220,21 @@ MonoBehaviour:
   faces: 6
   correctSymbol: 5
   delayPosTime: 0.5
+  neutralPositionSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ComboLock_Turn
+          m_BoolArgument: 0
+        m_CallState: 2
   v3: {x: 0, y: -90, z: 120}
 --- !u!65 &7527189123073080313
 BoxCollider:
@@ -62956,22 +63170,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &8005632865085210710
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6909182981599999702}
-  m_Layer: 0
-  m_Name: artPrefab_ACT2_Bookcase_fin
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!23 &8013509091461513965
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -65502,6 +65700,21 @@ MonoBehaviour:
   faces: 6
   correctSymbol: 4
   delayPosTime: 0.5
+  neutralPositionSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ComboLock_Turn
+          m_BoolArgument: 0
+        m_CallState: 2
   v3: {x: 0, y: -90, z: 300}
 --- !u!65 &9111910353177191452
 BoxCollider:

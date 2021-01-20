@@ -6,7 +6,7 @@ using System.Collections;
 //input swipe
 //output lerp
 // 
-namespace Dennis
+namespace PurpleFlame
 {
     public enum Side
     {

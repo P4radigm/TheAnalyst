@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TouchBehaviours;
 using UnityEngine;
 
-namespace Dennis
+namespace PurpleFlame
 {
     public class NoteBook : LeanDrag
     {
