@@ -60162,7 +60162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6686455789993830748, guid: f186dd7a0f1aebf4c81c611f6e215878, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6686455789993830750, guid: f186dd7a0f1aebf4c81c611f6e215878, type: 3}
       propertyPath: m_LocalPosition.x
@@ -68337,7 +68337,7 @@ MonoBehaviour:
   touchWhenNotVisible: 0
   angleThreshHold: 0.1
   rotateSpeed: 400
-  rotateCount: 200
+  rotateCount: 70
   layerMask:
     serializedVersion: 2
     m_Bits: 2048

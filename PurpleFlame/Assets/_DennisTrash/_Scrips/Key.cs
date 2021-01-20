@@ -19,7 +19,7 @@ namespace Dennis
         [SerializeField] private GameObject[] enableObjects;
         [SerializeField] private GameObject[] disableObjects;
 
-        private int roundCount;
+        private float roundCount;
         private float angleLastFrame = 0;
         private float angle = 0;
         private bool interactableHit;
@@ -42,7 +42,6 @@ namespace Dennis
             {
                 disableObjects[i].SetActive(true);
             }
-
         }
 
         sealed protected override void OnFingerDown(Lean.Touch.LeanFinger finger)
@@ -104,8 +103,11 @@ namespace Dennis
 
             if (Mathf.Abs(_difference) > angleThreshHold)
             {
-                roundCount++;
-                if (roundCount > rotateCount) { StartCinematic(); }
+                if(angleLastFrame - angle < 0)
+                {
+                    roundCount++;
+                    if (roundCount > rotateCount) { StartCinematic(); }
+                }
             }
 
             angleLastFrame = angle;
