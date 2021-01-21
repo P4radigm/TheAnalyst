@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1440290775}
-  m_IndirectSpecularColor: {r: 0.006659676, g: 0.008662804, b: 0.04258791, a: 1}
+  m_IndirectSpecularColor: {r: 0.0012489044, g: 0.0011381996, b: 0.0048321523, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -654,6 +654,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 2
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!65 &18842668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3282,6 +3320,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 0
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!65 &115995337
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4498,6 +4574,7 @@ MonoBehaviour:
   - {fileID: 1153988549}
   - {fileID: 1239856542}
   - {fileID: 2123420911}
+  xAnswersText: []
   typewriterManager: {fileID: 146942460}
   answerPos:
   - 0.32
@@ -4505,10 +4582,18 @@ MonoBehaviour:
   - 1.1
   - 1.4
   maxAnswerDis: 0.1
+  maxAnswerDisForAlign: 0
   scrollSpeed: 2
   paperLength: 0
   pickupLength: 0.1
   beginLength: 0
+  haDuration: 0
+  haCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &146942460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4534,6 +4619,20 @@ MonoBehaviour:
   snapshotCam: {fileID: 898784327}
   bookManager: {fileID: 63900464}
   bookCaseAnim: {fileID: 63900460}
+  verticalAlignCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  verticalAlignDurationMultiplier: 0
+  horizontalOffsetAmount: 0
+  paperZPosPerQuestion:
+  - 0
+  - 0
+  - 0
+  - 0
+  firstHit: 0
 --- !u!95 &146942461
 Animator:
   serializedVersion: 3
@@ -7782,6 +7881,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 2
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!23 &310494149
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22695,6 +22832,7 @@ MonoBehaviour:
   - {fileID: 1364277734}
   - {fileID: 1747942703}
   - {fileID: 1132704410}
+  xAnswersText: []
   typewriterManager: {fileID: 896710918}
   answerPos:
   - 0.32
@@ -22702,10 +22840,18 @@ MonoBehaviour:
   - 1.1
   - 1.4
   maxAnswerDis: 0.1
+  maxAnswerDisForAlign: 0
   scrollSpeed: 2
   paperLength: 0
   pickupLength: 0.1
   beginLength: 0
+  haDuration: 0
+  haCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &896710918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22731,6 +22877,20 @@ MonoBehaviour:
   snapshotCam: {fileID: 898784327}
   bookManager: {fileID: 63900464}
   bookCaseAnim: {fileID: 63900460}
+  verticalAlignCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  verticalAlignDurationMultiplier: 0
+  horizontalOffsetAmount: 0
+  paperZPosPerQuestion:
+  - 0
+  - 0
+  - 0
+  - 0
+  firstHit: 0
 --- !u!114 &896710919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26770,6 +26930,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 3
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!65 &1056303344
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30278,6 +30476,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 1
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!23 &1190720619
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -39381,6 +39617,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 4
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!23 &1498397505
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -43921,6 +44195,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 3
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!23 &1644528322
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50287,7 +50599,6 @@ MonoBehaviour:
   moveDragThreshold: 300
   book: {fileID: 1126483178}
   emptyPage: {fileID: 21300000, guid: 9946a2355d26aae418b2c533e886bcb2, type: 3}
-  buttonText: {fileID: 21019024}
   beginSprites:
   - {fileID: 21300000, guid: ae42da3995288dc478cf37ed58e15ad4, type: 3}
   - {fileID: 21300000, guid: 57af28000224e534487d3b9ccf2f62f3, type: 3}
@@ -51417,6 +51728,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 4
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!65 &1912817512
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53929,6 +54278,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 0
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!23 &2017088246
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -56370,6 +56757,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 1
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!65 &2082218839
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56504,7 +56929,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a8154c07240c1d44be2fd48dba6ca82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camCollider: {fileID: 1612673509}
+  typeCamCollider: {fileID: 0}
+  chessCamCollider: {fileID: 0}
 --- !u!114 &2087049741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64672,7 +65098,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a8154c07240c1d44be2fd48dba6ca82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camCollider: {fileID: 615270415}
+  typeCamCollider: {fileID: 0}
+  chessCamCollider: {fileID: 0}
 --- !u!114 &1633789350173819422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65193,6 +65620,7 @@ MonoBehaviour:
   - {fileID: 723234342}
   - {fileID: 1596253916}
   - {fileID: 1129523532}
+  xAnswersText: []
   typewriterManager: {fileID: 1723810675360615494}
   answerPos:
   - -0.0255
@@ -65200,10 +65628,18 @@ MonoBehaviour:
   - 0.0085
   - 0.0244
   maxAnswerDis: 0.005
+  maxAnswerDisForAlign: 0
   scrollSpeed: 0.000025
   paperLength: 0.0679
   pickupLength: 0.01
   beginLength: 0.0186
+  haDuration: 0
+  haCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &1723810675360615494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65229,6 +65665,20 @@ MonoBehaviour:
   snapshotCam: {fileID: 898784327}
   bookManager: {fileID: 63900464}
   bookCaseAnim: {fileID: 63900460}
+  verticalAlignCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  verticalAlignDurationMultiplier: 0
+  horizontalOffsetAmount: 0
+  paperZPosPerQuestion:
+  - 0
+  - 0
+  - 0
+  - 0
+  firstHit: 0
 --- !u!33 &1746177384553131683
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -67423,6 +67873,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 1
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2246274400700836515
 GameObject:
   m_ObjectHideFlags: 0
@@ -76620,6 +77108,63 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7907601513239817703}
   m_Mesh: {fileID: 2047831609708315230, guid: 3a76129bb1775bd4ab0973f3433e2d5c, type: 3}
+--- !u!1001 &4441261732106048947
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 316551172730702090, guid: e25b8b9593784464781b4cd80a316e1d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316551172730702090, guid: e25b8b9593784464781b4cd80a316e1d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316551172730702090, guid: e25b8b9593784464781b4cd80a316e1d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316551172730702090, guid: e25b8b9593784464781b4cd80a316e1d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316551172730702090, guid: e25b8b9593784464781b4cd80a316e1d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316551172730702090, guid: e25b8b9593784464781b4cd80a316e1d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316551172730702090, guid: e25b8b9593784464781b4cd80a316e1d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 316551172730702090, guid: e25b8b9593784464781b4cd80a316e1d, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 316551172730702090, guid: e25b8b9593784464781b4cd80a316e1d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316551172730702090, guid: e25b8b9593784464781b4cd80a316e1d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 316551172730702090, guid: e25b8b9593784464781b4cd80a316e1d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2706314266066234769, guid: e25b8b9593784464781b4cd80a316e1d, type: 3}
+      propertyPath: m_Name
+      value: artPrefab_ACT2_NotePlane_fin
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e25b8b9593784464781b4cd80a316e1d, type: 3}
 --- !u!4 &4449672272045347605
 Transform:
   m_ObjectHideFlags: 0
@@ -83491,6 +84036,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 0
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!33 &6147637538850813298
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -84060,6 +84643,63 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &6282420555400014135
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2933032177017621289, guid: 343666ccfcdeb1749800eb32bb514f6d, type: 3}
+      propertyPath: m_Name
+      value: artPrefab_ACT2_NoteRoll_fin
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708736823378702747, guid: 343666ccfcdeb1749800eb32bb514f6d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708736823378702747, guid: 343666ccfcdeb1749800eb32bb514f6d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708736823378702747, guid: 343666ccfcdeb1749800eb32bb514f6d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708736823378702747, guid: 343666ccfcdeb1749800eb32bb514f6d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708736823378702747, guid: 343666ccfcdeb1749800eb32bb514f6d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708736823378702747, guid: 343666ccfcdeb1749800eb32bb514f6d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708736823378702747, guid: 343666ccfcdeb1749800eb32bb514f6d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708736823378702747, guid: 343666ccfcdeb1749800eb32bb514f6d, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708736823378702747, guid: 343666ccfcdeb1749800eb32bb514f6d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708736823378702747, guid: 343666ccfcdeb1749800eb32bb514f6d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3708736823378702747, guid: 343666ccfcdeb1749800eb32bb514f6d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 343666ccfcdeb1749800eb32bb514f6d, type: 3}
 --- !u!4 &6286689170239421393
 Transform:
   m_ObjectHideFlags: 0
@@ -84281,6 +84921,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 2
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &6305860964082105322
 GameObject:
   m_ObjectHideFlags: 0
@@ -84421,6 +85099,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 3
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &6348822819774049201
 Transform:
   m_ObjectHideFlags: 0
@@ -92686,6 +93402,44 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerNumber: 4
+  highZrot: 0
+  lowZrot: 0
+  lowerButtonAnimDruation: 0
+  higherButtonAnimDruation: 0
+  lowerButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  higherButtonCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  negativeAnimDruation: 0
+  negativeCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  hammerTransform: {fileID: 0}
+  idleRot: 0
+  contactRot: 0
+  firstHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  returnHammerCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!33 &8497562728986145922
 MeshFilter:
   m_ObjectHideFlags: 0
