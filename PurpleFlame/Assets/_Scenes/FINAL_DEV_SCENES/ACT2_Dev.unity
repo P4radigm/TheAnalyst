@@ -397,7 +397,7 @@ RectTransform:
   - {fileID: 747375975}
   - {fileID: 1812206765}
   m_Father: {fileID: 852637727}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1634,6 +1634,12 @@ MonoBehaviour:
   - {fileID: 846161050}
   - {fileID: 604841317}
   animBookCase: {fileID: 63900460}
+  grabBookSound:
+    m_PersistentCalls:
+      m_Calls: []
+  finishedSound:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &69114327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11544,6 +11550,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 5508839313647672017}
+  - {fileID: 5508839313694195348}
   - {fileID: 1126483179}
   - {fileID: 1290235042}
   - {fileID: 1386681117}
@@ -14845,7 +14852,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 5508839313694195348}
   - {fileID: 1106749200}
   - {fileID: 17494739}
   m_Father: {fileID: 0}
@@ -18892,7 +18898,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 852637727}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -19143,7 +19149,7 @@ RectTransform:
   - {fileID: 1806812578}
   - {fileID: 334358095}
   m_Father: {fileID: 632785921}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -22110,7 +22116,7 @@ RectTransform:
   - {fileID: 618318469}
   - {fileID: 594639811}
   m_Father: {fileID: 632785921}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -23742,7 +23748,7 @@ RectTransform:
   m_Children:
   - {fileID: 2044268598}
   m_Father: {fileID: 632785921}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -25185,6 +25191,138 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1217926169}
     m_Modifications:
+    - target: {fileID: 1200493735098796924, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200493735098796924, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200493735098796924, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200493735098796924, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1817184618}
+    - target: {fileID: 1200493735098796924, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200493735098796924, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200493735098796924, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1200493735098796924, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Typewriter_Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567997374314900589, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567997374314900589, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567997374314900589, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567997374314900589, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1817184618}
+    - target: {fileID: 3567997374314900589, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567997374314900589, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567997374314900589, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3567997374314900589, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Typewriter_Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898768564668770196, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898768564668770196, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898768564668770196, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898768564668770196, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1817184618}
+    - target: {fileID: 4898768564668770196, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898768564668770196, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898768564668770196, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4898768564668770196, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Typewriter_Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 5066411056491667949, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5066411056491667949, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5066411056491667949, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5066411056491667949, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1817184618}
+    - target: {fileID: 5066411056491667949, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5066411056491667949, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 5066411056491667949, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5066411056491667949, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Typewriter_Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 5229133846877823465, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: paperPickUpSound.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5229133846877823465, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
       propertyPath: snapshotCam
       value: 
@@ -25196,7 +25334,35 @@ PrefabInstance:
     - target: {fileID: 5229133846877823465, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
       propertyPath: bookCaseAnim
       value: 
-      objectReference: {fileID: 63900460}
+      objectReference: {fileID: 2915063274895790099}
+    - target: {fileID: 5229133846877823465, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: paperPickUpSound.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5229133846877823465, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: paperPickUpSound.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5229133846877823465, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: paperPickUpSound.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1817184618}
+    - target: {fileID: 5229133846877823465, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: paperPickUpSound.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5229133846877823465, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: paperPickUpSound.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 5229133846877823465, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: paperPickUpSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5229133846877823465, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: paperPickUpSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Typewriter_FinishedLetter
+      objectReference: {fileID: 0}
     - target: {fileID: 8116130626413037291, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.444
@@ -25252,6 +25418,38 @@ PrefabInstance:
     - target: {fileID: 8928836378678320209, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
       propertyPath: m_Name
       value: artPrefab_ACT2_Typewriter_fin
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118944313744222147, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118944313744222147, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118944313744222147, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118944313744222147, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1817184618}
+    - target: {fileID: 9118944313744222147, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118944313744222147, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118944313744222147, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9118944313744222147, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Typewriter_Button_X
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
@@ -31613,7 +31811,182 @@ MonoBehaviour:
     Source: {fileID: 0}
   - name: Cupboard_PutDownWeight
     Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
-    Volume: 0.25
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Cupboard_Scale
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Cupboard_Finished
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: ComboLock_Turning
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 1
+    Source: {fileID: 0}
+  - name: ComboLock_Finished
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: ChessPiece_Move
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: ChessPiece_PickUp
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: ChessBoard_Finished
+    Clip: {fileID: 8300000, guid: 4a9fdf5eb5cbc4fb2a0b37008158d4f4, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: LoungeTable_Rope
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: LoungeTable_Button
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: LoungeTable_FragmentFinished
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: LoungeTable_Pedestal
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: ScienceDesk_CityReached
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: ScienceDesk_FragmentFinished
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: ScienceDesk_ChessPiece
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Typewriter_TurnWheel
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Typewriter_Button
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 0.5
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Typewriter_Button_X
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Typewriter_FinishedLetter
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Bookcase_PullBook
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Bookcase_Finished
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Button_Menu
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Button_Continue
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Button_Back
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Camera_ZoomIn
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
+    Pitch: 1
+    SpacialSound: 0
+    Loop: 0
+    Source: {fileID: 0}
+  - name: Camera_ZoomOut
+    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Volume: 1
     Pitch: 1
     SpacialSound: 0
     Loop: 0
@@ -38612,6 +38985,21 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 1024
+  pickUpSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ChessPiece_PickUp
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &151955336926526354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38653,6 +39041,51 @@ MonoBehaviour:
   chessBoardObj: {fileID: 2598160244169806831}
   chessPiecesObj: {fileID: 147973346}
   interactiveTrigger: {fileID: 212025954}
+  touchSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ChessPiece_PickUp
+          m_BoolArgument: 0
+        m_CallState: 2
+  moveSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ChessPiece_Move
+          m_BoolArgument: 0
+        m_CallState: 2
+  finishedSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ChessBoard_Finished
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!65 &151955336926526356
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39356,7 +39789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &550482526043991094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39416,6 +39849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e66fdee9d4481e47869642f6e8ed765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonPressable: 0
   rM: {fileID: 0}
   symbol: 4
   moveDistance: 0.05
@@ -39679,9 +40113,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8943f8cd808809a4aa84789ac4b0a312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pulledDown: 0
+  rM: {fileID: 0}
   ropeSymbol: 2
   pulledDownDis: 0.2
-  pulledDown: 0
   pullAnimDuration: 0.6
   pullAnimCurve:
     serializedVersion: 2
@@ -39707,7 +40142,21 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  rM: {fileID: 0}
+  pullDownSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LoungeTable_Rope
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!33 &703849670785387340
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -40416,6 +40865,36 @@ MonoBehaviour:
   - {fileID: 846161050}
   - {fileID: 604841317}
   animBookCase: {fileID: 2915063274895790099}
+  grabBookSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bookcase_PullBook
+          m_BoolArgument: 0
+        m_CallState: 2
+  finishedSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Bookcase_Finished
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1057678464544184864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40737,6 +41216,21 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Cupboard_PutDownWeight
+          m_BoolArgument: 0
+        m_CallState: 2
+  finishedSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Cupboard_Finished
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!65 &1223710045500149960
@@ -41316,6 +41810,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e66fdee9d4481e47869642f6e8ed765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonPressable: 0
   rM: {fileID: 0}
   symbol: 0
   moveDistance: 0.05
@@ -42398,9 +42893,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8943f8cd808809a4aa84789ac4b0a312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pulledDown: 0
+  rM: {fileID: 0}
   ropeSymbol: 0
   pulledDownDis: 0.2
-  pulledDown: 0
   pullAnimDuration: 0.6
   pullAnimCurve:
     serializedVersion: 2
@@ -42426,7 +42922,21 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  rM: {fileID: 0}
+  pullDownSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LoungeTable_Rope
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1946888576800859783
 GameObject:
   m_ObjectHideFlags: 0
@@ -45697,9 +46207,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8943f8cd808809a4aa84789ac4b0a312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pulledDown: 0
+  rM: {fileID: 0}
   ropeSymbol: 5
   pulledDownDis: 0.2
-  pulledDown: 0
   pullAnimDuration: 0.6
   pullAnimCurve:
     serializedVersion: 2
@@ -45725,7 +46236,21 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  rM: {fileID: 0}
+  pullDownSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LoungeTable_Rope
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3450462691140622452
 GameObject:
   m_ObjectHideFlags: 0
@@ -47564,7 +48089,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &4354951151797177531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48018,6 +48543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e66fdee9d4481e47869642f6e8ed765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonPressable: 0
   rM: {fileID: 0}
   symbol: 3
   moveDistance: 0.05
@@ -48186,7 +48712,37 @@ MonoBehaviour:
   rotateSpeed: 200
   moveDragThreshold: 0.5
   mainDeskAnim: {fileID: 4080571664604432155}
-  letter: {fileID: 0}
+  letter: {fileID: 2105079032083809613}
+  turningSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ComboLock_Turning
+          m_BoolArgument: 0
+        m_CallState: 2
+  finishedSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ComboLock_Finished
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4468583647076188311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48872,7 +49428,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &4735615828635440532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49688,6 +50244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e66fdee9d4481e47869642f6e8ed765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonPressable: 0
   rM: {fileID: 0}
   symbol: 2
   moveDistance: 0.05
@@ -50240,9 +50797,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8943f8cd808809a4aa84789ac4b0a312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pulledDown: 0
+  rM: {fileID: 0}
   ropeSymbol: 4
   pulledDownDis: 0.2
-  pulledDown: 0
   pullAnimDuration: 0.6
   pullAnimCurve:
     serializedVersion: 2
@@ -50268,7 +50826,21 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  rM: {fileID: 0}
+  pullDownSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LoungeTable_Rope
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &5354967150995683009
 Transform:
   m_ObjectHideFlags: 0
@@ -51603,6 +52175,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Continue
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &5508839313268899258
 RectTransform:
   m_ObjectHideFlags: 0
@@ -51834,6 +52418,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!224 &5508839313297304487
@@ -52482,6 +53078,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Menu
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2560444827977420579}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: UIShadows
@@ -52732,6 +53340,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Menu
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2560444827977420579}
@@ -53493,6 +54113,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Menu
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2560444827977420606}
         m_TargetAssemblyTypeName: MainMenuController, Assembly-CSharp
         m_MethodName: 
@@ -53689,6 +54321,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Camera_ZoomOut
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &5508839313647672017
 RectTransform:
   m_ObjectHideFlags: 0
@@ -53705,7 +54349,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 53.215576, y: 46.14789}
+  m_AnchoredPosition: {x: 53.215576, y: 46.147827}
   m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5508839313647672018
@@ -53851,8 +54495,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.41574687, y: 0.41574687, z: 0.41574687}
   m_Children: []
-  m_Father: {fileID: 852637727}
-  m_RootOrder: 0
+  m_Father: {fileID: 632785921}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -53969,6 +54613,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &5508839313696396312
@@ -54460,6 +55116,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Menu
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2560444827977420579}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: UITextureQuality
@@ -54633,6 +55301,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Back
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!224 &5508839313903338202
@@ -55595,6 +56275,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Menu
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2560444827977420579}
         m_TargetAssemblyTypeName: PauseManager, Assembly-CSharp
         m_MethodName: UICameraControl
@@ -55810,6 +56502,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Menu
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2560444827977420579}
@@ -56585,6 +57289,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Menu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5508839314743509204
 GameObject:
   m_ObjectHideFlags: 0
@@ -56695,6 +57411,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Menu
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2560444827977420579}
@@ -56840,6 +57568,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!224 &5508839314761547791
@@ -57021,11 +57761,11 @@ RectTransform:
   m_LocalScale: {x: 0.41574687, y: 0.41574687, z: 0.41574687}
   m_Children: []
   m_Father: {fileID: 632785921}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 53.215576, y: -31.638367}
+  m_AnchoredPosition: {x: 53.215576, y: -31.638306}
   m_SizeDelta: {x: 256, y: 256}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5508839314859230584
@@ -57111,6 +57851,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!224 &5508839314859230586
@@ -57346,6 +58098,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Menu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &5508839314904358359
 RectTransform:
   m_ObjectHideFlags: 0
@@ -57475,6 +58239,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Continue
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!224 &5508839314961997439
@@ -57951,6 +58727,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Button_Menu
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!224 &5508839315011415307
 RectTransform:
   m_ObjectHideFlags: 0
@@ -58345,6 +59133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e66fdee9d4481e47869642f6e8ed765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonPressable: 0
   rM: {fileID: 0}
   symbol: 1
   moveDistance: 0.05
@@ -58492,9 +59281,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8943f8cd808809a4aa84789ac4b0a312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pulledDown: 0
+  rM: {fileID: 0}
   ropeSymbol: 3
   pulledDownDis: 0.2
-  pulledDown: 0
   pullAnimDuration: 0.6
   pullAnimCurve:
     serializedVersion: 2
@@ -58520,7 +59310,21 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  rM: {fileID: 0}
+  pullDownSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LoungeTable_Rope
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5738376018877095490
 GameObject:
   m_ObjectHideFlags: 0
@@ -58868,6 +59672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e66fdee9d4481e47869642f6e8ed765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonPressable: 0
   rM: {fileID: 0}
   symbol: 5
   moveDistance: 0.05
@@ -60416,9 +61221,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8943f8cd808809a4aa84789ac4b0a312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pulledDown: 0
+  rM: {fileID: 0}
   ropeSymbol: 1
   pulledDownDis: 0.2
-  pulledDown: 0
   pullAnimDuration: 0.6
   pullAnimCurve:
     serializedVersion: 2
@@ -60444,7 +61250,21 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  rM: {fileID: 0}
+  pullDownSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LoungeTable_Rope
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!23 &6577773497200629915
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -65285,6 +66105,51 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  buttonPressedSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LoungeTable_Button
+          m_BoolArgument: 0
+        m_CallState: 2
+  finishedFragmentSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LoungeTable_FragmentFinished
+          m_BoolArgument: 0
+        m_CallState: 2
+  pedestalSound:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1817184618}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LoungeTable_Pedestal
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!33 &8875318588281341716
 MeshFilter:
   m_ObjectHideFlags: 0

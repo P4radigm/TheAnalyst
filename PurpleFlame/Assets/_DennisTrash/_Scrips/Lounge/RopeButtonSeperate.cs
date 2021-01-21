@@ -6,6 +6,7 @@ namespace PurpleFlame
 {
     public class RopeButtonSeperate : MonoBehaviour
     {
+        [HideInInspector] public bool buttonPressable;
 
         [HideInInspector] public RopeManager rM;
         [SerializeField] private RopeSymbol symbol;
@@ -47,10 +48,12 @@ namespace PurpleFlame
             if (_GoOut)
             {
                 _newPos = outPos;
+                buttonPressable = true;
             }
             else
             {
                 _newPos = inPos;
+                buttonPressable = false;
             }
 
             while (_timeValue < 1)

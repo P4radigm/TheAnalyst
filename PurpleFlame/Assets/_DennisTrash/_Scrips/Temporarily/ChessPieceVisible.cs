@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using Lean.Touch;
 using TouchBehaviours;
+using UnityEngine.Events;
 
 namespace PurpleFlame
 {
     public class ChessPieceVisible : LeanDrag
     {
         [SerializeField] private LayerMask layer;
+
+        [Header("Audio")]
+        [SerializeField] private UnityEvent pickUpSound;
 
         private RaycastHit hit;
 
@@ -26,6 +30,7 @@ namespace PurpleFlame
             {
                 if (!hit.collider.GetComponent<SetChessPieceVisible>()) { return; }
                 hit.collider.GetComponent<SetChessPieceVisible>().SetPieceVisible();
+                pickUpSound.Invoke();
             }
         }
     }

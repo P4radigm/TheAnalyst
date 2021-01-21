@@ -18,6 +18,7 @@ namespace PurpleFlame
         [Header("Audio")]
         [SerializeField] private UnityEvent pickUpSound;
         [SerializeField] private UnityEvent putDownSound;
+        [SerializeField] private UnityEvent finishedSound;
 
         private Weight selectedWeight;
         private Vector3 position;
@@ -116,6 +117,7 @@ namespace PurpleFlame
             if(correctWeights == 7)
             {
                 untouchable = true;
+                finishedSound.Invoke();
                 animChess.SetTrigger("UnlockChessPiece");
             }
         }
