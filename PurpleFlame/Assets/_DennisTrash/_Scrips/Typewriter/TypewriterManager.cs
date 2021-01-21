@@ -2,11 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TypewriterManager : LeanDrag
 {
     [HideInInspector] public int currentAnswer = 0;
     [HideInInspector] public bool paperPickedUp = false;
+    [HideInInspector] public float[] paperZPosPerQuestion = new float[4];
 
     [SerializeField] private float swipeThreshold;
     [SerializeField] private LayerMask layerMask;
@@ -20,7 +22,9 @@ public class TypewriterManager : LeanDrag
     [SerializeField] private float horizontalOffsetAmount;
     //[SerializeField] private Animator deskAnim;
 
-    [HideInInspector] public float[] paperZPosPerQuestion = new float[4];
+    [Header("Audio")]
+    [SerializeField] private UnityEvent paperPickUpSound;
+
     private float[] conceptZposArray = new float[4];
     private int[] answerNumbers = new int[4];
     private float swipe;
@@ -84,6 +88,7 @@ public class TypewriterManager : LeanDrag
                 bookManager.SetCanvas(answerNumbers[0] + 1, answerNumbers[1] + 1, answerNumbers[2] + 1, answerNumbers[3] + 1);
                 bookCaseAnim.SetTrigger("OpenBookCaseDoors");
 
+                paperPickUpSound.Invoke();
                 //snapshotCam.CallTakeSnapshot();
                 //Destroy(hit.collider.GetComponent<TypewriterPaper>().gameObject);
             }

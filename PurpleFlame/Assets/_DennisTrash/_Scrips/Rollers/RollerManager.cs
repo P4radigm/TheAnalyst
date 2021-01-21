@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace PurpleFlame
 {
@@ -11,6 +12,10 @@ namespace PurpleFlame
         [SerializeField] private float moveDragThreshold;
         [SerializeField] private Animator mainDeskAnim;
         [SerializeField] private Letter letter;
+
+        [Header("Audio")]
+        [SerializeField] private UnityEvent turningSound;
+        [SerializeField] private UnityEvent finishedSound;
 
         private bool readyToUse = true;
         private bool interactableHit;
@@ -86,6 +91,7 @@ namespace PurpleFlame
 
                 if (swipe > moveDragThreshold) { rollerObject.RotateObject(rotateSpeed); }
                 if (swipe < -moveDragThreshold) { rollerObject.RotateObject(-rotateSpeed); }
+                //if(swipe > moveDragThreshold || swipe < -moveDragThreshold) { turningSound.Invoke(); }
             }
         }
 
@@ -106,6 +112,8 @@ namespace PurpleFlame
                 {
                     rollerList[i].enabled = false;
                 }
+
+                finishedSound.Invoke();
                 mainDeskAnim.SetTrigger("ComboLockCompleted");
                 this.enabled = false;
             }

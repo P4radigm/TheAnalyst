@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Chessboard : LeanDrag
 {
@@ -23,6 +24,11 @@ public class Chessboard : LeanDrag
     [SerializeField] private Transform chessBoardObj;
     [SerializeField] private GameObject chessPiecesObj;
     [SerializeField] private GameObject interactiveTrigger;
+
+    [Header("Audio")]
+    [SerializeField] private UnityEvent touchSound;
+    [SerializeField] private UnityEvent moveSound;
+    [SerializeField] private UnityEvent finishedSound;
 
     private bool[,] allowedMoves { get; set; }
     private ChessPiece selectedPiece;
@@ -63,10 +69,13 @@ public class Chessboard : LeanDrag
                 selectedPiece.SetPosition((int)selectedPiece.startPosition.x, (int)selectedPiece.startPosition.y);
 
                 if(piecesOnBoard != 4) { return; }
+
                 if (pieceMoved == selectedPiece || pieceMoved == null)
                 {
                     allowedMoves = selectedPiece.PossibleMove();
                     HighLightMoves.Instance.HighlightAllowedMoves(allowedMoves);
+
+                    touchSound.Invoke();
                 }
             }
         }
@@ -119,6 +128,7 @@ public class Chessboard : LeanDrag
                         }
 
                         CheckIfPieceMoved();
+                        moveSound.Invoke();
                     }
                     else
                     {
@@ -148,6 +158,7 @@ public class Chessboard : LeanDrag
     {
         chessPiecesObj.transform.parent = chessBoardObj;
         mainDeskAnim.SetTrigger("ChessSolved");
+        finishedSound.Invoke();
         //Destroy(interactiveTrigger);
         if(typeRoutine != null) { return; }
         typeRoutine = StartCoroutine(StartTypeAnim());

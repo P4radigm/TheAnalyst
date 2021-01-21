@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace PurpleFlame
 {
@@ -16,17 +17,22 @@ namespace PurpleFlame
 
     public class Rope : MonoBehaviour
     {
+        [HideInInspector] public bool pulledDown = false;
+        [HideInInspector] public RopeManager rM;
+
         [SerializeField] private RopeSymbol ropeSymbol;
         [SerializeField] private float pulledDownDis;
         //[SerializeField] private float pulledDownSpeed;
 
-        [HideInInspector] public bool pulledDown = false;
-        private Vector3 startPosition;
-        private Vector3 endPosition;
         [SerializeField] private float pullAnimDuration;
         [SerializeField] private AnimationCurve pullAnimCurve;
+
+        [Header("Audio")]
+        [SerializeField] private UnityEvent pullDownSound;
+
+        private Vector3 startPosition;
+        private Vector3 endPosition;
         private Coroutine pullRoutine;
-        [HideInInspector] public RopeManager rM;
 
         private void Start()
         {
@@ -46,8 +52,18 @@ namespace PurpleFlame
             float _timeValue = 0;
             Vector3 _currentPos = transform.position;
             Vector3 _newPos = transform.position;
-            if (_goDown) { _newPos = endPosition; pulledDown = true; }
-            else { _newPos = startPosition; pulledDown = false; }
+
+            if (_goDown && !pulledDown) { pullDownSound.Invoke(); }
+
+            if (_goDown) { 
+                _newPos = endPosition; 
+                pulledDown = true;
+            }
+            else 
+            { 
+                _newPos = startPosition; 
+                pulledDown = false; 
+            }
 
             while (_timeValue < 1)
             {

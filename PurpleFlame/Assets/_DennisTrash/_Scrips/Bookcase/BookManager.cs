@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 
 namespace PurpleFlame
 {
@@ -15,6 +16,10 @@ namespace PurpleFlame
         [SerializeField] private TextMeshProUGUI[] bookNumbersUpperRow;
         [SerializeField] private TextMeshProUGUI[] bookNumbersSideRow;
         [SerializeField] private Animator animBookCase;
+
+        [Header("Audio")]
+        [SerializeField] private UnityEvent grabBookSound;
+        [SerializeField] private UnityEvent finishedSound;
 
         private float swipe;
         private float currentTimer;
@@ -48,6 +53,8 @@ namespace PurpleFlame
                     interactableHit = true;
                     lastBookSelected = hit.collider.GetComponent<Book>();
                     ObjectRotation.Instance.DisableScript(true);
+
+                    grabBookSound.Invoke();
                 }
             }
         }
@@ -101,6 +108,7 @@ namespace PurpleFlame
             disableTouch = true;
             numberCanvas.SetActive(false);
             animBookCase.SetTrigger("OpenBookCase");
+            finishedSound.Invoke();
         }
 
         public void SetCanvas(int firstQuestion, int secondQuestion, int thirdQuestion, int fourthQuestion)

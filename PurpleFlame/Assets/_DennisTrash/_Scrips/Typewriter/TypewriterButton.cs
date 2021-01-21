@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class TypewriterButton : MonoBehaviour
 {
@@ -23,6 +24,9 @@ public class TypewriterButton : MonoBehaviour
     [SerializeField] private float contactRot;
     [SerializeField] private AnimationCurve firstHammerCurve;
     [SerializeField] private AnimationCurve returnHammerCurve;
+
+    [Header("Audio")]
+    [SerializeField] private UnityEvent pressSound;
 
     //private Animator anim;
     private Coroutine presssButtonRoutine;
@@ -65,6 +69,7 @@ public class TypewriterButton : MonoBehaviour
             yield return null;
         }
 
+        pressSound.Invoke();
         tM.PunchLetter();
 
         StartCoroutine(higherButtonIE());

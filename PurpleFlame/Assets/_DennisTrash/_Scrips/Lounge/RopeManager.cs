@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace PurpleFlame
 {
@@ -26,6 +27,11 @@ namespace PurpleFlame
         [SerializeField] private float rewardAnimDuration;
         [SerializeField] private AnimationCurve rewardAnimCurve;
         //[SerializeField] private float pedestalMoveSpeed;
+
+        [Header("Audio")]
+        [SerializeField] private UnityEvent buttonPressedSound;
+        [SerializeField] private UnityEvent finishedFragmentSound;
+        [SerializeField] private UnityEvent pedestalSound;
 
         private float swipeDistance;
         //private float timeToReset;
@@ -86,6 +92,7 @@ namespace PurpleFlame
                 if (hit.collider.gameObject.GetComponent<RopeButtonSeperate>())
                 {
                     ropeButtonSeperate = hit.collider.gameObject.GetComponent<RopeButtonSeperate>();
+                    if (ropeButtonSeperate.buttonPressable) { buttonPressedSound.Invoke(); }
                     ropeButtonSeperate.ButtonMove(false);
                 }
             }
@@ -166,6 +173,8 @@ namespace PurpleFlame
             yield return new WaitForSeconds(1);
 
             tableFragmentList[_segment].StartMoveTableAnim();
+            finishedFragmentSound.Invoke();
+
             currentLevel++;
             if (currentLevel == 4)
             {
@@ -178,7 +187,9 @@ namespace PurpleFlame
 
         private IEnumerator RewardAnim()
         {
-            yield return new WaitForSeconds(1.5f);
+            yield return new WaitForSeconds(3f);
+
+            pedestalSound.Invoke();
 
             float _timeValue = 0;
             Vector3 _oldPos = pedestal.transform.position;
