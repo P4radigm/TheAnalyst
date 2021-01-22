@@ -2653,6 +2653,133 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 327200271771813907, guid: 97d479ef0784d1249984bbf0fe0c77f8, type: 3}
   m_PrefabInstance: {fileID: 118844502}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &118961984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 118961985}
+  - component: {fileID: 118961986}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &118961985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118961984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1335486824}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &118961986
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118961984}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f66368d538a7c15448e836a68072a173, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &121216032
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16295,7 +16422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &923875890
 Transform:
   m_ObjectHideFlags: 0
@@ -23313,6 +23440,7 @@ Transform:
   m_Children:
   - {fileID: 1879073816}
   - {fileID: 923875890}
+  - {fileID: 118961985}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -32386,9 +32514,9 @@ MonoBehaviour:
     Loop: 0
     Source: {fileID: 0}
   - name: Cupboard_PutDownWeight
-    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
-    Volume: 1
-    Pitch: 1
+    Clip: {fileID: 8300000, guid: 1f6c9a485cbba46059bfd25d75dbd202, type: 3}
+    Volume: 0.3
+    Pitch: 0.4
     SpacialSound: 0
     Loop: 0
     Source: {fileID: 0}
@@ -32407,16 +32535,16 @@ MonoBehaviour:
     Loop: 0
     Source: {fileID: 0}
   - name: ComboLock_Turning
-    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
-    Volume: 0.5
+    Clip: {fileID: 8300000, guid: 3de6f8a98c4b64bb08b68009b02b2a95, type: 3}
+    Volume: 0.7
     Pitch: 1
     SpacialSound: 0
     Loop: 0
     Source: {fileID: 0}
   - name: ComboLock_Finished
-    Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
+    Clip: {fileID: 8300000, guid: 3ac631a117ffc4da7b1337854c1cbe13, type: 3}
     Volume: 1
-    Pitch: 1
+    Pitch: 0.8
     SpacialSound: 0
     Loop: 0
     Source: {fileID: 0}
@@ -32429,8 +32557,8 @@ MonoBehaviour:
     Source: {fileID: 0}
   - name: ChessPiece_PickUp
     Clip: {fileID: 8300000, guid: 296a4f7a2e57c41d48e9a92a20201173, type: 3}
-    Volume: 1
-    Pitch: 1
+    Volume: 0.8
+    Pitch: 0.8
     SpacialSound: 0
     Loop: 0
     Source: {fileID: 0}
@@ -32450,7 +32578,7 @@ MonoBehaviour:
     Source: {fileID: 0}
   - name: LoungeTable_Button
     Clip: {fileID: 8300000, guid: 675252295ca904bdd9920d0eb1737cee, type: 3}
-    Volume: 1
+    Volume: 0.8
     Pitch: 1
     SpacialSound: 0
     Loop: 0
@@ -32458,14 +32586,14 @@ MonoBehaviour:
   - name: LoungeTable_FragmentFinished
     Clip: {fileID: 8300000, guid: 654202dbb0d8243dfa7484a2f986060d, type: 3}
     Volume: 1
-    Pitch: 1
+    Pitch: 2
     SpacialSound: 0
     Loop: 0
     Source: {fileID: 0}
   - name: LoungeTable_Pedestal
     Clip: {fileID: 8300000, guid: 17191a9d03e9549238995e4d221c35e1, type: 3}
     Volume: 1
-    Pitch: 1
+    Pitch: 1.75
     SpacialSound: 0
     Loop: 0
     Source: {fileID: 0}
@@ -32499,14 +32627,14 @@ MonoBehaviour:
     Source: {fileID: 0}
   - name: Typewriter_Button
     Clip: {fileID: 8300000, guid: c8991220dd2414cdba84bb7b81337bfb, type: 3}
-    Volume: 0.5
+    Volume: 0.4
     Pitch: 1
     SpacialSound: 0
     Loop: 0
     Source: {fileID: 0}
   - name: Typewriter_Button_X
     Clip: {fileID: 8300000, guid: f55445b75ceee427f8c7b7c09294a7ec, type: 3}
-    Volume: 1
+    Volume: 0.5
     Pitch: 1
     SpacialSound: 0
     Loop: 0
@@ -33677,7 +33805,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 644f8ebbf11ed5649b8c38a970b1ea58, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
