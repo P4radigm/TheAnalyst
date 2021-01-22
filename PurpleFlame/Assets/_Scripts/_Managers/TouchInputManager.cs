@@ -58,7 +58,7 @@ namespace TouchBehaviours
             //Shoot a Raycast from mouseRay with mouseRay direction towards the Touchablelayers given in the GameManager.
             if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out hit, RaycastRange, GameManager.Instance.TouchableLayers))
             {
-                Debug.Log("RAYCAST");
+                //Debug.Log("RAYCAST");
                 if(hit.transform.gameObject != null && hit.transform.gameObject.HasComponent<AvatarSecondDesk>())
                 {
                     avatar = hit.transform.gameObject;

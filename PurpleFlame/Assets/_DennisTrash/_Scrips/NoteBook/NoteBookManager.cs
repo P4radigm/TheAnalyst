@@ -163,6 +163,7 @@ namespace PurpleFlame
                     book.SetActive(true);
                 }
 
+                ObjectRotation.Instance.DisableScript(true);
                 noteBookOpenSound.Invoke();
             }
             else
@@ -171,6 +172,7 @@ namespace PurpleFlame
                 book.SetActive(false);
                 telegramCanvas.SetActive(false);
 
+                ObjectRotation.Instance.DisableScript(false);
                 noteBookCloseSound.Invoke();
             }
         }
@@ -222,19 +224,20 @@ namespace PurpleFlame
             swipeRecognised = true;
 
             //NextPages
-            if (currentPageSelected < totalPages - 2) 
+            if (nextPages && currentPageSelected < totalPages - 2  ) 
             {
-                if (nextPages) { currentPageSelected += 2; }
+                currentPageSelected += 2;
+                noteBookPageTurnSound.Invoke();
             }
 
             //PreviousPages
-            if (!nextPages) { currentPageSelected -= 2; }
-            if (currentPageSelected < 0) 
+            if (!nextPages && currentPageSelected > 1)
             {
-                currentPageSelected = 0;
+                currentPageSelected -= 2;
+                noteBookPageTurnSound.Invoke();
+                //currentPageSelected = 0;
             }
 
-            noteBookPageTurnSound.Invoke();
         }
 
         #region Singleton

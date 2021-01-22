@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace PurpleFlame
 {
@@ -20,6 +21,9 @@ namespace PurpleFlame
         [SerializeField] private Animator CDControlAnimator;
         [SerializeField] private Animator CDSectorAnimator;
         [SerializeField] private float animationSpeedMultiplier;
+        [Space]
+        [SerializeField] private Letter letter;
+
         private bool Benabled = false;
         private bool CDenabled = false;
 
@@ -27,6 +31,13 @@ namespace PurpleFlame
         [Header("End Cinematic Stuff")]
         [SerializeField] private GameObject[] enableObjects;
         [SerializeField] private GameObject[] disableObjects;
+        
+        [Header("Audio")]
+        [SerializeField] private UnityEvent turnSound;
+        [SerializeField] private UnityEvent firstPartEngineSound;
+        [SerializeField] private UnityEvent secondPartEngineSound;
+        [SerializeField] private UnityEvent thirdPartEngineSound;
+        [SerializeField] private UnityEvent stopSounds;
 
         private float angleLastFrame = 0;
         private float angle = 0;
@@ -35,6 +46,7 @@ namespace PurpleFlame
         private float yRot;
         private float yRotLastFrame;
         private bool interactableHit;
+        private bool finished;
         private Vector3 hitNormal;
         private Vector3 position;
 
@@ -61,6 +73,8 @@ namespace PurpleFlame
         {
             base.OnFingerDown(finger);
 
+            if(letter != null) { return; }
+
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(touchingFingers[0].ScreenPosition);
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
@@ -78,10 +92,12 @@ namespace PurpleFlame
             base.OnFingerUp(finger);
             interactableHit = false;
             plane.GetComponent<Collider>().enabled = false;
+            stopSounds.Invoke();
         }
 
         private void Update()
         {
+            if (finished) { return; }
             if (interactableHit) { RotateInput(); }
         }
 
@@ -144,20 +160,24 @@ namespace PurpleFlame
 
                 handleAnimator.Update(_animControl);
                 ASectorAnimator.Update(_animControl);
-                
+                firstPartEngineSound.Invoke();
+
+
                 if (Benabled)
                 {
                     BControlAnimator.Update(_animControl);
                     BSectorAnimator.Update(_animControl);
+                    secondPartEngineSound.Invoke();
                 }
 
                 if (CDenabled)
                 {
                     CDControlAnimator.Update(_animControl);
                     CDSectorAnimator.Update(_animControl);
+                    thirdPartEngineSound.Invoke();
                 }
 
-                if(rotation > 720)
+                if (rotation > 720)
                 {
                     Benabled = true;
 
@@ -180,6 +200,8 @@ namespace PurpleFlame
                 }
 
                 if(rotation < 0) { rotation = 0; }
+
+                turnSound.Invoke();
             }
 
             angleLastFrame = angle;
@@ -187,6 +209,9 @@ namespace PurpleFlame
 
         private void StartCinematic()
         {
+            finished = true;
+            stopSounds.Invoke();
+
             for (int i = 0; i < enableObjects.Length; i++)
             {
                 enableObjects[i].SetActive(true);
