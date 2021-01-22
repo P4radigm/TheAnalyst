@@ -2208,6 +2208,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 966307467}
     m_Modifications:
+    - target: {fileID: 206198813617554180, guid: a8fa887943f555245a8f652df46d7b3b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 865825935852705951, guid: a8fa887943f555245a8f652df46d7b3b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.16400003
@@ -2264,6 +2268,18 @@ PrefabInstance:
       propertyPath: chessPiece
       value: 
       objectReference: {fileID: 4354951151797177530}
+    - target: {fileID: 5566728390526393271, guid: a8fa887943f555245a8f652df46d7b3b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459915942756860996, guid: a8fa887943f555245a8f652df46d7b3b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7655148246023084017, guid: a8fa887943f555245a8f652df46d7b3b, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8759923820671914215, guid: a8fa887943f555245a8f652df46d7b3b, type: 3}
       propertyPath: m_Name
       value: ScienceDeskPrefabEndTerm
@@ -2280,6 +2296,78 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2784494126507576579, guid: a8fa887943f555245a8f652df46d7b3b, type: 3}
   m_PrefabInstance: {fileID: 99561434}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &99561437 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6459915942756860996, guid: a8fa887943f555245a8f652df46d7b3b, type: 3}
+  m_PrefabInstance: {fileID: 99561434}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &99561438 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7655148246023084017, guid: a8fa887943f555245a8f652df46d7b3b, type: 3}
+  m_PrefabInstance: {fileID: 99561434}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &99561439 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 206198813617554180, guid: a8fa887943f555245a8f652df46d7b3b, type: 3}
+  m_PrefabInstance: {fileID: 99561434}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &99561440 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5566728390526393271, guid: a8fa887943f555245a8f652df46d7b3b, type: 3}
+  m_PrefabInstance: {fileID: 99561434}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &99561441
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99561437}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35200024, y: 0.36596835, z: 0.28570753}
+  m_Center: {x: 0.00000017881393, y: -0.000000037252903, z: -0.00000016763806}
+--- !u!65 &99561442
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99561438}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35200024, y: 0.36596835, z: 0.28570753}
+  m_Center: {x: 0.00000017881393, y: -0.000000037252903, z: -0.00000016763806}
+--- !u!65 &99561443
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99561439}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35200024, y: 0.36596835, z: 0.28570753}
+  m_Center: {x: 0.00000017881393, y: -0.000000037252903, z: -0.00000016763806}
+--- !u!65 &99561444
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99561440}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35200024, y: 0.36596835, z: 0.28570753}
+  m_Center: {x: 0.00000017881393, y: -0.000000037252903, z: -0.00000016763806}
 --- !u!1001 &103234690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25635,6 +25723,82 @@ PrefabInstance:
       propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: Typewriter_Button
       objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171488, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: m_Size.x
+      value: 0.036292654
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171488, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: m_Size.y
+      value: 0.043691415
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171488, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: m_Size.z
+      value: 0.03537664
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171491, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: rotateSound.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171491, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: stopRotateSound.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171491, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: rotateSound.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171491, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: rotateSound.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171491, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: rotateSound.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1817184618}
+    - target: {fileID: 1280447739185171491, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: rotateSound.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171491, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: rotateSound.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171491, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: rotateSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171491, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: rotateSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Typewriter_TurnWheel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171491, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: stopRotateSound.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171491, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: stopRotateSound.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171491, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: stopRotateSound.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1817184618}
+    - target: {fileID: 1280447739185171491, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: stopRotateSound.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171491, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: stopRotateSound.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Stop
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171491, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: stopRotateSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280447739185171491, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
+      propertyPath: stopRotateSound.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Typewriter_TurnWheel
+      objectReference: {fileID: 0}
     - target: {fileID: 3567997374314900589, guid: 36544a54380ec7246a6b8bdf218a57a4, type: 3}
       propertyPath: pressSound.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -32247,7 +32411,7 @@ MonoBehaviour:
     Volume: 0.5
     Pitch: 1
     SpacialSound: 0
-    Loop: 1
+    Loop: 0
     Source: {fileID: 0}
   - name: ComboLock_Finished
     Clip: {fileID: 8300000, guid: 7ce89ad2786744180865d31a53ab64cc, type: 3}
