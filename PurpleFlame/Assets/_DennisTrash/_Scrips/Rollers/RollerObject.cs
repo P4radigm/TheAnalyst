@@ -19,6 +19,7 @@ namespace PurpleFlame
 
         public Vector3 v3;
         private bool correct = false;
+        private bool soundActivate;
         private int symbol = 0;
         private float angle;
         private float angleLerp;
@@ -75,7 +76,7 @@ namespace PurpleFlame
 
                 v3.z = Mathf.Lerp(v3.z, angleLerp, 0.07f);
                 transform.eulerAngles = v3;
-                neutralPositionSound.Invoke();
+                soundActivate = true;
             }
             else
             {
@@ -91,6 +92,12 @@ namespace PurpleFlame
                 }
 
                 CorrectSymbol();
+
+                if (soundActivate)
+                {
+                    soundActivate = false;
+                    neutralPositionSound.Invoke();
+                }
             }
         }
 
@@ -109,6 +116,7 @@ namespace PurpleFlame
                 correct = false;
                 RollerManager.Instance.SymbolsCorrectCheck(correct);
             }
+
         }
 
         public void RotateObject(float speed)

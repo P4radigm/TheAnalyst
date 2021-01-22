@@ -40,7 +40,7 @@ namespace PurpleFlame
         sealed protected override void OnFingerUp(Lean.Touch.LeanFinger finger)
         {
             base.OnFingerUp(finger);
-            if (finished) { return; }
+            if (finished || selectedDoor == null) { return; }
             ResetValues();
         }
 

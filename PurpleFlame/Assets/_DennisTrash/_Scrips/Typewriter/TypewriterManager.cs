@@ -104,6 +104,7 @@ public class TypewriterManager : LeanDrag
         buttonHit = false;
         swipeRecognised = false;
         pressingTypeWriterDisk = false;
+        if(typeWriterDisk != null) { typeWriterDisk.stopRotateSound.Invoke(); }
         swipe = 0;
     }
 

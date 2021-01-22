@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace PurpleFlame
 {
@@ -19,6 +20,10 @@ namespace PurpleFlame
         [SerializeField] private TypewriterUI typeWriterUI;
         [SerializeField] private GameObject layerMask;
         [SerializeField] private Transform rollerCog;
+
+        [Header("Audio")]
+        [SerializeField] private UnityEvent rotateSound;
+        public UnityEvent stopRotateSound;
 
         private float angleLastFrame = 0;
         private float angle = 0;
@@ -114,11 +119,15 @@ namespace PurpleFlame
             //if(_difference != 0)
             //Debug.Log($"angle = {angle}, angleLastFrame = {angleLastFrame}");
             //Debug.Log($"_difference = {_difference}");
+            Debug.Log(_difference);
 
             if(Mathf.Abs(_difference) < 200)
             {
                 typeWriterUI.UpdatePaper(_difference);
             }
+
+            if(Mathf.Abs(_difference) > 0.2f) { rotateSound.Invoke(); }
+            else { stopRotateSound.Invoke(); }
 
             angleLastFrame = angle;
 

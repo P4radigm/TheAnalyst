@@ -40,13 +40,22 @@ namespace PurpleFlame
         sealed protected override void OnFingerDown(Lean.Touch.LeanFinger finger)
         {
             base.OnFingerDown(finger);
-            InputTouch();
+            Ray ray = Camera.main.ScreenPointToRay(touchingFingers[0].ScreenPosition);
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerTarget))
+            {
+                if (!hit.collider.GetComponent<RollerObject>()) { return; }
+                rollerObject = hit.collider.GetComponent<RollerObject>();
+                ObjectRotation.Instance.DisableScript(true);
+                interactableHit = true;
+            }
         }
 
         sealed protected override void OnFingerUp(Lean.Touch.LeanFinger finger)
         {
             //if(rollerObject != null) { Debug.Log(Mathf.RoundToInt(Mathf.Round(rollerObject.v3.z * 10) / 10)); }
             base.OnFingerUp(finger);
+
+            if (!interactableHit) { return; }
             ObjectRotation.Instance.DisableScript(false);
 
             if(rollerObject != null) 
@@ -68,21 +77,6 @@ namespace PurpleFlame
             }
         }
 
-        private void InputTouch()
-        {
-            if (touchingFingers.Count > 0)
-            {
-                Ray ray = Camera.main.ScreenPointToRay(touchingFingers[0].ScreenPosition);
-                if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerTarget))
-                {
-                    if (!hit.collider.GetComponent<RollerObject>()) { return; }
-                    rollerObject = hit.collider.GetComponent<RollerObject>();
-                    ObjectRotation.Instance.DisableScript(true);
-                    interactableHit = true;
-                }
-            }
-        }
-
         private void SwipeInput()
         {
             if (!swipeRecognised && interactableHit)
@@ -91,7 +85,7 @@ namespace PurpleFlame
 
                 if (swipe > moveDragThreshold) { rollerObject.RotateObject(rotateSpeed); }
                 if (swipe < -moveDragThreshold) { rollerObject.RotateObject(-rotateSpeed); }
-                //if(swipe > moveDragThreshold || swipe < -moveDragThreshold) { turningSound.Invoke(); }
+                if(swipe > moveDragThreshold || swipe < -moveDragThreshold) { turningSound.Invoke(); }
             }
         }
 
