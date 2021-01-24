@@ -183,7 +183,8 @@ namespace PurpleFlame
         }
 
         public void AddLetters(Letter letter)
-        {
+        {          
+
             if (currentState == NodeState.Tutorial)
             {
                 currentState = NodeState.Notebook;
@@ -239,7 +240,7 @@ namespace PurpleFlame
             if (!nextPages && currentPageSelected > 1)
             {
                 currentPageSelected -= 2;
-                noteBookPageTurnSound.Invoke();
+                //noteBookPageTurnSound.Invoke();
                 //currentPageSelected = 0;
             }
 

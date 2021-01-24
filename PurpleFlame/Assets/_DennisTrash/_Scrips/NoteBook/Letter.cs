@@ -14,9 +14,13 @@ namespace PurpleFlame
 
         public void PutInNotebook()
         {
+            Debug.Log("AAAAAAAA");
             NoteBookManager.Instance.AddLetters(this);
+            Debug.Log("BBBBBBBB");
             NoteBookManager.Instance.SetNotebookVisible();
+            Debug.Log("CCCCCCCC");
             Destroy(this.gameObject);
+            Debug.Log("DDDDDDDD");
         }
     }
 }
