@@ -12,6 +12,7 @@ namespace PurpleFlame
         [SerializeField] private float moveDragThreshold;
         [SerializeField] private Animator mainDeskAnim;
         [SerializeField] private Letter letter;
+        [SerializeField] private CameraTarget cT;
 
         [Header("Audio")]
         [SerializeField] private UnityEvent turningSound;
@@ -109,6 +110,7 @@ namespace PurpleFlame
 
                 finishedSound.Invoke();
                 mainDeskAnim.SetTrigger("ComboLockCompleted");
+                cT.MoveToOldTarget(2);
                 this.enabled = false;
             }
         }

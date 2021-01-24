@@ -196,7 +196,7 @@ namespace TouchBehaviours
 
             //Move towards new target preferred cam position
             if (targetPrefferedCamPosition != null)
-                CameraFollowTarget.MoveToNewTarget(targetPrefferedCamPosition, InterpolationSpeed, CameraOffsetOfInteractable);
+                CameraFollowTarget.MoveToNewTarget(targetPrefferedCamPosition, InterpolationSpeed, CameraOffsetOfInteractable, target);
 
             CameraFollowTarget.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
 

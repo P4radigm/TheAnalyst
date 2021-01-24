@@ -11,6 +11,8 @@ public class CameraTarget : MonoBehaviour
     Transform currentTarget;
     Transform nextTarget;
 
+    private TouchBehaviours.InteractableObject currentTargetObject;
+
     private float distanceToCam;
 
     void Start()
@@ -20,8 +22,19 @@ public class CameraTarget : MonoBehaviour
         //transform.parent = currentTarget;
     }
 
-    public void MoveToNewTarget(Transform newTarget, float time, float _distanceToCam)
+    public void MoveToNewTarget(Transform newTarget, float time, float _distanceToCam, GameObject _targetObject)
     {
+        if(_targetObject != null)
+        {
+            if (_targetObject.GetComponent<TouchBehaviours.InteractableObject>() != null)
+            {
+                currentTargetObject = _targetObject.GetComponent<TouchBehaviours.InteractableObject>();
+            }
+            else { currentTargetObject = null; }
+        }
+        else { currentTargetObject = null; }
+
+
         transform.parent = null;
         nextTarget = newTarget;
         distanceToCam = _distanceToCam;
@@ -33,7 +46,20 @@ public class CameraTarget : MonoBehaviour
     public void MoveToOldTarget(float time)
     {
         transform.parent = null;
-        nextTarget = StartPosition;
+
+        if(currentTargetObject != null)
+        {
+            if (currentTargetObject.Back != null)
+            {
+                nextTarget = currentTargetObject.Back.PrefferedCamTransformPosition;
+                currentTargetObject = currentTargetObject.Back;
+            }
+            else { nextTarget = StartPosition; }
+        }
+        else { nextTarget = StartPosition; }
+
+        Debug.LogWarning($"nextTraget = {nextTarget}");
+
         transform.LerpTransform(this, nextTarget.position, TravelSpeed);
 
         //StartCoroutine(MoveCoroutine(time));
