@@ -63,26 +63,26 @@ public class OptionsManager : MonoBehaviour
         //DontDestroyOnLoad(pauseCanvas);
     }
 
-    //private void Update()
-    //{
-    //    if(screenOrientation != Screen.orientation)
-    //    {
-    //        if(Screen.orientation == ScreenOrientation.LandscapeLeft)
-    //        {
-    //            UpdateNotchDisplay();
-    //            screenOrientation = ScreenOrientation.LandscapeLeft;
-    //        }
-    //        else if (Screen.orientation == ScreenOrientation.LandscapeRight)
-    //        {
-    //            UpdateNotchDisplay();
-    //            screenOrientation = ScreenOrientation.LandscapeRight;
-    //        }
-    //        else
-    //        {
-    //            Debug.Log("ScreenOrientation not supported");
-    //        }
-    //    }
-    //}
+    private void Update()
+    {
+        if (screenOrientation != Screen.orientation)
+        {
+            if (Screen.orientation == ScreenOrientation.LandscapeLeft)
+            {
+                UpdateNotchDisplay();
+                screenOrientation = ScreenOrientation.LandscapeLeft;
+            }
+            else if (Screen.orientation == ScreenOrientation.LandscapeRight)
+            {
+                UpdateNotchDisplay();
+                screenOrientation = ScreenOrientation.LandscapeRight;
+            }
+            else
+            {
+                //Debug.Log("ScreenOrientation not supported");
+            }
+        }
+    }
 
     public void UpdateNotchDisplay()
     {

@@ -23,6 +23,7 @@ namespace PurpleFlame
         [SerializeField] private float moveDragThreshold; // how much do you have to swipe before you have effect
 
         [Header("UI")]
+        [SerializeField] private GameObject inGameUI;
         [SerializeField] private GameObject book;
         [SerializeField] private Sprite emptyPage;
         //[SerializeField] private Letter beginLetter;
@@ -163,6 +164,8 @@ namespace PurpleFlame
                     book.SetActive(true);
                 }
 
+                inGameUI.SetActive(false);
+
                 ObjectRotation.Instance.DisableScript(true);
                 noteBookOpenSound.Invoke();
             }
@@ -171,6 +174,8 @@ namespace PurpleFlame
                 //currentPageSelected = 0;
                 book.SetActive(false);
                 telegramCanvas.SetActive(false);
+
+                inGameUI.SetActive(true);
 
                 ObjectRotation.Instance.DisableScript(false);
                 noteBookCloseSound.Invoke();

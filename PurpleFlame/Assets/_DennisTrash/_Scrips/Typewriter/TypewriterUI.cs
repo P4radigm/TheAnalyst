@@ -7,7 +7,8 @@ namespace PurpleFlame
 {
     public class TypewriterUI : MonoBehaviour
     {
-        public int answersCount;
+        //public int answersCount;
+        public bool answersDone = false;
         [HideInInspector] public bool readyToPickUp = false;
 
         public GameObject paper;
@@ -54,7 +55,7 @@ namespace PurpleFlame
                 v3.y = startPos.y - beginLength;
             }
 
-            if (answersCount != 4)
+            if (!answersDone)
             {
                 if (v3.y > startPos.y + paperLength)
                 {

@@ -22,13 +22,12 @@ namespace PurpleFlame
                 Destroy(gameObject);
             }
 
-            DontDestroyOnLoad(this.gameObject);
+            //DontDestroyOnLoad(this.gameObject);
         }
 
         [Header("General")]
         private CameraTarget cT;
-        [SerializeField] private Canvas inGameCanvas;
-        [SerializeField] private Canvas pauseCanvas;
+        [SerializeField] private GameObject inGameCanvas;
         [SerializeField] private GameObject pauseMain;
         [SerializeField] private GameObject pauseSettings;
         [Header("Settings")]
@@ -74,10 +73,9 @@ namespace PurpleFlame
 
         public void Pause()
         {
-            inGameCanvas.gameObject.SetActive(false);
-            pauseCanvas.gameObject.SetActive(true);
-            pauseSettings.SetActive(false);
+            inGameCanvas.SetActive(false);
             pauseMain.SetActive(true);
+            pauseSettings.SetActive(false);
             //usualtime = Time.timeScale;
             //Time.timeScale = 0;
             ObjectRotation.Instance.enabled = false;
@@ -88,7 +86,8 @@ namespace PurpleFlame
 
         public void Continue()
         {
-            pauseCanvas.gameObject.SetActive(false);
+            pauseMain.SetActive(false);
+            pauseSettings.SetActive(false);
             inGameCanvas.gameObject.SetActive(true);
             //Time.timeScale = usualtime;
             ObjectRotation.Instance.enabled = true;

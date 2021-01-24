@@ -159,13 +159,13 @@ public class TypewriterManager : LeanDrag
         {
             if(currentButtonPressed.answerNumber < 4)
             {
-                if(answerNumbers[currentAnswer] == -1) { typeWriterUI.answersCount++; }
+                //if(answerNumbers[currentAnswer] == -1) { typeWriterUI.answersCount++; }
                 answerNumbers[currentAnswer] = currentButtonPressed.answerNumber;
             }
             else
             {
                 answerNumbers[currentAnswer] = -1;
-                typeWriterUI.answersCount--;
+                //typeWriterUI.answersCount--;
             }
             //typeWriterUI.AnswerInsert(currentAnswer, currentButtonPressed.answerNumber + 1);
             if (currentButtonPressed.answerNumber + 1 != 5)
@@ -189,7 +189,19 @@ public class TypewriterManager : LeanDrag
                 {
                     currentButtonPressed.StartPressButtonAnim(this, false);
                 }
-            }      
+            }
+
+            bool answerCheck = true;
+
+            for (int i = 0; i < answerNumbers.Length; i++)
+            {
+                if (answerNumbers[i] == -1)
+                {
+                    answerCheck = false;
+                }
+            }
+
+            typeWriterUI.answersDone = answerCheck;
         }
     }
 
