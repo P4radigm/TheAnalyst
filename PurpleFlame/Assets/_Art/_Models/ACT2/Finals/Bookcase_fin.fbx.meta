@@ -17,37 +17,37 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_BookcaseBase
-    second: {fileID: 2100000, guid: e32a7e21c4b792d458edee4558d83103, type: 2}
+    second: {fileID: 2100000, guid: 0254c1c02ef74274f9d5bc41efb24e88, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_Bookcase_back3
-    second: {fileID: 2100000, guid: 963ca3404143bff48b0909f5bbe89d7a, type: 2}
+    second: {fileID: 2100000, guid: 0254c1c02ef74274f9d5bc41efb24e88, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_Bookcase_flanks3
-    second: {fileID: 2100000, guid: b06487aa3f1878f47a3ef261cbee94c8, type: 2}
+    second: {fileID: 2100000, guid: 0254c1c02ef74274f9d5bc41efb24e88, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_Bookcase_numberplates3
-    second: {fileID: 2100000, guid: e29ec3452ac13ba4788d9bac1310a97c, type: 2}
+    second: {fileID: 2100000, guid: 0254c1c02ef74274f9d5bc41efb24e88, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_InteractableGold3
-    second: {fileID: 2100000, guid: 627e33d562cb56541990f3e53064aca7, type: 2}
+    second: {fileID: 2100000, guid: 0254c1c02ef74274f9d5bc41efb24e88, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_MetalDark3
-    second: {fileID: 2100000, guid: 35058e7872079cc44ad388679971be14, type: 2}
+    second: {fileID: 2100000, guid: 0254c1c02ef74274f9d5bc41efb24e88, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_Metal_Light3
-    second: {fileID: 2100000, guid: c90ce8fe152bfbe49970356438363860, type: 2}
+    second: {fileID: 2100000, guid: 0254c1c02ef74274f9d5bc41efb24e88, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

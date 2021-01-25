@@ -21,22 +21,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_Cupboard_Wood
-    second: {fileID: 2100000, guid: 96738a3aae2acd74c828ce5ef68cd3b0, type: 2}
+    second: {fileID: 2100000, guid: eadc74768fa64cc419e293050339d38d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_Matte_Dark
-    second: {fileID: 2100000, guid: ffcc0911a1ac59a48a6c5bf2ecb1735c, type: 2}
+    second: {fileID: 2100000, guid: eadc74768fa64cc419e293050339d38d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_Pedestals
-    second: {fileID: 2100000, guid: c90ce8fe152bfbe49970356438363860, type: 2}
+    second: {fileID: 2100000, guid: eadc74768fa64cc419e293050339d38d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_cupboarddoors
-    second: {fileID: 2100000, guid: c90ce8fe152bfbe49970356438363860, type: 2}
+    second: {fileID: 2100000, guid: eadc74768fa64cc419e293050339d38d, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_CeilingWall
-    second: {fileID: 2100000, guid: e29ec3452ac13ba4788d9bac1310a97c, type: 2}
+    second: {fileID: 2100000, guid: b65d2ce295fd0d845bf10f4ce83bbc35, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
