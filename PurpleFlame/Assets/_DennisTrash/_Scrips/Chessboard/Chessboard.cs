@@ -81,7 +81,7 @@ public class Chessboard : LeanDrag
         }
     }
 
-    private void SetOnBoard(ChessPiece selectedPiece)
+    public void SetOnBoard(ChessPiece selectedPiece)
     {
         piecesOnBoard++;
         selectedPiece.onBoard = true;

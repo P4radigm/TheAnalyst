@@ -22,6 +22,13 @@ namespace PurpleFlame
         [HideInInspector] public bool unMoved = true;
         [HideInInspector] public bool onBoard = false;
 
+        private Collider collider;
+
+        private void Start()
+        {
+            collider = GetComponent<Collider>();
+        }
+
         public void ShowActions(bool[,] t)
         {
             switch (chessPiece)
@@ -43,6 +50,12 @@ namespace PurpleFlame
                 default:
                     break;
             }
+        }
+
+        public void SetOnBoard()
+        {
+            Chessboard.Instance.SetOnBoard(this);
+            collider.enabled = true;
         }
         public override bool[,] PossibleMove()
         {
