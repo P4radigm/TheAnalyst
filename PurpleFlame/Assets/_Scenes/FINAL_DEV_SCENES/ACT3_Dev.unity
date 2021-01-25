@@ -1638,14 +1638,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5f67524435aa1e04b9d8ef636d54c040, type: 3}
   - {fileID: 21300000, guid: 64c6cf26e1ef0ac42a44f83954c85a6b, type: 3}
   - {fileID: 21300000, guid: c691369ae2ced5442b82fdf4a1f77c8c, type: 3}
-  - {fileID: 21300000, guid: 20fe4257cf1b5ab428ea92099384a31f, type: 3}
+  - {fileID: 21300000, guid: f0111c57d5fa7dc4ebbc4186bcf5e51c, type: 3}
   - {fileID: 21300000, guid: a1ec5f42517078e4f9ab947219238e17, type: 3}
-  - {fileID: 21300000, guid: 27aa83b270e7ee64bb8c43311f2e63f1, type: 3}
+  - {fileID: 21300000, guid: fac8f9482905f3b45b65fb3608f15d7e, type: 3}
   - {fileID: 21300000, guid: 09f3fd308a08f7e4fb5bc5d28ba5c047, type: 3}
   - {fileID: 21300000, guid: fa004cba81b958a498d5210986a64d80, type: 3}
   - {fileID: 21300000, guid: fe8505062521a9348aafb61c182d4e20, type: 3}
   - {fileID: 21300000, guid: 566de973de2c2e84bae35133170f877c, type: 3}
-  - {fileID: 21300000, guid: 0348ecd5d7fe10d48a08172ec74b207b, type: 3}
+  - {fileID: 21300000, guid: d30d769f5cbdca042852111652c50228, type: 3}
   - {fileID: 21300000, guid: de18fb82374b321498e1b706e692ad49, type: 3}
   beginText:
   - "From: Nikola Tesla\r\nTo: Initiate\r\nSend: New York, June 21st 1892\r\nReceived:
@@ -1687,15 +1687,15 @@ MonoBehaviour:
     your mind to something else for a while. \r\n\r\nGood luck\r\n"
   - '13-03-1846 - Choices
 
-
+    
 
     Weighing my priorities has always been a struggle
     to me.
 
+    
 
-
-    My work is my number one and I would give up anything for it. The
-    choices I have made define me and they have brought you here.
+    My work is my number one and I would put it above everything
+    else. The choices I have made define me and they have brought you here.
 
 '
   - "20-03-1846 - Consider\r\n\r\nWhen you are making a choice, one will always look
@@ -1724,7 +1724,7 @@ MonoBehaviour:
     through Oxford. There were reports that my work could be in danger there. "
   - 'In Liverpool, a flood made it impossible to travel over the Thames. I had to
     go to London via all accessible cities in the country within 52 hours. '
-  - 'Finally, I had to choose one city and travel to another one, but through all
+  - 'Finally, I was in Norwich and had to travel to Liverpool, going through all
     the other cities in the country. All this in 74 hours. There was only one route
     that precisely took this amount of time. '
   - "30-08-1850 - Power\r\n\r\nThe King has power. Knowledge is power. The king stands
@@ -4180,13 +4180,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8674815562326443854, guid: cf2276959b99d4443976970d958fce72, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8674815562400492296, guid: cf2276959b99d4443976970d958fce72, type: 3}
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8674815562400492298, guid: cf2276959b99d4443976970d958fce72, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cf2276959b99d4443976970d958fce72, type: 3}
 --- !u!1 &620377391
 GameObject:
@@ -13805,7 +13806,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 06acbbdac6ac0474fbd6bca55db519cc, type: 2}
+  - {fileID: 2100000, guid: a34debdf3ab429f4491c010afff48573, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13834,7 +13835,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1860134349}
-  m_Mesh: {fileID: 4018240635619668338, guid: 34cde5795f8d3a0449a35a55704e09e5, type: 3}
+  m_Mesh: {fileID: 4018240635619668338, guid: 5fa6b17d835d9274184d0e8adc9fb4b9, type: 3}
 --- !u!1 &1882289319
 GameObject:
   m_ObjectHideFlags: 0
