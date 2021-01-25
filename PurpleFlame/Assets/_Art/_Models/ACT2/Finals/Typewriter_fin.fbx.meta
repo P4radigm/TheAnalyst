@@ -6,7 +6,47 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Proto_InteractableGold
+    second: {fileID: 2100000, guid: eadc74768fa64cc419e293050339d38d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Proto_MetalDark
+    second: {fileID: 2100000, guid: eadc74768fa64cc419e293050339d38d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Proto_MetalLight
+    second: {fileID: 2100000, guid: eadc74768fa64cc419e293050339d38d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Proto_MetalMedium
+    second: {fileID: 2100000, guid: eadc74768fa64cc419e293050339d38d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Proto_Sky
+    second: {fileID: 2100000, guid: eadc74768fa64cc419e293050339d38d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Proto_Type_Paper
+    second: {fileID: 2100000, guid: eadc74768fa64cc419e293050339d38d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Proto_WoodMedium
+    second: {fileID: 2100000, guid: eadc74768fa64cc419e293050339d38d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: eadc74768fa64cc419e293050339d38d, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -88,7 +128,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.036
+    globalScale: 3.6
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

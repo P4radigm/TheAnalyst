@@ -3,7 +3,22 @@ guid: 1243397739b41b04eb7514cf4dbefc68
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Proto_InteractableGold4
+    second: {fileID: 2100000, guid: eadc74768fa64cc419e293050339d38d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Proto_MetalLight4
+    second: {fileID: 2100000, guid: eadc74768fa64cc419e293050339d38d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: eadc74768fa64cc419e293050339d38d, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -85,7 +100,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.036
+    globalScale: 3.6
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
