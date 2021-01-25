@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using BasHelpers;
+using TouchBehaviours;
 
 public class CameraTarget : MonoBehaviour
 {
@@ -10,25 +11,32 @@ public class CameraTarget : MonoBehaviour
     public float TravelSpeed = 5f;
     Transform currentTarget;
     Transform nextTarget;
-
-    private TouchBehaviours.InteractableObject currentTargetObject;
+    private TouchInputManager tIM;
+    private GameManager gM;
+    private InteractableObject currentTargetObject;
 
     private float distanceToCam;
 
     void Start()
     {
+        gM = GameManager.Instance;
         currentTarget = InitialTarget;
         transform.position = StartPosition.position;
         //transform.parent = currentTarget;
     }
 
-    public void MoveToNewTarget(Transform newTarget, float time, float _distanceToCam, GameObject _targetObject)
+    public void MoveToNewTarget(Transform newTarget, float time, float _distanceToCam, GameObject _targetObject, TouchInputManager _tIM)
     {
+        if(_tIM != null)
+        {
+            tIM = _tIM;
+        }
+
         if(_targetObject != null)
         {
-            if (_targetObject.GetComponent<TouchBehaviours.InteractableObject>() != null)
+            if (_targetObject.GetComponent<InteractableObject>() != null)
             {
-                currentTargetObject = _targetObject.GetComponent<TouchBehaviours.InteractableObject>();
+                currentTargetObject = _targetObject.GetComponent<InteractableObject>();
             }
             else { currentTargetObject = null; }
         }
@@ -52,16 +60,23 @@ public class CameraTarget : MonoBehaviour
             if (currentTargetObject.Back != null)
             {
                 nextTarget = currentTargetObject.Back.PrefferedCamTransformPosition;
+                //Debug.Log($"currentTargetObject.Back = {currentTargetObject.Back}");
+                //Debug.Log($"tIM.target = {currentTargetObject.Back.gameObject}");
+                gM.ReInitializeInspectables(currentTargetObject.Back.gameObject);
+                tIM.target = currentTargetObject.Back.gameObject;
+                tIM.DubbleTapedOnInspectable();
                 currentTargetObject = currentTargetObject.Back;
+                return;
             }
             else { nextTarget = StartPosition; }
         }
         else { nextTarget = StartPosition; }
 
-        Debug.LogWarning($"nextTraget = {nextTarget}");
+        //Debug.LogWarning($"nextTraget = {nextTarget}");
 
         transform.LerpTransform(this, nextTarget.position, TravelSpeed);
 
+        gM.ReInitializeInspectables(null);
         //StartCoroutine(MoveCoroutine(time));
     }
 

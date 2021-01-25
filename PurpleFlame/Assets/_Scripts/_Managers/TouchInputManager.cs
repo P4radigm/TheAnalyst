@@ -28,7 +28,7 @@ namespace TouchBehaviours
         public float RequiredTabs = 2;
         [SerializeField] private float tabCount = 0;
         [SerializeField] private float tabCooler = 0.5f;
-        private GameObject target;
+        [HideInInspector] public GameObject target;
         private GameObject lastTarget;
         private GameObject avatar;
 
@@ -168,7 +168,7 @@ namespace TouchBehaviours
         /// <summary>
         /// When we dubble taped on an inspectable we need to do some stuff
         /// </summary>
-        private void DubbleTapedOnInspectable()
+        public void DubbleTapedOnInspectable()
         {
             if (target == null) return;
 
@@ -196,7 +196,7 @@ namespace TouchBehaviours
 
             //Move towards new target preferred cam position
             if (targetPrefferedCamPosition != null)
-                CameraFollowTarget.MoveToNewTarget(targetPrefferedCamPosition, InterpolationSpeed, CameraOffsetOfInteractable, target);
+                CameraFollowTarget.MoveToNewTarget(targetPrefferedCamPosition, InterpolationSpeed, CameraOffsetOfInteractable, target, this);
 
             CameraFollowTarget.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation;
 

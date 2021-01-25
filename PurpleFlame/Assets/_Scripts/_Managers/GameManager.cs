@@ -42,6 +42,7 @@ namespace TouchBehaviours
         public float DeactivationTimeOfObjects = 2f;
         public Image FadePanel;
         public SecondDeskManager SecondDeskManager;
+        //[HideInInspector] public GameObject currentTarget;
         private bool paused = false;
 
         public void Pause(bool save = true)
@@ -144,11 +145,16 @@ namespace TouchBehaviours
             item.PuzzleDoneEvent.Invoke();
         }
 
-        public void ReInitializeInspectables()
+        public void ReInitializeInspectables(GameObject _exception)
         {
             foreach(KeyValuePair<Iinspectable, GameObject> keyValuePair in InspectableGameObjects)
             {
                 keyValuePair.Value.GetComponent<Collider>().enabled = true;
+            }
+
+            if(_exception != null)
+            {
+                _exception.GetComponent<Collider>().enabled = false;
             }
         }
     }
