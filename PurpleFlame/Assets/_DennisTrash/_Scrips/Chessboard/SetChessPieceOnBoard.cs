@@ -6,17 +6,18 @@ namespace PurpleFlame
 {
     public class SetChessPieceOnBoard : MonoBehaviour
     {
-        [SerializeField] private ChessPiece chessPiece;
+        [SerializeField] private Collider chessPiece;
         [SerializeField] private Collider chessBoardCollider;
 
         private void Start()
         {
             chessBoardCollider.enabled = false;
+            chessPiece.enabled = false;
         }
 
         public void SetOnBoard()
         {
-            chessPiece.SetOnBoard();
+            chessPiece.enabled = true;
             chessBoardCollider.enabled = true;
         }
     }
