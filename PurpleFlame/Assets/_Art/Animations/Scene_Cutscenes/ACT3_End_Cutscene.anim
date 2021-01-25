@@ -1945,7 +1945,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 116.65
-        value: -2410
+        value: -2790
         inSlope: 27.815207
         outSlope: 27.815207
         tangentMode: 0
@@ -1953,10 +1953,10 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 149.71666
-        value: 2393
-        inSlope: 145.25206
-        outSlope: 145.25206
+        time: 154.65
+        value: 2760
+        inSlope: 146.05266
+        outSlope: 146.05266
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -2115,7 +2115,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 150.4
+    m_StopTime: 155.81667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -5327,7 +5327,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 116.65
-        value: -2410
+        value: -2790
         inSlope: 27.815207
         outSlope: 27.815207
         tangentMode: 0
@@ -5335,10 +5335,10 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 149.71666
-        value: 2393
-        inSlope: 145.25206
-        outSlope: 145.25206
+        time: 154.65
+        value: 2760
+        inSlope: 146.05266
+        outSlope: 146.05266
         tangentMode: 34
         weightedMode: 0
         inWeight: 0.33333334
@@ -5474,7 +5474,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 150.4
+  - time: 155.81667
     functionName: LoadLevel
     data: 
     objectReferenceParameter: {fileID: 0}
