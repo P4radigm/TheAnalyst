@@ -69,7 +69,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_ACT2_UV_Pack_1
-    second: {fileID: 2100000, guid: fb0a0f9226c6c0f46ab388d28bd5684f, type: 2}
+    second: {fileID: 2100000, guid: 22e25345595384645a88e1ccd170dfca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
