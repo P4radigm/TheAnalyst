@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_BookPaper
-    second: {fileID: 2100000, guid: adc614062f1201d4c94dc0cb923d9b16, type: 2}
+    second: {fileID: 2100000, guid: 8c74385719b01e3468852ba7306bdeab, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_Book_02
-    second: {fileID: 2100000, guid: 01c0167bbeee35043b6558e1c1f35715, type: 2}
+    second: {fileID: 2100000, guid: 8c74385719b01e3468852ba7306bdeab, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
