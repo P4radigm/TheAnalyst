@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: MAT_Window_Curtain_Red
-    second: {fileID: 2100000, guid: ff2eadaf8714dec4db4534bf8736bac5, type: 2}
+    second: {fileID: 2100000, guid: 8b9b7a3bb51be224d81c8fcf142289d0, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
