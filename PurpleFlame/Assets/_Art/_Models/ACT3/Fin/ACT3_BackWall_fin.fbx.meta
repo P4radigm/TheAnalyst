@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Default_Material
-    second: {fileID: 2100000, guid: 337ee43b40d7b6049b3006575eca7d30, type: 2}
+    second: {fileID: 2100000, guid: 4b5f13855361c0749aa0b394404f4b7c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_FlanksWall
-    second: {fileID: 2100000, guid: 41cac851d2a6a1c47bcd4e69f7dc49b5, type: 2}
+    second: {fileID: 2100000, guid: 4b5f13855361c0749aa0b394404f4b7c, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

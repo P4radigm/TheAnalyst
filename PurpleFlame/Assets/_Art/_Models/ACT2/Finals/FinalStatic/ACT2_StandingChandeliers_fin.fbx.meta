@@ -8,27 +8,27 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_ChandelierCandle.001
-    second: {fileID: 2100000, guid: dbe848663a80b614d82165cb9b13ad8b, type: 2}
+    second: {fileID: 2100000, guid: 8b9b7a3bb51be224d81c8fcf142289d0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Chandelier_01.001
-    second: {fileID: 2100000, guid: 627e33d562cb56541990f3e53064aca7, type: 2}
+    second: {fileID: 2100000, guid: 8b9b7a3bb51be224d81c8fcf142289d0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Chandelier_02.001
-    second: {fileID: 2100000, guid: 627e33d562cb56541990f3e53064aca7, type: 2}
+    second: {fileID: 2100000, guid: 8b9b7a3bb51be224d81c8fcf142289d0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Chandelier_03
-    second: {fileID: 2100000, guid: 627e33d562cb56541990f3e53064aca7, type: 2}
+    second: {fileID: 2100000, guid: 8b9b7a3bb51be224d81c8fcf142289d0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Chandelier_04
-    second: {fileID: 2100000, guid: 627e33d562cb56541990f3e53064aca7, type: 2}
+    second: {fileID: 2100000, guid: 8b9b7a3bb51be224d81c8fcf142289d0, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

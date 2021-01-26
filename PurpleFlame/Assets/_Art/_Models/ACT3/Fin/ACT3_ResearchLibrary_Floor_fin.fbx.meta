@@ -8,12 +8,12 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Default_Material
-    second: {fileID: 2100000, guid: 826e343a838dbfc458e6b50ccb6dd4bd, type: 2}
+    second: {fileID: 2100000, guid: 4b5f13855361c0749aa0b394404f4b7c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_Flanks_Ground
-    second: {fileID: 2100000, guid: 826e343a838dbfc458e6b50ccb6dd4bd, type: 2}
+    second: {fileID: 2100000, guid: 4b5f13855361c0749aa0b394404f4b7c, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -29,42 +29,42 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Bouten
-    second: {fileID: 2100000, guid: 35058e7872079cc44ad388679971be14, type: 2}
+    second: {fileID: 2100000, guid: 22e25345595384645a88e1ccd170dfca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Pin
-    second: {fileID: 2100000, guid: c9f057b01e83d1d4ba8b6d887685a6f1, type: 2}
+    second: {fileID: 2100000, guid: 22e25345595384645a88e1ccd170dfca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Proto_InteractableGold
-    second: {fileID: 2100000, guid: beaced4b578449c448f6e79d1965b5c9, type: 2}
+    second: {fileID: 2100000, guid: 22e25345595384645a88e1ccd170dfca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Proto_MetalDark
-    second: {fileID: 2100000, guid: 963ca3404143bff48b0909f5bbe89d7a, type: 2}
+    second: {fileID: 2100000, guid: 22e25345595384645a88e1ccd170dfca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Proto_MetalLight
-    second: {fileID: 2100000, guid: d31f865dca8110049ad413fc6bc3db93, type: 2}
+    second: {fileID: 2100000, guid: 22e25345595384645a88e1ccd170dfca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Proto_MetalMedium
-    second: {fileID: 2100000, guid: c90ce8fe152bfbe49970356438363860, type: 2}
+    second: {fileID: 2100000, guid: 22e25345595384645a88e1ccd170dfca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Proto_WoodBase
-    second: {fileID: 2100000, guid: 41cac851d2a6a1c47bcd4e69f7dc49b5, type: 2}
+    second: {fileID: 2100000, guid: 22e25345595384645a88e1ccd170dfca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Proto_WoodLight
-    second: {fileID: 2100000, guid: 7586f8926e9f97241b2ffd29b86f3c47, type: 2}
+    second: {fileID: 2100000, guid: 22e25345595384645a88e1ccd170dfca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -74,32 +74,32 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_Blocker
-    second: {fileID: 2100000, guid: c90ce8fe152bfbe49970356438363860, type: 2}
+    second: {fileID: 2100000, guid: 22e25345595384645a88e1ccd170dfca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_ChessCilinder
-    second: {fileID: 2100000, guid: 84a67017e32d4a94e9832a86f0f51c59, type: 2}
+    second: {fileID: 2100000, guid: 22e25345595384645a88e1ccd170dfca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_DeskOrna
-    second: {fileID: 2100000, guid: 35058e7872079cc44ad388679971be14, type: 2}
+    second: {fileID: 2100000, guid: 22e25345595384645a88e1ccd170dfca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_Limestone
-    second: {fileID: 2100000, guid: dbe848663a80b614d82165cb9b13ad8b, type: 2}
+    second: {fileID: 2100000, guid: 22e25345595384645a88e1ccd170dfca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_Rollshutter
-    second: {fileID: 2100000, guid: feceac8adc460f7408b2d5772b1967eb, type: 2}
+    second: {fileID: 2100000, guid: 22e25345595384645a88e1ccd170dfca, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_WoodDark
-    second: {fileID: 2100000, guid: 01c0167bbeee35043b6558e1c1f35715, type: 2}
+    second: {fileID: 2100000, guid: 22e25345595384645a88e1ccd170dfca, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

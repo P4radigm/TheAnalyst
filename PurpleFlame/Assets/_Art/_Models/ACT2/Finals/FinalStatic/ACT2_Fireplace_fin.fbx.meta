@@ -8,22 +8,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bricks
-    second: {fileID: 2100000, guid: 35058e7872079cc44ad388679971be14, type: 2}
+    second: {fileID: 2100000, guid: 8b9b7a3bb51be224d81c8fcf142289d0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Limestone
-    second: {fileID: 2100000, guid: 963ca3404143bff48b0909f5bbe89d7a, type: 2}
+    second: {fileID: 2100000, guid: 8b9b7a3bb51be224d81c8fcf142289d0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_Metal_Dark
-    second: {fileID: 2100000, guid: c90ce8fe152bfbe49970356438363860, type: 2}
+    second: {fileID: 2100000, guid: 8b9b7a3bb51be224d81c8fcf142289d0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_Wood
-    second: {fileID: 2100000, guid: e32a7e21c4b792d458edee4558d83103, type: 2}
+    second: {fileID: 2100000, guid: 8b9b7a3bb51be224d81c8fcf142289d0, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
