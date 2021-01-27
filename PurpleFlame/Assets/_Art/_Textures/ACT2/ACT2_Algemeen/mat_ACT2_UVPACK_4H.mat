@@ -85,7 +85,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Boolean_1E9950CC: 1
+    - Boolean_1E9950CC: 0
     - Boolean_6234D484: 0
     - Boolean_9E761660: 0
     - Boolean_A29117A1: 0
