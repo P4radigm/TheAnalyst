@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: mat_AdaChair
-    second: {fileID: 2100000, guid: 7902dd2b40e02ad46a4d6d430d387e76, type: 2}
+    second: {fileID: 2100000, guid: 005a8534af79f98419a6b54cf1226a0e, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
