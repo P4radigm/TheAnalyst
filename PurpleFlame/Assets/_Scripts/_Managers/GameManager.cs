@@ -42,6 +42,8 @@ namespace TouchBehaviours
         public float DeactivationTimeOfObjects = 2f;
         public Image FadePanel;
         public SecondDeskManager SecondDeskManager;
+
+        //public CameraTouchTarget CurrentlyAtThisTarget
         private bool paused = false;
 
         public void Pause(bool save = true)
